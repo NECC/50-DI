@@ -38,7 +38,7 @@ export default function HomePage() {
           <div className="mt-16 text-white/70 text-sm font-mono max-w-2xl mx-auto leading-relaxed">
             <p>
               Celebrando cinco décadas de inovação, excelência e transformação tecnológica. Junte-se a nós nesta jornada
-              através de 50 anos de história em Informática.
+              através de 50 anos de história em Informática na Universidade do Minho.
             </p>
           </div>
         </div>
