@@ -1,0 +1,10 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/depoimentos/page": "app/depoimentos/page.js",
+  "/evento/page": "app/evento/page.js",
+  "/page": "app/page.js",
+  "/patrocinadores/page": "app/patrocinadores/page.js",
+  "/programacao/page": "app/programacao/page.js",
+  "/timeline/page": "app/timeline/page.js"
+}

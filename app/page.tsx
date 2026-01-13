@@ -20,7 +20,7 @@ export default function HomePage() {
           {/* Ajustei o margin-bottom (mb-12) para dar espaço ao botão */}
           <div className="mb-12 flex justify-center">
             <Image
-              src="/Artboard 2.svg" 
+              src="/Artboard2.svg" 
               alt="50 anos Engenharia Informática Universidade do Minho"
               width={800} // Largura base para referência
               height={600} // Altura base para referência

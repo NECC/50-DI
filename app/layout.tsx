@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "50 anos - Engenharia Informática",
+  title: "50 anos - Informática",
   description: "50º Aniversário Engenharia Informática",
   generator: "v0.app",
   icons: {
