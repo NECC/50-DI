@@ -1,1 +1,9 @@
-{"/_not-found/page":"/_not-found","/evento/page":"/evento","/patrocinadores/page":"/patrocinadores","/page":"/","/programacao/page":"/programacao","/depoimentos/page":"/depoimentos","/timeline/page":"/timeline"}
+{
+  "/_not-found/page": "/_not-found",
+  "/depoimentos/page": "/depoimentos",
+  "/evento/page": "/evento",
+  "/page": "/",
+  "/patrocinadores/page": "/patrocinadores",
+  "/programacao/page": "/programacao",
+  "/timeline/page": "/timeline"
+}
