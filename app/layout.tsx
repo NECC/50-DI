@@ -4,23 +4,28 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const geist = Geist({
+  subsets: ["latin"],
+})
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+})
 
 export const metadata: Metadata = {
-  title: "50 anos - Informática",
-  description: "50º Aniversário Engenharia Informática",
-  generator: "v0.app",
+  title: "50 anos Informática UMinho",
+  description: "50º Aniversário da Informática na Universidade do Minho",
   icons: {
     icon: [
       {
         url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
+        //media: "(prefers-color-scheme: light)",
       },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
+      // {
+      //   url: "/icon-dark-32x32.png",
+      //   media: "(prefers-color-scheme: dark)",
+      // },
       {
         url: "/icon.svg",
         type: "image/svg+xml",
@@ -36,8 +41,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`font-sans antialiased`}>
+    <html lang="pt-PT">
+      <body
+        className={`${geist.className} ${geistMono.variable} font-sans antialiased`}
+      >
         {children}
         <Analytics />
       </body>
