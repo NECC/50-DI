@@ -43,11 +43,13 @@ module.exports = {
           DEFAULT: "oklch(var(--card))",
           foreground: "oklch(var(--card-foreground))",
         },
-        // Add your custom colors using the CSS variables
         'sage-green': "oklch(var(--sage-green))",
         'vibrant-orange': "oklch(var(--vibrant-orange))",
         'cream': "oklch(var(--cream))",
         'dark-bg': "oklch(var(--dark-bg))",
+      },
+    fontFamily: {
+      'redaction-20': ['"Redaction 20"', 'sans-serif'],
       },
     },
   },
