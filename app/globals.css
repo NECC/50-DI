@@ -120,3 +120,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+@font-face {
+  font-family: 'Redaction 20';
+  src: url('/fonts/Redaction20.woff2') format('woff2'),
+       url('/fonts/Redaction20.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
