@@ -66,14 +66,21 @@ return (
                 className={`
                   break-inside-avoid inline-block w-full relative overflow-hidden 
                   rounded-lg group bg-black mb-8
+                  aspect-square
                   ${index % 2 !== 0 ? 'lg:mt-16' : ''}
                 `}
               >
-                
                 <div 
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-80"
+                  className="
+                    absolute inset-0
+                    bg-center bg-no-repeat bg-contain
+                    transition-transform duration-700
+                    group-hover:scale-110
+                    opacity-80
+                  "
                   style={{ backgroundImage: `url(${item.imagem})` }}
                 />
+
 
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
 
