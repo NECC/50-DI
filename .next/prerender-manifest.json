@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/programacao/0":{},"/programacao/1":{},"/programacao/2":{},"/programacao/3":{},"/programacao/4":{},"/programacao/5":{}},"dynamicRoutes":{"/programacao/[id]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/programacao/[id]","routeRegex":"^\\/programacao\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"44d63193af2e5a5ca03f33f944c54f8a","previewModeSigningKey":"bb106870e6fc1dc80234aba042942a71702e48c732a07bc9408c58a04d133d5d","previewModeEncryptionKey":"0600102cb9304fc79473d6a876a52917379cdae302f05ee48ddad3200563d351"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "53367e8002d56e778f4280f1af2cea5a",
+    "previewModeSigningKey": "38b6babc5c0edfcb90ee0f14ed9279a7b247c29499df19d4a91993d298bcc122",
+    "previewModeEncryptionKey": "e030b7824f1d871ced0bcf72b38621b1405ca2d9756cd49f219e9d82c1370347"
+  }
+}

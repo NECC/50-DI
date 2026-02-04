@@ -1,4 +1,4 @@
-// File: C:\Users\ASUS TUF\Downloads\v0-perfumes-app-main\50-DI\app\layout.tsx
+// File: /Users/px/Documents/50-DI/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
