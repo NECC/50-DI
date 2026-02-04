@@ -1,24 +1,13 @@
 import Image from "next/image";
+import ProgramacaoPage from "./programacao/page";
+import { Navigation } from "@/components/navigation";
 
 export default function HomePage() {
   return (
     <>
 
-      
-      <div className="flex justify-between items-center w-full bg-sage-green fixed top-0 left-0 z-50"><div className="flex items-center cursor-pointer">
-      {/*<Image alt="Logo NECC" loading="lazy" width="100" height="100" decoding="async" data-nimg="1" className="w-20 h-20" style="color:transparent" srcset="/_next/image?url=%2Flogos%2FneccSticker.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2Flogos%2FneccSticker.png&amp;w=256&amp;q=75 2x" src="/_next/image?url=%2Flogos%2FneccSticker.png&amp;w=256&amp;q=75">*/}
-      {/*<div className="text-[#018cca] text-lg sm:text-2xl font-semibold">NECChange</div>}
-      {/*</div><div className="flex flex-col justify-center items-center w-10 h-10 sm:hidden border mx-5 cursor-pointer hover:bg-gray-100 rounded">*/}
-      {/*<div className="w-5/12 h-[2px] rounded bg-black m-[1px]"></div><div className="w-5/12 h-[2px] rounded bg-black m-[1px]"></div>*/}
-      {/*<div className="w-5/12 h-[2px] rounded bg-black m-[1px]"></div>*/}
-      <Image alt="50-Informática" src="/Artboard2.svg" width={100} height={100} className="w-30 h-30" priority/>
-
-      </div><ul className="text-gray-800 font-semibold sm:flex hidden items-center">
-      <li><a className="px-12 py-4 text-white text-lg font-medium rounded-sm hover:bg-white hover:text-sage-green transition-all duration-300"href="/programacao">Programação</a></li>
-      <li><a className="px-12 py-4 text-white text-lg font-medium rounded-sm hover:bg-white hover:text-sage-green transition-all duration-300" href="/super_user">5 décadas</a></li></ul></div>
-
-      <main className="min-h-screen bg-sage-green flex items-center justify-center relative overflow-hidden px-6">
-        
+      <main className="min-h-screen bg-[#71AA7A] flex items-center justify-center relative overflow-hidden px-6 [--bg-color:#71AA7A]">
+      <Navigation />  
         {/* Decorative orange squares - Mantive exatamente como estavam */}
         <div className="absolute top-12 left-12 w-16 h-16 bg-[#EB5F0A] rounded-sm opacity-80" />
         <div className="absolute top-20 right-1/4 w-12 h-12 bg-[#EB5F0A] rounded-sm opacity-60" />
@@ -52,8 +41,88 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-
       </main>
+      <main className="min-h-screen bg-white flex items-center justify-center relative overflow-hidden px-6">
+        <div className="mt-16 max-w-6xl mx-auto flex gap-6 items-start">
+          <div className="text-[#EB5F0A] text-sm font-mono leading-relaxed">
+            <p>
+              O ensino regular da Informática e sua Engenharia inicia-se na Universidade do
+              Minho no ano lectivo de 1976-77. Pioneiro no país, o novo curso, sob a designação
+              Engenharia de Produção – Ramo Sistemas, incluia no seu plano de estudos
+              disciplinas como Linguagens de Programação, Sistemas de Computação ou
+              Processamento de Dados, O último semestre previa um estágio na indústria de
+              modo a facilitar a integração dos futuros engenheiros no mercado de trabalho.
+            </p>
+            <p>
+              E foi assim que tudo começou. Quatro anos mais tarde, o curso autonomizava-se na
+              Licenciatura em Engenharia de Sistemas e Informática, a LESI, e, um pouco depois,
+              diversificar-se-ia com a criação da Licenciatura em Matemática e Ciências da
+              Computação, a LMCC. Dois cursos marcaram decisivamente o desenvolvimento da
+              Informática em Portugal e sucessivas gerações de alunos. Prosseguiriam com o
+              mesmo sucesso, após Bolonha, na Licenciatura e Mestrado em Engenharia
+              Informática e na Licenciatura em Ciências de Computação.
+            </p>
+            <p>
+              Entretanto, a oferta cresceu e diversificou-se. Alguns ramos, como os Sistemas de
+              Informação, consolidaram-se em novos departamentos, outros autonomizaram-se
+              em novos projectos, como as Comunicações e, mais recentemente, as Ciências de
+              Dados, a Informática Médica, a Inteligência Artificial, a Segurança da Informação ou
+              a Computação de Alto Desempenho. Cursos de fronteira surgiram em diálogo com
+              outros domínios do saber, como a Bioinformática e a Engenharia Física, esta última
+              igualmente pioneira no ensino da computação quântica.
+            </p>
+            <p>
+              Simultaneamente, uma forte e consistente dimensão de investigação, com elevado
+              nível de internacionalização, veio escudar o vertiginoso desenvolvimento da
+              Informática nesta Casa. Desde o início, também aí, fomos pioneiros: em 1995 o
+              Departamento de Informática organizou a primeira conferência nacional em WWW,
+              alojou a primeira página institucional de Portugal, e daqui saiu a primeira mensagem
+              de e-mail.
+            </p>
+            <p>
+              O segredo deste sucesso reside na conjugação de três factores: ensino exigente e
+              rigoroso; investigação internacionalmente reconhecida, hoje enquadrada no
+              Algoritmi e no INESC TEC; aposta consistente na inovação, no empreendedorismo
+              e no diálogo com o tecido empresarial.
+            </p>
+            <p>
+              Este último pilar é constitutivo, desde o início, do código genético da Informática na
+              UMinho. Concretizando o célebre aforismo de E. W. Dijkstra, procuramos levar à
+              indústria não tanto o que ela quer, mas o que de facto precisa. E fazer, em conjunto,
+              esse caminho.
+            </p>
+            <p>  
+              Assim se explica o vibrante ecossistema de inovação que é imagem de marca da
+              Informática na UMinho. Caminho iniciado logo na década de 1970, com a criação da
+              Datamatic, e continuado hoje com empresas fundamentais, em domínios que vão da
+              segurança à sustentação da vida, do processamento de documentos às bases de
+              dados distribuídas, dos agentes inteligentes à engenharia de dados.
+              Pedindo de empréstimo o verso de António Machado
+            </p>
+              <blockquote className="mt-0 border-l-4 border-[var(--bg-color)] pl-6 italic text-[#EB5F0A]">
+                "Caminhante, não há caminho: faz-se caminho ao andar."
+              </blockquote>
+              <p>
+              invocamos nesta exposição um percurso de 50 anos, assinalando metas,
+              sublinhando desafios, registando as pequenas e grandes histórias que nos
+              conduziram até aqui.
+            </p>
+            <p>
+              Apetece juntar os nomes e os rostos de tantos alunos, investigadores, parceiros
+              que, em cada dia, fizeram tantos anos. Orgulhamo-nos do seu profissionalismo, da
+              sua competência, dos seus inúmeros sucessos. São eles que validam e certificam
+              este caminho. Com eles nos abrimos, confiadamente, aos próximos 50 anos.
+            </p>
+          </div>
+           <div className="absolute top-12 left-12 w-16 h-16 bg-[#71AA7A] rounded-sm opacity-80" />
+          <div className="absolute top-20 right-1/4 w-12 h-12 bg-[#71AA7A] rounded-sm opacity-60" />
+          <div className="absolute top-1/3 right-12 w-20 h-20 bg-[#71AA7A] rounded-sm opacity-70" />
+          <div className="absolute bottom-24 left-1/4 w-16 h-16 bg-[#71AA7A] rounded-sm opacity-50" />
+          <div className="absolute bottom-32 right-24 w-24 h-24 bg-[#71AA7A] rounded-sm opacity-80" />
+          <div className="absolute top-1/2 left-1/3 w-14 h-14 bg-[#71AA7A] rounded-sm opacity-40" />
+        </div>
+      </main>
+      <ProgramacaoPage/>
     </>
   )
 }
