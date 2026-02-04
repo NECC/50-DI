@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import Image from "next/image";
-
+import Link from "next/link"
 
 export default function ProgramacaoPage() {
   const schedule = [
@@ -48,10 +48,10 @@ export default function ProgramacaoPage() {
     },
   ]
 
-return (
+  return (
     <>
-      <Navigation />
-      <main className="min-h-screen pt-20 bg-[#EB5F0A]">
+      <main className="min-h-screen pt-20 bg-[#EB5F0A] [--bg-color:#EB5F0A]">
+        <Navigation />
         <div className="container mx-auto px-6 py-12">
           <div className="mb-16">
             <h1 className="text-7xl md:text-8xl font-redaction-20 text-white mb-8 drop-shadow-md text-balance">
@@ -61,12 +61,13 @@ return (
 
           <div className="columns-1 lg:columns-2 gap-0 md:gap-20">
             {schedule.map((item, index) => (
-              <div
+              <Link
                 key={index}
+                href={`/programacao/${index}`}
                 className={`
                   break-inside-avoid inline-block w-full relative overflow-hidden 
                   rounded-lg group bg-black mb-8
-                  aspect-square
+                  aspect-square cursor-pointer
                   ${index % 2 !== 0 ? 'lg:mt-16' : ''}
                 `}
               >
@@ -81,7 +82,6 @@ return (
                   style={{ backgroundImage: `url(${item.imagem})` }}
                 />
 
-
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
 
                 <div className="relative z-10 p-6 flex flex-col gap-6 h-full justify-between min-h-[250px]">
@@ -94,23 +94,13 @@ return (
                     </p>
                   </div>
 
-                  
                   <div className="flex items-end justify-between border-t border-white/20 pt-4 mt-4">
-                    {/*<Image 
-                      alt="50-Informática" 
-                      src="/Artboard2.svg" 
-                      width={100} 
-                      height={100} 
-                      className="w-12 h-12 opacity-80" 
-                      priority
-                    />*/}
-                     <div className="text-2xl font-bold text-white font-mono">
+                    <div className="text-2xl font-bold text-white font-mono">
                       {item.time}
                     </div>
                   </div>
-
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
