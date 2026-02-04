@@ -17,19 +17,20 @@ export default function HomePage() {
         <div className="absolute top-1/2 left-1/3 w-14 h-14 bg-[#EB5F0A] rounded-sm opacity-40" />
        
         <div className="text-center z-10 max-w-4xl w-full">
+          {/* Image */}
           <div className="mb-12 flex justify-center">
             <Image
               src="/Artboard2.svg" 
               alt="50 anos Informática Universidade do Minho"
-              width={800} // Largura base para referência
-              height={600} // Altura base para referência
-              priority // Carrega a imagem imediatamente (importante para o banner principal)
-              className="w-full h-auto max-w-[600px] md:max-w-[800px]" // Controla o tamanho máximo no ecrã
+              width={800}
+              height={600}
+              priority
+              className="w-full h-auto max-w-[500px] md:max-w-[700px]"
             />
           </div>
 
           {/* Coming Soon Button */}
-          <button className="px-12 py-4 border-2 border-white text-white text-lg font-medium rounded-sm hover:bg-white hover:text-sage-green transition-all duration-300">
+          <button className="px-12 py-4 border-2 border-white text-white text-lg font-medium rounded-lg hover:bg-white hover:text-[#71AA7A] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
             Em Breve
           </button>
 

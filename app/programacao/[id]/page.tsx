@@ -52,16 +52,20 @@ export function generateStaticParams() {
   }))
 }
 
-export default function EventoPage({ params }: { params: { id: string } }) {
-  const eventId = parseInt(params.id)
+export default async function EventoPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const eventId = parseInt(id)
   const event = schedule[eventId]
   
   if (!event) {
     return (
-      <main className="min-h-screen pt-20 bg-[#EB5F0A] [--bg-color:#EB5F0A]">
+      <main className="min-h-screen pt-20 bg-gradient-to-br from-[#EB5F0A] via-[#EB5F0A] to-[#E55100] [--bg-color:#EB5F0A]">
         <Navigation />
-        <div className="container mx-auto px-6 py-12 text-center">
+        <div className="container mx-auto px-6 py-12 text-center relative z-10">
           <h1 className="text-4xl font-bold text-white mb-4">Evento não encontrado</h1>
+          <Link href="/programacao" className="text-white/80 hover:text-white transition-colors">
+            Voltar aos eventos
+          </Link>
         </div>
       </main>
     )
@@ -70,32 +74,99 @@ export default function EventoPage({ params }: { params: { id: string } }) {
   return (
     <main className="min-h-screen pt-20 bg-white [--bg-color:#EB5F0A]">
       <Navigation />
-      <div className="container mx-auto px-6 py-12">
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
-          <div className="flex-1">
-            <div className="mb-6">
-              <h1 className="text-7xl md:text-8xl font-redaction-20 text-[#EB5F0A] mb-8 drop-shadow-md text-balance">
+      
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-96 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 right-20 w-72 h-72 bg-[#EB5F0A]/5 rounded-full blur-3xl" />
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
+        {/* Back Link */}
+        <Link 
+          href="/programacao"
+          className="inline-flex items-center gap-2 text-[#EB5F0A] hover:text-[#E55100] font-medium mb-8 transition-colors duration-300"
+        >
+          <span>←</span>
+          <span>Voltar aos eventos</span>
+        </Link>
+
+        {/* Main Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
+          {/* Left Column - Content */}
+          <div className="lg:col-span-2 space-y-8">
+            {/* Title */}
+            <div className="space-y-4">
+              <span className="inline-block text-sm font-mono uppercase tracking-widest text-[#EB5F0A]/60">
+                Evento
+              </span>
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-redaction-20 text-[#EB5F0A] leading-tight">
                 {event.title}
               </h1>
-              <h2 className="text-s md:text-s font-redaction-20 mb-2 text-[#EB5F0A]">
-                {event.time}
-              </h2>
-              <h2 className="text-5xl font-redaction-20 text-[#EB5F0A] uppercase tracking-wider mb-3">
+            </div>
+
+            {/* Date and Location */}
+            <div className="grid grid-cols-2 gap-6 py-6 border-y border-[#EB5F0A]/20">
+              <div>
+                <p className="text-xs uppercase tracking-widest text-[#EB5F0A]/60 mb-2">
+                  Data
+                </p>
+                <p className="text-xl sm:text-2xl font-mono font-bold text-[#EB5F0A]">
+                  {event.time}
+                </p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-widest text-[#EB5F0A]/60 mb-2">
+                  Local
+                </p>
+                <p className="text-xl sm:text-2xl font-mono font-bold text-[#EB5F0A]">
+                  {event.location}
+                </p>
+              </div>
+            </div>
+
+            {/* Description */}
+            <div className="space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-redaction-20 text-[#EB5F0A] uppercase tracking-wide">
                 Descrição
               </h2>
-              <p className="text-xl text-[#EB5F0A] leading-relaxed">
+              <p className="text-base sm:text-lg text-[#EB5F0A]/90 leading-relaxed">
                 {event.description}
               </p>
-              <p className="text-xl text-[#EB5F0A] font-mono">
-                {event.location}
-              </p>
+            </div>
+
+            {/* CTA Section */}
+            <div className="pt-8 border-t border-[#EB5F0A]/20">
+              <button className="px-8 py-3 bg-[#EB5F0A] text-white font-bold rounded-lg hover:bg-[#E55100] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                Registar Interesse
+              </button>
             </div>
           </div>
-          <div 
-            className="w-full lg:w-96 h-96 bg-black bg-center bg-no-repeat relative flex-shrink-0 rounded-lg overflow-hidden"
-            style={{ backgroundImage: `url(${event.imagem})` }}
-          >
-            <div className="absolute inset-0 bg-black/50" />
+
+          {/* Right Column - Image */}
+          <div className="lg:col-span-1 flex flex-col gap-6">
+            {/* Featured Image - Removed */}
+            <div className="hidden" />
+
+            {/* Navigation Cards */}
+            <div className="space-y-3">
+              {schedule.map((evt, idx) => (
+                <Link
+                  key={idx}
+                  href={`/programacao/${idx}`}
+                  className={`
+                    block p-4 rounded-lg transition-all duration-300 border
+                    ${
+                      idx === eventId
+                        ? 'bg-[#EB5F0A] text-white border-[#EB5F0A] shadow-lg'
+                        : 'bg-white text-[#EB5F0A] border-[#EB5F0A]/20 hover:border-[#EB5F0A]/50 hover:bg-[#EB5F0A]/5'
+                    }
+                  `}
+                >
+                  <p className="font-bold text-sm sm:text-base">{evt.title}</p>
+                  <p className="text-xs opacity-70 mt-1">{evt.time}</p>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

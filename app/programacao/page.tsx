@@ -50,58 +50,94 @@ export default function ProgramacaoPage() {
 
   return (
     <>
-      <main className="min-h-screen pt-20 bg-[#EB5F0A] [--bg-color:#EB5F0A]">
+      <main className="min-h-screen pt-20 bg-gradient-to-br from-[#EB5F0A] via-[#EB5F0A] to-[#E55100] [--bg-color:#EB5F0A]">
         <Navigation />
-        <div className="container mx-auto px-6 py-12">
-          <div className="mb-16">
-            <h1 className="text-7xl md:text-8xl font-redaction-20 text-white mb-8 drop-shadow-md text-balance">
+        
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+          <div className="absolute top-20 right-10 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-40 left-10 w-96 h-96 bg-black/10 rounded-full blur-3xl" />
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
+          {/* Header Section */}
+          <div className="mb-16 md:mb-24">
+            <h1 className="text-6xl sm:text-7xl md:text-8xl font-redaction-20 text-white mb-4 drop-shadow-lg text-balance leading-tight">
               Programação
             </h1>
+            <p className="text-white/80 text-lg sm:text-xl font-light max-w-2xl">
+              Descobra os principais eventos que celebram os 50 anos de excelência em Informática
+            </p>
           </div>
 
-          <div className="columns-1 lg:columns-2 gap-0 md:gap-20">
+          {/* Grid Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
             {schedule.map((item, index) => (
               <Link
                 key={index}
                 href={`/programacao/${index}`}
                 className={`
-                  break-inside-avoid inline-block w-full relative overflow-hidden 
-                  rounded-lg group bg-black mb-8
-                  aspect-square cursor-pointer
-                  ${index % 2 !== 0 ? 'lg:mt-16' : ''}
+                  group relative overflow-hidden rounded-xl bg-gradient-to-br from-black/80 to-black border border-[#EB5F0A]/30
+                  h-64 sm:h-72 md:h-80 lg:h-96
+                  shadow-lg transition-all duration-500 ease-out
+                  hover:shadow-2xl hover:shadow-[#EB5F0A]/20 hover:border-[#EB5F0A]/60
+                  ${index % 2 !== 0 ? 'lg:mt-8' : ''}
+                  transform hover:scale-105 cursor-pointer
                 `}
               >
-                <div 
-                  className="
-                    absolute inset-0
-                    bg-center bg-no-repeat bg-contain
-                    transition-transform duration-700
-                    group-hover:scale-110
-                    opacity-80
-                  "
-                  style={{ backgroundImage: `url(${item.imagem})` }}
-                />
-
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
-
-                <div className="relative z-10 p-6 flex flex-col gap-6 h-full justify-between min-h-[250px]">
-                  <div className="flex-1">
-                    <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg leading-tight">
+                {/* Content Container */}
+                <div className="relative z-10 h-full p-6 sm:p-8 flex flex-col justify-between">
+                  {/* Top Content */}
+                  <div className="space-y-4">
+                    <div className="inline-block">
+                      <span className="text-xs sm:text-sm font-mono uppercase tracking-widest text-[#EB5F0A] opacity-80">
+                        Evento
+                      </span>
+                    </div>
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight group-hover:text-[#EB5F0A] transition-colors duration-300">
                       {item.title}
                     </h3>
-                    <p className="text-white/90 font-mono text-sm uppercase tracking-wider">
-                      {item.location}
-                    </p>
                   </div>
 
-                  <div className="flex items-end justify-between border-t border-white/20 pt-4 mt-4">
-                    <div className="text-2xl font-bold text-white font-mono">
-                      {item.time}
+                  {/* Bottom Content */}
+                  <div className="space-y-4">
+                    <div className="w-12 h-0.5 bg-gradient-to-r from-[#EB5F0A] to-transparent group-hover:w-16 transition-all duration-500" />
+                    
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-baseline">
+                        <span className="text-white/60 text-xs uppercase tracking-wider font-light">
+                          Data
+                        </span>
+                        <time className="text-base sm:text-lg font-bold text-[#EB5F0A] font-mono">
+                          {item.time}
+                        </time>
+                      </div>
+                      <div className="flex justify-between items-baseline">
+                        <span className="text-white/60 text-xs uppercase tracking-wider font-light">
+                          Local
+                        </span>
+                        <span className="text-base sm:text-lg font-medium text-white/80 font-mono">
+                          {item.location}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                {/* Hover Glow Effect */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl pointer-events-none">
+                  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#EB5F0A] to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#EB5F0A] to-transparent" />
+                </div>
               </Link>
             ))}
+          </div>
+
+          {/* Footer Info */}
+          <div className="mt-20 pt-12 border-t border-white/20 text-center">
+            <p className="text-white/70 font-light max-w-2xl mx-auto">
+              Clique em qualquer evento para obter mais detalhes. Inscrições e informações adicionais serão disponibilizadas em breve.
+            </p>
           </div>
         </div>
       </main>

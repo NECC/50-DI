@@ -62,29 +62,42 @@ export default function TimelinePage() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-cream pt-20">
-        <div className="container mx-auto px-6 py-12">
+      <main className="min-h-screen bg-white pt-20">
+        <div className="container mx-auto px-4 sm:px-6 py-12">
           {/* Header */}
-          <div className="mb-16">
-            <h1 className="text-7xl md:text-8xl font-bold text-dark-bg mb-8 text-balance">Timeline</h1>
-            <p className="text-vibrant-orange text-xl font-mono">50 Anos de Feitos do DI</p>
+          <div className="mb-16 md:mb-24">
+            <h1 className="text-6xl sm:text-7xl md:text-8xl font-redaction-20 text-[#EB5F0A] mb-4 text-balance leading-tight">
+              Timeline
+            </h1>
+            <p className="text-gray-600 text-lg sm:text-xl font-light max-w-2xl">
+              50 Anos de Marcos Importantes do Departamento
+            </p>
           </div>
 
           {/* Timeline */}
-          <div className="relative max-w-5xl mx-auto pb-24">
+          <div className="relative max-w-4xl mx-auto pb-24">
             {/* Vertical line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-vibrant-orange/30" />
+            <div className="absolute left-0 sm:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#EB5F0A] via-[#EB5F0A]/50 to-transparent" />
 
-            <div className="space-y-12">
+            <div className="space-y-8 sm:space-y-12">
               {milestones.map((milestone, index) => (
-                <div key={index} className="relative pl-24">
+                <div key={index} className="relative pl-8 sm:pl-24">
                   {/* Year dot */}
-                  <div className="absolute left-4 top-2 w-8 h-8 bg-vibrant-orange rounded-full border-4 border-cream" />
+                  <div className="absolute -left-2 sm:left-2 top-2 w-4 h-4 sm:w-8 sm:h-8 bg-gradient-to-br from-[#EB5F0A] to-orange-500 rounded-full border-4 border-white shadow-lg group hover:scale-125 transition-transform" />
 
-                  <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
-                    <div className="text-5xl font-bold text-vibrant-orange font-mono mb-3">{milestone.year}</div>
-                    <h3 className="text-2xl font-bold text-dark-bg mb-2">{milestone.title}</h3>
-                    <p className="text-dark-bg/70 leading-relaxed">{milestone.description}</p>
+                  <div className="bg-white rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-[#EB5F0A]/50 shadow-md hover:shadow-lg transition-all duration-300 group">
+                    <div className="flex items-baseline gap-4 mb-4">
+                      <div className="text-4xl sm:text-5xl font-bold text-[#EB5F0A] font-mono">
+                        {milestone.year}
+                      </div>
+                      <div className="flex-1 h-px bg-gradient-to-r from-[#EB5F0A] to-transparent group-hover:from-[#EB5F0A] group-hover:to-orange-300 transition-colors" />
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#EB5F0A] transition-colors">
+                      {milestone.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+                      {milestone.description}
+                    </p>
                   </div>
                 </div>
               ))}

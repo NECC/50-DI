@@ -49,12 +49,16 @@ export default function DepoimentosPage() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-sage-green pt-20">
-        <div className="container mx-auto px-6 py-12">
-          {/* Header */}
-          <div className="mb-16">
-            <h1 className="text-7xl md:text-8xl font-bold text-white mb-8 text-balance">Depoimentos</h1>
-            <p className="text-vibrant-orange text-xl font-mono">Professores e Ex-Diretores sobre o DI</p>
+      <main className="min-h-screen bg-white pt-20">
+        <div className="container mx-auto px-4 sm:px-6 py-12">
+          {/* Header Section */}
+          <div className="mb-16 md:mb-24">
+            <h1 className="text-6xl sm:text-7xl md:text-8xl font-redaction-20 text-[#EB5F0A] mb-4 text-balance leading-tight">
+              Depoimentos
+            </h1>
+            <p className="text-gray-600 text-lg sm:text-xl font-light max-w-2xl">
+              Testemunhos de Professores e Ex-Diretores sobre o Departamento
+            </p>
           </div>
 
           {/* Testimonials Grid */}
@@ -62,22 +66,37 @@ export default function DepoimentosPage() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-lg p-8 hover:bg-white/20 transition-colors"
+                className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 p-8 hover:border-[#EB5F0A]/50 hover:shadow-lg transition-all duration-300"
               >
+                {/* Avatar and Info */}
                 <div className="flex items-start gap-6 mb-6">
-                  <div className="w-20 h-20 rounded-full bg-vibrant-orange/30 flex-shrink-0 overflow-hidden">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#EB5F0A] to-orange-500 flex-shrink-0 overflow-hidden shadow-md">
                     <img
                       src={testimonial.image || "/placeholder.svg?height=80&width=80"}
                       alt={testimonial.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-1">{testimonial.name}</h3>
-                    <p className="text-vibrant-orange text-sm font-mono">{testimonial.role}</p>
+                  <div className="flex-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">
+                      {testimonial.name}
+                    </h3>
+                    <p className="text-[#EB5F0A] text-sm font-mono">
+                      {testimonial.role}
+                    </p>
                   </div>
                 </div>
-                <blockquote className="text-white/90 leading-relaxed text-lg">"{testimonial.quote}"</blockquote>
+
+                {/* Divider */}
+                <div className="h-px bg-gradient-to-r from-[#EB5F0A] to-transparent mb-6" />
+
+                {/* Quote */}
+                <blockquote className="text-gray-700 leading-relaxed italic">
+                  "{testimonial.quote}"
+                </blockquote>
+
+                {/* Hover accent */}
+                <div className="absolute top-0 left-0 w-1 h-0 bg-gradient-to-b from-[#EB5F0A] to-transparent group-hover:h-full transition-all duration-500" />
               </div>
             ))}
           </div>
