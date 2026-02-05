@@ -1,4 +1,10 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/evento/page": "app/evento/page.js",
   "/page": "app/page.js",
-  "/programacao/page": "app/programacao/page.js"
+  "/programacao/page": "app/programacao/page.js",
+  "/depoimentos/page": "app/depoimentos/page.js",
+  "/patrocinadores/page": "app/patrocinadores/page.js",
+  "/timeline/page": "app/timeline/page.js",
+  "/programacao/[id]/page": "app/programacao/[id]/page.js"
 }
