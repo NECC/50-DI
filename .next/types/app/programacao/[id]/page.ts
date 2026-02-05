@@ -1,4 +1,4 @@
-// File: C:\Users\ASUS TUF\Downloads\v0-perfumes-app-main\50-DI\app\programacao\[id]\page.tsx
+// File: /Users/px/Documents/50-DI/app/programacao/[id]/page.tsx
 import * as entry from '../../../../../app/programacao/[id]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,5 +1,5 @@
-import { Navigation } from "@/components/navigation"
-import Link from "next/link"
+import { Navigation } from "@/components/navigation";
+import Link from "next/link";
 
 const schedule = [
   {
@@ -14,75 +14,87 @@ const schedule = [
     title: "Seminário",
     imagem: "/Artboard2.svg",
     location: "Auditório Principal",
-    description: "Seminário sobre Ensino/formação em Informática/Computação nos diversos níveis do Sistema Educativo: desafios para os próximos 50 anos – evento integrado na ENEI-Encontro Nacional de Estudantes de Informática",
+    description:
+      "Seminário sobre Ensino/formação em Informática/Computação nos diversos níveis do Sistema Educativo: desafios para os próximos 50 anos – evento integrado na ENEI-Encontro Nacional de Estudantes de Informática",
   },
   {
     time: "27 Maio 2026",
     title: "Mesa Redonda",
     imagem: "/Artboard2.svg",
     location: "Auditório Principal",
-    description: "Mesa redonda com empresas/indústria sobre O futuro da Informática",
+    description:
+      "Mesa redonda com empresas/indústria sobre O futuro da Informática",
   },
   {
     time: "Junho 2026",
     title: "Workshop",
     imagem: "/Artboard2.svg",
     location: "Auditório Principal",
-    description: "Workshop em Engenharia de Software Apoiada por Assistentes Artificiais – evento focado nos desafios e oportunidades da IA ao desenvolvimento de software, envolvendo alunos, peritos e empresas",
+    description:
+      "Workshop em Engenharia de Software Apoiada por Assistentes Artificiais – evento focado nos desafios e oportunidades da IA ao desenvolvimento de software, envolvendo alunos, peritos e empresas",
   },
   {
     time: "3ª semana de Setembro 2026",
     title: "Festa dos 50 Anos da Informática na UMinho",
     imagem: "/Artboard2.svg",
     location: "Auditório Principal",
-    description: "Festa dos 50 Anos da Informática na UMinho, evento de convívio e networking  entre academia, estudantes, alumni e empresas",
+    description:
+      "Festa dos 50 Anos da Informática na UMinho, evento de convívio e networking  entre academia, estudantes, alumni e empresas",
   },
   {
     time: "Data a anunciar em 2027",
     title: "Seminário",
     imagem: "/Artboard2.svg",
     location: "Auditório Principal",
-    description: "Seminário sobre Temas fronteira: desafios à investigação em informática",
+    description:
+      "Seminário sobre Temas fronteira: desafios à investigação em informática",
   },
-]
+];
 
 export function generateStaticParams() {
   return schedule.map((_, index) => ({
     id: index.toString(),
-  }))
+  }));
 }
 
-export default async function EventoPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params
-  const eventId = parseInt(id)
-  const event = schedule[eventId]
-  
+export default async function EventoPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const eventId = parseInt(id);
+  const event = schedule[eventId];
+
   if (!event) {
     return (
       <main className="min-h-screen pt-20 bg-gradient-to-br from-[#EB5F0A] via-[#EB5F0A] to-[#E55100] [--bg-color:#EB5F0A]">
         <Navigation />
         <div className="container mx-auto px-6 py-12 text-center relative z-10">
-          <h1 className="text-4xl font-bold text-white mb-4">Evento não encontrado</h1>
-          <Link href="/programacao" className="text-white/80 hover:text-white transition-colors">
+          <h1 className="text-4xl font-bold text-white mb-4">
+            Evento não encontrado
+          </h1>
+          <Link
+            href="/programacao"
+            className="text-white/80 hover:text-white transition-colors"
+          >
             Voltar aos eventos
           </Link>
         </div>
       </main>
-    )
+    );
   }
-  
+
   return (
     <main className="min-h-screen pt-20 bg-white [--bg-color:#EB5F0A]">
       <Navigation />
-      
-      {/* Decorative elements */}
+
       <div className="absolute top-0 left-0 w-full h-96 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-20 w-72 h-72 bg-[#EB5F0A]/5 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
-        {/* Back Link */}
-        <Link 
+        <Link
           href="/programacao"
           className="inline-flex items-center gap-2 text-[#EB5F0A] hover:text-[#E55100] font-medium mb-8 transition-colors duration-300"
         >
@@ -90,11 +102,8 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
           <span>Voltar aos eventos</span>
         </Link>
 
-        {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-          {/* Left Column - Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Title */}
             <div className="space-y-4">
               <span className="inline-block text-sm font-mono uppercase tracking-widest text-[#EB5F0A]/60">
                 Evento
@@ -124,7 +133,6 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
               </div>
             </div>
 
-            {/* Description */}
             <div className="space-y-4">
               <h2 className="text-2xl sm:text-3xl font-redaction-20 text-[#EB5F0A] uppercase tracking-wide">
                 Descrição
@@ -133,21 +141,11 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
                 {event.description}
               </p>
             </div>
-
-            {/* CTA Section */}
-            <div className="pt-8 border-t border-[#EB5F0A]/20">
-              <button className="px-8 py-3 bg-[#EB5F0A] text-white font-bold rounded-lg hover:bg-[#E55100] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                Registar Interesse
-              </button>
-            </div>
           </div>
 
-          {/* Right Column - Image */}
           <div className="lg:col-span-1 flex flex-col gap-6">
-            {/* Featured Image - Removed */}
             <div className="hidden" />
 
-            {/* Navigation Cards */}
             <div className="space-y-3">
               {schedule.map((evt, idx) => (
                 <Link
@@ -157,8 +155,8 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
                     block p-4 rounded-lg transition-all duration-300 border
                     ${
                       idx === eventId
-                        ? 'bg-[#EB5F0A] text-white border-[#EB5F0A] shadow-lg'
-                        : 'bg-white text-[#EB5F0A] border-[#EB5F0A]/20 hover:border-[#EB5F0A]/50 hover:bg-[#EB5F0A]/5'
+                        ? "bg-[#EB5F0A] text-white border-[#EB5F0A] shadow-lg"
+                        : "bg-white text-[#EB5F0A] border-[#EB5F0A]/20 hover:border-[#EB5F0A]/50 hover:bg-[#EB5F0A]/5"
                     }
                   `}
                 >
@@ -171,5 +169,5 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
         </div>
       </div>
     </main>
-  )
+  );
 }
