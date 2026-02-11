@@ -99,7 +99,7 @@ export default async function EventoPage({
 
       <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
         <Link
-          href="/programacao"
+          href="/#programacao"
           className="inline-flex items-center gap-2 text-[#EB5F0A] hover:text-[#E55100] font-medium mb-8 transition-colors duration-300"
         >
           <span>←</span>
