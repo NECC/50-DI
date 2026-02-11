@@ -45,7 +45,7 @@ export function Navigation() {
         <div className="flex items-center">
           <a
             href="/"
-            className="flex items-center px-0 py-2 text-black text-lg font-medium rounded-sm hover:bg-white transition-all duration-300"
+            className="flex items-center px-1 py-1 text-black text-lg font-medium rounded-sm hover:bg-white transition-all duration-300"
           >
             <Image
               alt="50-Informática"
@@ -70,7 +70,7 @@ export function Navigation() {
           <li>
             <a
               className="px-12 py-4 text-black text-lg font-medium rounded-sm hover:bg-white hover:text-black transition-all duration-300"
-              href="/programacao"
+              href="/#programacao"
             >
               Programação
             </a>

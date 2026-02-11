@@ -58,15 +58,12 @@ export default function ProgramacaoPage() {
     <>
       <main className="min-h-screen pt-20 bg-gradient-to-br from-[#EB5F0A] via-[#EB5F0A] to-[#E55100] [--bg-color:#EB5F0A]">
         <Navigation />
-
-        {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-20 right-10 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
           <div className="absolute bottom-40 left-10 w-96 h-96 bg-black/10 rounded-full blur-3xl" />
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
-          {/* Header Section */}
           <div className="mb-16 md:mb-24">
             <h1 className="text-6xl sm:text-7xl md:text-8xl font-redaction-20 text-white mb-4 drop-shadow-lg text-balance leading-tight">
               Programação

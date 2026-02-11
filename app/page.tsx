@@ -136,7 +136,9 @@ export default function HomePage() {
           </div>
         </div>
       </main>
-      <ProgramacaoPage />
+      <section id="programacao">
+        <ProgramacaoPage />
+      </section>
     </>
   );
 }
