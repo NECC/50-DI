@@ -42,25 +42,31 @@ export function Navigation() {
         className="flex justify-between items-center w-full fixed top-0 left-0 z-50 px-4 py-2 transition-colors duration-300"
         style={{ backgroundColor: bgColor }}
       >
-        <div className="flex items-center cursor-pointer">
-          <Image
-            alt="50-Informática"
-            src="/icon.svg"
-            width={100}
-            height={100}
-            className="w-30 h-30"
-            priority
-          />
+        <div className="flex items-center">
+          <a
+            href="/"
+            className="flex items-center px-0 py-2 text-black text-lg font-medium rounded-sm hover:bg-white transition-all duration-300"
+          >
+            <Image
+              alt="50-Informática"
+              src="/icon.svg"
+              width={75}
+              height={75}
+              className="w-30 h-30"
+              priority
+            />
+          </a>
         </div>
+
         <ul className="text-black font-semibold sm:flex hidden items-center">
-          <li>
+          {/*<li>
             <a
               className="px-12 py-4 text-black text-lg font-medium rounded-sm hover:bg-white hover:text-black transition-all duration-300"
               href="/"
             >
               Homepage
             </a>
-          </li>
+          </li>*/}
           <li>
             <a
               className="px-12 py-4 text-black text-lg font-medium rounded-sm hover:bg-white hover:text-black transition-all duration-300"

@@ -28,12 +28,13 @@ export default function ProgramacaoPage() {
         "Mesa redonda com empresas/indústria sobre “O futuro da Informática",
     },
     {
-      time: "Junho 2026",
-      title: "Workshop",
+      time: "2 e 3 de Junho 2026",
+      title:
+        "Workshop em Engenharia de Software Apoiada por Assistentes Artificiais",
       imagem: "/Artboard2.svg",
-      location: "Auditório Principal",
+      location: "Anfiteatro B2 da Universidade do Minho",
       description:
-        "Workshop em “Engenharia de Software Apoiada por Assistentes Artificiais” – evento focado nos desafios e oportunidades da IA ao desenvolvimento de software, envolvendo alunos, peritos e empresas",
+        "Será organizada pelo Departamento de Informática e realizada no final do 2º semestre letivo de 2025/2026, integrada nas actividades da unidade curricular de Laboratórios IV da Licenciatura em Engenharia Informática. A participação será aberta à comunidade académica e empresarial, e a qualquer outra pessoa com interesse neste domínio. A participação será gratuita, mas implicará um registo prévio dos participantes.A workshop decorrerá nos dias 2 e 3 de junho de 2026, no  anfiteatro B1 do Edifício 2 no Campus de Gualtar da Universidade do Minho, e terá incluído no seu programa um conjunto de sessões especializadas (seminários, tutoriais, demonstrações e sessões 'hands-on'), que abordarão alguns dos aspetos científico-técnológicos mais relevantes da Inteligência Artifical Generativa e suas aplicações no mundo real.",
     },
     {
       time: "3ª semana de Setembro 2026",

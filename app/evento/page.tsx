@@ -1,4 +1,4 @@
-import { Navigation } from "@/components/navigation"
+import { Navigation } from "@/components/navigation";
 
 export default function EventoPage() {
   return (
@@ -22,15 +22,24 @@ export default function EventoPage() {
               {/* Content */}
               <div className="space-y-6 text-gray-700 text-base sm:text-lg leading-relaxed">
                 <p>
-                  Este evento marca um momento histórico na celebração dos 50 anos da Engenharia Informática. Durante décadas, testemunhamos transformações extraordinárias que moldaram o mundo digital que conhecemos hoje.
+                  Este evento marca um momento histórico na celebração dos 50
+                  anos da Engenharia Informática. Durante décadas, testemunhamos
+                  transformações extraordinárias que moldaram o mundo digital
+                  que conhecemos hoje.
                 </p>
 
                 <p>
-                  Desde os primeiros sistemas de computação de grande porte até à era da computação em nuvem e inteligência artificial, a nossa jornada tem sido marcada por inovação constante e excelência académica.
+                  Desde os primeiros sistemas de computação de grande porte até
+                  à era da computação em nuvem e inteligência artificial, a
+                  nossa jornada tem sido marcada por inovação constante e
+                  excelência académica.
                 </p>
 
                 <p>
-                  Junte-se a nós para celebrar as conquistas do passado e explorar as possibilidades do futuro. Este é um momento de reflexão, partilha e inspiração para a próxima geração de engenheiros informáticos.
+                  Junte-se a nós para celebrar as conquistas do passado e
+                  explorar as possibilidades do futuro. Este é um momento de
+                  reflexão, partilha e inspiração para a próxima geração de
+                  engenheiros informáticos.
                 </p>
               </div>
 
@@ -82,5 +91,5 @@ export default function EventoPage() {
         </div>
       </main>
     </>
-  )
+  );
 }
