@@ -134,10 +134,6 @@ export default function HomePage() {
               anos.
             </p>
           </div>
-          <div className="absolute top-20 left-12 w-16 h-16 bg-[#71AA7A] rounded-sm opacity-80" />
-          <div className="absolute top-20 right-1/4 w-12 h-12 bg-[#71AA7A] rounded-sm opacity-60" />
-          <div className="absolute top-1/3 right-12 w-20 h-20 bg-[#71AA7A] rounded-sm opacity-70" />
-          <div className="absolute bottom-32 right-24 w-24 h-24 bg-[#71AA7A] rounded-sm opacity-80" />
         </div>
       </main>
       <ProgramacaoPage />
