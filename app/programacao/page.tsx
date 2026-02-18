@@ -7,14 +7,14 @@ export default function ProgramacaoPage() {
     {
       time: "8 Abril 2026",
       title: "Sessão de Abertura",
-      imagem: "/Artboard2.svg",
+      imagem: "/icon.svg",
       location: "Auditório Principal",
       description: "Cerimónia de abertura das comemorações dos 50 anos",
     },
     {
       time: "9-12 Abril 2026",
       title: "Seminário",
-      imagem: "/Artboard2.svg",
+      imagem: "/icon.svg",
       location: "Auditório Principal",
       description:
         "Seminário sobre “Ensino/formação em Informática/Computação nos diversos níveis do Sistema Educativo: desafios para os próximos 50 anos” – evento integrado na ENEI-Encontro Nacional de Estudantes de Informática",
@@ -22,7 +22,7 @@ export default function ProgramacaoPage() {
     {
       time: "27 Maio 2026",
       title: "Mesa Redonda",
-      imagem: "/Artboard2.svg",
+      imagem: "/icon.svg",
       location: "Auditório Principal",
       description:
         "Mesa redonda com empresas/indústria sobre “O futuro da Informática",
@@ -31,7 +31,7 @@ export default function ProgramacaoPage() {
       time: "2 e 3 de Junho 2026",
       title:
         "Workshop em Engenharia de Software Apoiada por Assistentes Artificiais",
-      imagem: "/Artboard2.svg",
+      imagem: "/icon.svg",
       location: "Anfiteatro B2 da Universidade do Minho",
       description:
         "Será organizada pelo Departamento de Informática e realizada no final do 2º semestre letivo de 2025/2026, integrada nas actividades da unidade curricular de Laboratórios IV da Licenciatura em Engenharia Informática. A participação será aberta à comunidade académica e empresarial, e a qualquer outra pessoa com interesse neste domínio. A participação será gratuita, mas implicará um registo prévio dos participantes.A workshop decorrerá nos dias 2 e 3 de junho de 2026, no  anfiteatro B1 do Edifício 2 no Campus de Gualtar da Universidade do Minho, e terá incluído no seu programa um conjunto de sessões especializadas (seminários, tutoriais, demonstrações e sessões 'hands-on'), que abordarão alguns dos aspetos científico-técnológicos mais relevantes da Inteligência Artifical Generativa e suas aplicações no mundo real.",
@@ -39,7 +39,7 @@ export default function ProgramacaoPage() {
     {
       time: "3ª semana de Setembro 2026",
       title: "Festa dos 50 Anos da Informática na UMinho",
-      imagem: "/Artboard2.svg",
+      imagem: "/icon.svg",
       location: "Auditório Principal",
       description:
         "Festa dos 50 Anos da Informática na UMinho, evento de convívio e networking  entre academia, estudantes, alumni e empresas",
@@ -47,7 +47,7 @@ export default function ProgramacaoPage() {
     {
       time: "Data a anunciar em 2027",
       title: "Seminário",
-      imagem: "/Artboard2.svg",
+      imagem: "/icon.svg",
       location: "Auditório Principal",
       description:
         "Seminário sobre “Temas fronteira: desafios à investigação em informática”",
@@ -92,11 +92,15 @@ export default function ProgramacaoPage() {
                     absolute inset-0
                     aspect-square
                     bg-center bg-no-repeat bg-contain
+                    bg-[#71AA7A]
                     transition-transform duration-700
                     group-hover:scale-110
                     opacity-80
                   "
-                  style={{ backgroundImage: `url(${item.imagem})` }}
+                  style={{
+                    backgroundImage: `url(${item.imagem})`,
+                    backgroundSize: "80%",
+                  }}
                 />
                 {/* Content Container */}
                 <div className="relative z-10 h-full p-6 sm:p-8 flex flex-col justify-between">
