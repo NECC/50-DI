@@ -17,7 +17,7 @@ export default function ProgramacaoPage() {
       imagem: "/icon.svg",
       location: "Auditório Principal",
       description:
-        "Seminário sobre “Ensino/formação em Informática/Computação nos diversos níveis do Sistema Educativo: desafios para os próximos 50 anos” – evento integrado na ENEI-Encontro Nacional de Estudantes de Informática",
+        'Seminário sobre "Ensino/formação em Informática/Computação nos diversos níveis do Sistema Educativo: desafios para os próximos 50 anos" – evento integrado na ENEI-Encontro Nacional de Estudantes de Informática',
     },
     {
       time: "27 Maio 2026",
@@ -25,7 +25,7 @@ export default function ProgramacaoPage() {
       imagem: "/icon.svg",
       location: "Auditório Principal",
       description:
-        "Mesa redonda com empresas/indústria sobre “O futuro da Informática",
+        'Mesa redonda com empresas/indústria sobre "O futuro da Informática"',
     },
     {
       time: "2 e 3 de Junho 2026",
@@ -44,24 +44,12 @@ export default function ProgramacaoPage() {
       description:
         "Festa dos 50 Anos da Informática na UMinho, evento de convívio e networking  entre academia, estudantes, alumni e empresas",
     },
-    {
-      time: "Data a anunciar em 2027",
-      title: "Seminário",
-      imagem: "/icon.svg",
-      location: "Auditório Principal",
-      description:
-        "Seminário sobre “Temas fronteira: desafios à investigação em informática”",
-    },
   ];
 
   return (
     <>
-      <main className="min-h-screen pt-20 bg-gradient-to-br from-[#EB5F0A] via-[#EB5F0A] to-[#E55100] [--bg-color:#EB5F0A]">
+      <main className="min-h-screen pt-20 bg-[#EB5F0A] [--bg-color:#EB5F0A]">
         <Navigation />
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-          <div className="absolute top-20 right-10 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-40 left-10 w-96 h-96 bg-black/10 rounded-full blur-3xl" />
-        </div>
 
         <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
           <div className="mb-16 md:mb-24">
@@ -69,88 +57,208 @@ export default function ProgramacaoPage() {
               Programação
             </h1>
             <p className="text-white/80 text-lg sm:text-xl font-light max-w-2xl">
-              Descobra os principais eventos que celebram os 50 anos de
+              Descubra os principais eventos que celebram os 50 anos de
               excelência em Informática
             </p>
           </div>
 
-          {/* Grid Layout */}
-          <div className="columns-1 lg:columns-2 gap-0 md:gap-20">
-            {schedule.map((item, index) => (
-              <Link
-                key={index}
-                href={`/programacao/${index}`}
-                className={`
-                  break-inside-avoid inline-block w-full relative overflow-hidden 
-                  group bg-black mb-8
-                  aspect-square cursor-pointer
-                  ${index % 2 !== 0 ? "lg:mt-16" : ""}
-                `}
-              >
+          {/* Organic Masonry Layout - 5 Cards */}
+          <div
+            className="relative w-full mx-auto max-w-[1600px]"
+            style={{ minHeight: "1800px" }}
+          >
+            {/* Card 1 - Top Left (Sessão de Abertura) */}
+            <Link
+              href={`/programacao/0`}
+              className="absolute top-[40px] left-[160px] group bg-black cursor-pointer overflow-hidden"
+              style={{ width: "480px", height: "480px" }}
+            >
+              <div className="relative w-full h-full">
                 <div
-                  className="
-                    absolute inset-0
-                    aspect-square
-                    bg-center bg-no-repeat bg-contain
-                    bg-[#71AA7A]
-                    transition-transform duration-700
-                    group-hover:scale-110
-                    opacity-80
-                  "
+                  className="absolute inset-0 bg-center bg-no-repeat bg-contain bg-[#71AA7A] transition-transform duration-700 group-hover:scale-110 opacity-80"
                   style={{
-                    backgroundImage: `url(${item.imagem})`,
+                    backgroundImage: `url(${schedule[0].imagem})`,
                     backgroundSize: "80%",
                   }}
                 />
-                {/* Content Container */}
-                <div className="relative z-10 h-full p-6 sm:p-8 flex flex-col justify-between">
-                  {/* Top Content */}
-                  <div className="space-y-4">
-                    <div className="inline-block">
-                      <span className="text-xs sm:text-sm font-mono uppercase tracking-widest text-[#EB5F0A] opacity-80">
-                        Evento
-                      </span>
-                    </div>
-                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-redaction-10 text-white leading-tight group-hover:text-[#EB5F0A] transition-colors duration-300">
-                      {item.title}
+                <div className="relative z-10 h-full pl-6 flex flex-col justify-between">
+                  <div className="space-y-3">
+                    <div className="inline-block"></div>
+                    <h3 className="text-2xl font-redaction-10 text-white leading-tight">
+                      {schedule[0].title}
                     </h3>
                   </div>
-
-                  {/* Bottom Content */}
-                  <div className="space-y-4">
-                    <div className="w-12 h-0.5 bg-gradient-to-r from-[#EB5F0A] to-transparent group-hover:w-16 transition-all duration-500" />
-
-                    <div className="space-y-3">
-                      <div className="flex justify-between items-baseline">
-                        <span className="text-white/60 text-xs uppercase tracking-wider font-light">
-                          Data
-                        </span>
-                        <time className="text-base sm:text-lg font-bold text-[#EB5F0A] font-mono">
-                          {item.time}
-                        </time>
-                      </div>
-                      <div className="flex justify-between items-baseline">
-                        <span className="text-white/60 text-xs uppercase tracking-wider font-light">
-                          Local
-                        </span>
-                        <span className="text-base sm:text-lg font-medium text-white/80 font-mono">
-                          {item.location}
-                        </span>
-                      </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-baseline">
+                      <span className="text-white/60 text-xs uppercase tracking-wider font-light">
+                        data
+                      </span>
+                      <time className="text-sm font-bold text-white font-mono">
+                        {schedule[0].time}
+                      </time>
+                    </div>
+                    <div className="flex justify-between items-baseline">
+                      <span className="text-white/60 text-xs uppercase tracking-wider font-light">
+                        local
+                      </span>
+                      <span className="text-sm font-medium text-white/80 font-mono">
+                        Auditório Principal
+                      </span>
                     </div>
                   </div>
                 </div>
+              </div>
+            </Link>
 
-                {/* Hover Glow Effect */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl pointer-events-none">
-                  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#EB5F0A] to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#EB5F0A] to-transparent" />
+            {/* Card 2 - Top Right (Seminário) */}
+            <Link
+              href={`/programacao/1`}
+              className="absolute top-[200px] right-[160px] group bg-black cursor-pointer overflow-hidden"
+              style={{ width: "480px", height: "480px" }}
+            >
+              <div className="relative w-full h-full">
+                <div
+                  className="absolute inset-0 bg-center bg-no-repeat bg-contain bg-[#71AA7A] transition-transform duration-700 group-hover:scale-110 opacity-80"
+                  style={{
+                    backgroundImage: `url(${schedule[1].imagem})`,
+                    backgroundSize: "80%",
+                  }}
+                />
+                <div className="relative z-10 h-full pl-6 flex flex-col justify-between">
+                  <div className="space-y-3">
+                    <div className="inline-block"></div>
+                    <h3 className="text-2xl font-redaction-10 text-white leading-tight">
+                      {schedule[1].title}
+                    </h3>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-baseline">
+                      <span className="text-white/60 text-xs uppercase tracking-wider font-light">
+                        data
+                      </span>
+                      <time className="text-sm font-bold text-white font-mono">
+                        {schedule[1].time}
+                      </time>
+                    </div>
+                  </div>
                 </div>
-              </Link>
-            ))}
+              </div>
+            </Link>
+
+            {/* Card 3 - Middle Center (Mesa Redonda) */}
+            <Link
+              href={`/programacao/2`}
+              className="absolute top-[45%] left-[50%] -translate-x-1/2 group bg-black cursor-pointer overflow-hidden"
+              style={{ width: "380px", height: "380px" }}
+            >
+              <div className="relative w-full h-full">
+                <div
+                  className="absolute inset-0 bg-center bg-no-repeat bg-contain bg-[#71AA7A] transition-transform duration-700 group-hover:scale-110 opacity-80"
+                  style={{
+                    backgroundImage: `url(${schedule[2].imagem})`,
+                    backgroundSize: "80%",
+                  }}
+                />
+                <div className="relative z-10 h-full pl-6 flex flex-col justify-between">
+                  <div className="space-y-3">
+                    <div className="inline-block"></div>
+                    <h3 className="text-xl font-redaction-10 text-white leading-tight">
+                      {schedule[2].title}
+                    </h3>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-baseline">
+                      <span className="text-white/60 text-xs uppercase tracking-wider font-light">
+                        data
+                      </span>
+                      <time className="text-sm font-bold text-white font-mono">
+                        {schedule[2].time}
+                      </time>
+                    </div>
+                    <div className="flex justify-between items-baseline">
+                      <span className="text-white/60 text-xs uppercase tracking-wider font-light">
+                        local
+                      </span>
+                      <span className="text-sm font-medium text-white/80 font-mono">
+                        Auditório Principal
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 4 - Bottom Left (Workshop) */}
+            <Link
+              href={`/programacao/3`}
+              className="absolute top-[55%] right-[40px] group bg-black cursor-pointer overflow-hidden"
+              style={{ width: "380px", height: "400px" }}
+            >
+              <div className="relative w-full h-full">
+                <div
+                  className="absolute inset-0 bg-center bg-no-repeat bg-contain bg-[#71AA7A] transition-transform duration-700 group-hover:scale-110 opacity-80"
+                  style={{
+                    backgroundImage: `url(${schedule[3].imagem})`,
+                    backgroundSize: "80%",
+                  }}
+                />
+                <div className="relative z-10 h-full pl-6 flex flex-col justify-between">
+                  <div className="space-y-3">
+                    <div className="inline-block"></div>
+                    <h3 className="text-xl font-redaction-10 text-white leading-tight">
+                      {schedule[3].title}
+                    </h3>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-baseline">
+                      <span className="text-white/60 text-xs uppercase tracking-wider font-light">
+                        data
+                      </span>
+                      <time className="text-sm font-bold text-white font-mono">
+                        {schedule[3].time}
+                      </time>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 5 - Bottom Right (Festa) */}
+            <Link
+              href={`/programacao/4`}
+              className="absolute top-[75%] left-[200px] group bg-black cursor-pointer overflow-hidden"
+              style={{ width: "480px", height: "480px" }}
+            >
+              <div className="relative w-full h-full">
+                <div
+                  className="absolute inset-0 bg-center bg-no-repeat bg-contain bg-[#71AA7A] transition-transform duration-700 group-hover:scale-110 opacity-80"
+                  style={{
+                    backgroundImage: `url(${schedule[4].imagem})`,
+                    backgroundSize: "80%",
+                  }}
+                />
+                <div className="relative z-10 h-full pl-6 flex flex-col justify-between">
+                  <div className="space-y-3">
+                    <div className="inline-block"></div>
+                    <h3 className="text-2xl font-redaction-10 text-white leading-tight">
+                      {schedule[4].title}
+                    </h3>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-baseline">
+                      <span className="text-white/60 text-xs uppercase tracking-wider font-light">
+                        data
+                      </span>
+                      <time className="text-sm font-bold text-white font-mono">
+                        {schedule[4].time}
+                      </time>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
           </div>
 
-          {/* Footer Info */}
           <div className="mt-20 pt-12 border-t border-white/20 text-center">
             <p className="text-white/70 font-light max-w-2xl mx-auto">
               Clique em qualquer evento para obter mais detalhes. Inscrições e
