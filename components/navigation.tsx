@@ -1,19 +1,15 @@
 "use client";
-import Image from "next/image";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
+import { Icon } from "@/components/icon";
 
 export function Navigation() {
   const [bgColor, setBgColor] = useState("");
+  const [textColor, setTextColor] = useState("");
   const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const viewportHeight = window.innerHeight;
-
       if (pathname === "/programacao/") {
         setBgColor("#EB5F0A");
       } else if (pathname === "/") {
@@ -22,13 +18,17 @@ export function Navigation() {
 
         if (scrollPosition < viewportHeight) {
           setBgColor("#71AA7A");
+          setTextColor("#FFFFFF");
         } else if (scrollPosition < viewportHeight * 2) {
           setBgColor("#FFFFFF");
+          setTextColor("#000000");
         } else {
           setBgColor("#EB5F0A");
+          setTextColor("#FFFFFF");
         }
       } else {
         setBgColor("#FFFFFF");
+        setTextColor("#000000");
       }
     };
     handleScroll();
@@ -45,20 +45,13 @@ export function Navigation() {
         <div className="flex items-center">
           <a
             href="/"
-            className="flex items-center px-1 py-1 text-black text-lg font-medium rounded-sm hover:bg-white transition-all duration-300"
+            className="inline-flex items-center px-1 py-1 text-black text-lg font-medium rounded-sm transform hover:scale-105 transition-transform duration-300"
           >
-            <Image
-              alt="50-Informática"
-              src="/icon.svg"
-              width={75}
-              height={75}
-              className="w-30 h-30"
-              priority
-            />
+            <Icon width={75} height={75} className="w-30 h-30" color={textColor}/>
           </a>
         </div>
 
-        <ul className="text-black font-semibold sm:flex hidden items-center">
+        <ul className="text-white font-semibold sm:flex hidden items-center">
           {/*<li>
             <a
               className="px-12 py-4 text-black text-lg font-medium rounded-sm hover:bg-white hover:text-black transition-all duration-300"
@@ -69,7 +62,7 @@ export function Navigation() {
           </li>*/}
           <li>
             <a
-              className="px-12 py-4 text-black text-lg font-medium rounded-sm hover:bg-white hover:text-black transition-all duration-300"
+              className={`inline-block px-12 py-4 text-lg font-medium rounded-sm transform hover:scale-105 transition-transform duration-300 ${textColor === "#FFFFFF" ? "text-white" : "text-black"}`}
               href="/#programacao"
             >
               Programação
