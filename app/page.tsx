@@ -140,8 +140,7 @@ export default function HomePage() {
       <section id="programacao">
         <ProgramacaoPage />
       </section>
-      <section id="patrocinadores">
-        {/* Exemplo de Patrocinios(Nada real)*/}
+      {/* <section id="patrocinadores">
         <Sponsors
           mainSponsors={[
             { name: "Patrocinador 1", logo: "/icon.svg" },
@@ -159,7 +158,7 @@ export default function HomePage() {
             { name: "Exposição 3", logo: "/icon.svg" },
           ]}
         />
-      </section>
+      </section> */}
     </>
   );
 }
