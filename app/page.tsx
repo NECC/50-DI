@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ProgramacaoPage from "./programacao/page";
 import { Navigation } from "@/components/navigation";
+import { Icon } from "@/components/icon"
 
 export default function HomePage() {
   return (
@@ -44,96 +45,124 @@ export default function HomePage() {
         </div>
       </main>
       <main className="min-h-screen bg-white flex items-center justify-center relative overflow-hidden px-6">
-        <div className="mt-16 max-w-6xl mx-auto flex gap-6 items-start">
-          <div className="text-[#EB5F0A] text-sm font-mono leading-relaxed">
-            <p>
-              O ensino regular da Informática e sua Engenharia inicia-se na
-              Universidade do Minho no ano lectivo de 1976-77. Pioneiro no país,
-              o novo curso, sob a designação Engenharia de Produção – Ramo
-              Sistemas, incluia no seu plano de estudos disciplinas como
-              Linguagens de Programação, Sistemas de Computação ou Processamento
-              de Dados, O último semestre previa um estágio na indústria de modo
-              a facilitar a integração dos futuros engenheiros no mercado de
-              trabalho.
-            </p>
-            <br></br>
-            <p>
-              E foi assim que tudo começou. Quatro anos mais tarde, o curso
-              autonomizava-se na Licenciatura em Engenharia de Sistemas e
-              Informática, a LESI, e, um pouco depois, diversificar-se-ia com a
-              criação da Licenciatura em Matemática e Ciências da Computação, a
-              LMCC. Dois cursos marcaram decisivamente o desenvolvimento da
-              Informática em Portugal e sucessivas gerações de alunos.
-              Prosseguiriam com o mesmo sucesso, após Bolonha, na Licenciatura e
-              Mestrado em Engenharia Informática e na Licenciatura em Ciências
-              de Computação.
-            </p>
-            <br></br>
-            <p>
-              Entretanto, a oferta cresceu e diversificou-se. Alguns ramos, como
-              os Sistemas de Informação, consolidaram-se em novos departamentos,
-              outros autonomizaram-se em novos projectos, como as Comunicações
-              e, mais recentemente, as Ciências de Dados, a Informática Médica,
-              a Inteligência Artificial, a Segurança da Informação ou a
-              Computação de Alto Desempenho. Cursos de fronteira surgiram em
-              diálogo com outros domínios do saber, como a Bioinformática e a
-              Engenharia Física, esta última igualmente pioneira no ensino da
-              computação quântica.
-            </p>
-            <br></br>
-            <p>
-              Simultaneamente, uma forte e consistente dimensão de investigação,
-              com elevado nível de internacionalização, veio escudar o
-              vertiginoso desenvolvimento da Informática nesta Casa. Desde o
-              início, também aí, fomos pioneiros: em 1995 o Departamento de
-              Informática organizou a primeira conferência nacional em WWW,
-              alojou a primeira página institucional de Portugal, e daqui saiu a
-              primeira mensagem de e-mail.
-            </p>
-            <br></br>
-            <p>
-              O segredo deste sucesso reside na conjugação de três factores:
-              ensino exigente e rigoroso; investigação internacionalmente
-              reconhecida, hoje enquadrada no Algoritmi e no INESC TEC; aposta
-              consistente na inovação, no empreendedorismo e no diálogo com o
-              tecido empresarial.
-            </p>
-            <br></br>
-            <p>
-              Este último pilar é constitutivo, desde o início, do código
-              genético da Informática na UMinho. Concretizando o célebre
-              aforismo de E. W. Dijkstra, procuramos levar à indústria não tanto
-              o que ela quer, mas o que de facto precisa. E fazer, em conjunto,
-              esse caminho.
-            </p>
-            <br></br>
-            <p>
-              Assim se explica o vibrante ecossistema de inovação que é imagem
-              de marca da Informática na UMinho. Caminho iniciado logo na década
-              de 1970, com a criação da Datamatic, e continuado hoje com
-              empresas fundamentais, em domínios que vão da segurança à
-              sustentação da vida, do processamento de documentos às bases de
-              dados distribuídas, dos agentes inteligentes à engenharia de
-              dados. Pedindo de empréstimo o verso de António Machado
-            </p>
-            <blockquote className="mt-0 border-l-4 border-[var(--bg-color)] pl-6 italic text-[#EB5F0A]">
-              "Caminhante, não há caminho: faz-se caminho ao andar."
-            </blockquote>
-            <p>
-              invocamos nesta exposição um percurso de 50 anos, assinalando
-              metas, sublinhando desafios, registando as pequenas e grandes
-              histórias que nos conduziram até aqui.
-            </p>
-            <br></br>
-            <p>
-              Apetece juntar os nomes e os rostos de tantos alunos,
-              investigadores, parceiros que, em cada dia, fizeram tantos anos.
-              Orgulhamo-nos do seu profissionalismo, da sua competência, dos
-              seus inúmeros sucessos. São eles que validam e certificam este
-              caminho. Com eles nos abrimos, confiadamente, aos próximos 50
-              anos.
-            </p>
-          </div>
+        <div className="my-16 max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-start">
+          <div className="w-full flex flex-col gap-16">
+                <div className="flex flex-col md:flex-row gap-16 items-center">
+                    <div className="md:flex-1 min-w-0 break-words whitespace-normal text-[#EB5F0A] text-md font-mono leading-relaxed">
+                    <p className="">
+                      O ensino regular da Informática e sua Engenharia inicia-se na
+                      Universidade do Minho no ano lectivo de 1976-77. Pioneiro no país,
+                      o novo curso, sob a designação Engenharia de Produção – Ramo
+                      Sistemas, incluia no seu plano de estudos disciplinas como
+                      Linguagens de Programação, Sistemas de Computação ou Processamento
+                      de Dados, O último semestre previa um estágio na indústria de modo
+                      a facilitar a integração dos futuros engenheiros no mercado de
+                      trabalho.
+                    </p>
+                    <br />
+                    <p>
+                      E foi assim que tudo começou. Quatro anos mais tarde, o curso
+                      autonomizava-se na Licenciatura em Engenharia de Sistemas e
+                      Informática, a LESI, e, um pouco depois, diversificar-se-ia com a
+                      criação da Licenciatura em Matemática e Ciências da Computação, a
+                      LMCC. Dois cursos marcaram decisivamente o desenvolvimento da
+                      Informática em Portugal e sucessivas gerações de alunos.
+                    </p>
+                  </div>
+
+                  <div className="relative">
+                    <div className="absolute inset-0 z-20 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
+                    <Image
+                      src="/home1.jpg"
+                      alt="50 anos Informática Universidade do Minho"
+                      width={800}
+                      height={600}
+                      priority
+                      className="relative z-10 w-full md:w-96 h-56 md:h-96 rounded-md flex-shrink-0 object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col md:flex-row-reverse gap-16 items-center">
+                  <div className="md:flex-1 min-w-0 text-[#EB5F0A] text-md font-mono leading-relaxed">
+                        <p className="break-words whitespace-normal">
+                      Entretanto, a oferta cresceu e diversificou-se. Alguns ramos, como
+                      os Sistemas de Informação, consolidaram-se em novos departamentos,
+                      outros autonomizaram-se em novos projectos, como as Comunicações
+                      e, mais recentemente, as Ciências de Dados, a Informática Médica,
+                      a Inteligência Artificial, a Segurança da Informação ou a
+                      Computação de Alto Desempenho. Cursos de fronteira surgiram em
+                      diálogo com outros domínios do saber, como a Bioinformática e a
+                      Engenharia Física, esta última igualmente pioneira no ensino da
+                      computação quântica.
+                    </p>
+                    <br />
+                    <p>
+                      Simultaneamente, uma forte e consistente dimensão de investigação,
+                      com elevado nível de internacionalização, veio escudar o
+                      vertiginoso desenvolvimento da Informática nesta Casa. Desde o
+                      início, também aí, fomos pioneiros: em 1995 o Departamento de
+                      Informática organizou a primeira conferência nacional em WWW,
+                      alojou a primeira página institucional de Portugal, e daqui saiu a
+                      primeira mensagem de e-mail.
+                    </p>
+                  </div>
+
+                  <div className="relative">
+                    <div className="absolute inset-0 z-20 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
+                    <Image
+                      src="/home2.jpg"
+                      alt="50 anos Informática Universidade do Minho"
+                      width={800}
+                      height={600}
+                      priority
+                      className="relative z-10 w-full md:w-96 h-56 md:h-96 rounded-md flex-shrink-0 object-cover"
+                    />
+                  </div>
+              </div>
+
+                <div className="flex flex-col md:flex-row gap-16 items-center">
+                  <div className="md:flex-1 min-w-0 text-[#EB5F0A] text-md font-mono leading-relaxed">
+                        <p className="break-words whitespace-normal">
+                      O segredo deste sucesso reside na conjugação de três factores:
+                      ensino exigente e rigoroso; investigação internacionalmente
+                      reconhecida, hoje enquadrada no Algoritmi e no INESC TEC; aposta
+                      consistente na inovação, no empreendedorismo e no diálogo com o
+                      tecido empresarial.
+                    </p>
+                    <br />
+                    <p>
+                      Este último pilar é constitutivo, desde o início, do código
+                      genético da Informática na UMinho. Concretizando o célebre
+                      aforismo de E. W. Dijkstra, procuramos levar à indústria não tanto
+                      o que ela quer, mas o que de facto precisa. E fazer, em conjunto,
+                      esse caminho.
+                    </p>
+                    <br />
+                    <p>
+                      Assim se explica o vibrante ecossistema de inovação que é imagem
+                      de marca da Informática na UMinho. Caminho iniciado logo na década
+                      de 1970, com a criação da Datamatic, e continuado hoje com
+                      empresas fundamentais, em domínios que vão da segurança à
+                      sustentação da vida, do processamento de documentos às bases de
+                      dados distribuídas, dos agentes inteligentes à engenharia de
+                      dados.
+                    </p>
+                  </div>
+
+                  <div className="relative">
+                    <div className="absolute inset-0 z-20 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
+                    <Image
+                      src="/home3.jpg"
+                      alt="50 anos Informática Universidade do Minho"
+                      width={800}
+                      height={600}
+                      priority
+                      className="relative z-10 w-full md:w-96 h-56 md:h-96 rounded-md flex-shrink-0 object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
         </div>
       </main>
       <section id="programacao">
