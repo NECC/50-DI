@@ -2,6 +2,7 @@ import Image from "next/image";
 import ProgramacaoPage from "./programacao/page";
 import { Navigation } from "@/components/navigation";
 import { Icon } from "@/components/icon"
+import Sponsors from "@/components/sponsors/Sponsors";
 
 export default function HomePage() {
   return (
@@ -29,11 +30,11 @@ export default function HomePage() {
             />
           </div>
 
-          {/* Coming Soon Button 
+          {/* Coming Soon Button
           <button className="px-12 py-4 border-2 border-white text-white text-lg font-medium rounded-lg hover:bg-white hover:text-[#71AA7A] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
             Em Breve
           </button>
-          
+
           {/* Additional info */}
           <div className="mt-16 text-white/70 text-sm font-mono max-w-2xl mx-auto leading-relaxed">
             <p>
@@ -168,6 +169,25 @@ export default function HomePage() {
       <section id="programacao">
         <ProgramacaoPage />
       </section>
+      {/* <section id="patrocinadores">
+        <Sponsors
+          mainSponsors={[
+            { name: "Patrocinador 1", logo: "/icon.svg" },
+            { name: "Patrocinador 2" },
+            { name: "Patrocinador 4" },
+            { name: "Patrocinador 4" },
+            { name: "Patrocinador 4" },
+            { name: "Patrocinador 3", logo: "/icon.svg" },
+            { name: "Patrocinador 3", logo: "/icon.svg" },
+            { name: "Patrocinador 3", logo: "/icon.svg" },
+          ]}
+          exhibitionSponsors={[
+            { name: "Exposição 1", logo: "/icon.svg" },
+            { name: "Exposição 2" },
+            { name: "Exposição 3", logo: "/icon.svg" },
+          ]}
+        />
+      </section> */}
     </>
   );
 }
