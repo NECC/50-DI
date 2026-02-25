@@ -47,7 +47,12 @@ export function Navigation() {
             href="/"
             className="inline-flex items-center px-1 py-1 text-black text-lg font-medium rounded-sm transform hover:scale-105 transition-transform duration-300"
           >
-            <Icon width={75} height={75} className="w-30 h-30" color={textColor}/>
+            <Icon
+              width={75}
+              height={75}
+              className="w-30 h-30"
+              color={textColor}
+            />
           </a>
         </div>
 
@@ -68,7 +73,7 @@ export function Navigation() {
               Programação
             </a>
           </li>
-          <li>
+          {/*<li>
             <a
               className={`inline-block px-8 py-4 text-lg font-medium rounded-sm transform hover:scale-105 transition-transform duration-300 ${textColor === "#FFFFFF" ? "text-white" : "text-black"}`}
               href="/#exposicao" 
