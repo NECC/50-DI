@@ -4,44 +4,61 @@ import Link from "next/link";
 export default function ProgramacaoPage() {
   const schedule = [
     {
+      time: "Ao longo de 2026-2027",
+      title: "Exposição 50 Anos Informática UMinho",
+      imagem: "/icon.svg",
+      location:
+        "Departamento de Informática da Escola de Engenharia, Campus de Gualtar",
+      description:
+        "Patente no Departamento de Informática da Escola de Engenharia, Campus de Gualtar, ao longo de 2026-2027.",
+    },
+    {
       time: "8 Abril 2026",
-      title: "Sessão de Abertura",
-      imagem: "/icon.svg",
-      location: "Auditório Principal",
-      description: "Cerimónia de abertura das comemorações dos 50 anos",
-    },
-    {
-      time: "9-12 Abril 2026",
-      title: "Seminário",
+      title: "Informática 50 Anos: Memória e Desafio",
       imagem: "/icon.svg",
       location: "Auditório Principal",
       description:
-        'Seminário sobre "Ensino/formação em Informática/Computação nos diversos níveis do Sistema Educativo: desafios para os próximos 50 anos"',
+        "Sessão de Abertura, mesa-redonda, e inauguração da Exposição 50 Anos da Informática na UMinho.",
     },
     {
-      time: "27 Maio 2026",
-      title: "Mesa Redonda",
+      time: "11 Abril, 2026 (18H00)",
+      title: "Os Próximos 50 Anos no Ensino da Informática",
       imagem: "/icon.svg",
-      location: "Auditório Principal",
+      location: "Fórum Braga",
       description:
-        'Mesa redonda com empresas/indústria sobre "O futuro da Informática"',
+        "Tertúlia integrada na ENEI - Encontro Nacional de Estudantes de Informática.",
     },
     {
-      time: "2 e 3 de Junho 2026",
-      title:
-        "Workshop em Engenharia de Software Apoiada por Assistentes Artificiais",
+      time: "27 Maio, 2026 (14H30)",
+      title: "Informática, Inovação e o Futuro",
       imagem: "/icon.svg",
-      location: "Anfiteatro B2 da Universidade do Minho",
+      location: "Campus de Gualtar (Ed. 2, B1)",
       description:
-        "Workshop integrada nas actividades da unidade curricular de Laboratórios IV.",
+        "Mesa-redonda com actores-chave do tecido empresarial em Informática.",
+    },
+    {
+      time: "2 - 3 Junho, 2026 (9H30 às 17H30)",
+      title: "Engenharia de Software Apoiada por Assistentes Artificiais",
+      imagem: "/icon.svg",
+      location: "Campus de Gualtar (Ed. 2, B1)",
+      description:
+        "Workshop sobre desafios e oportunidades da IA no desenvolvimento de software, com alunos, peritos e empresas.",
     },
     {
       time: "3ª semana de Setembro 2026",
-      title: "Festa dos 50 Anos da Informática na UMinho",
+      title: "Informática@UMinho: A Festa dos 50 Anos",
       imagem: "/icon.svg",
       location: "Auditório Principal",
       description:
-        "Evento de convívio e networking entre academia, estudantes e empresas",
+        "Oportunidade de convívio e networking  entre academia, estudantes, alumni e empresas.",
+    },
+    {
+      time: "Data a anunciar em 2027",
+      title: "Os próximos 50 anos: Caminhos para a investigação",
+      imagem: "/Artboard2.svg",
+      location: "",
+      description:
+        "Seminário sobre o futuro da investigação em Computação e sua Engenharia.",
     },
   ];
 
@@ -60,95 +77,44 @@ export default function ProgramacaoPage() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-8 lg:hidden max-w-xl mx-auto md:max-w-none">
-          <div className="md:flex md:gap-8 md:items-start">
+        {/* Mobile: 2-column grid, every 5th item spans full width */}
+        <div className="lg:hidden grid grid-cols-2 gap-4">
+          {schedule.map((item, i) => (
             <Link
-              href="/programacao/0"
-              className="group bg-black overflow-hidden block md:w-[48%] md:ml-[4%]"
+              key={i}
+              href={`/programacao/${i}`}
+              className={`group bg-black overflow-hidden ${i % 5 === 0 ? "col-span-2" : "col-span-1"}`}
               style={{ aspectRatio: "1 / 1" }}
             >
-              <CardContent data={schedule[0]} />
+              <CardContent data={item} small={i % 5 !== 0} />
             </Link>
-
-            <Link
-              href="/programacao/1"
-              className="group bg-black overflow-hidden block mt-8 md:mt-16 md:w-[44%]"
-              style={{ aspectRatio: "1 / 1" }}
-            >
-              <CardContent data={schedule[1]} />
-            </Link>
-          </div>
-
-          <div className="md:flex md:gap-8 md:items-start md:mt-4">
-            <Link
-              href="/programacao/2"
-              className="group bg-black overflow-hidden block md:w-[34%] md:ml-[16%]"
-              style={{ aspectRatio: "1 / 1" }}
-            >
-              <CardContent data={schedule[2]} small />
-            </Link>
-
-            <Link
-              href="/programacao/3"
-              className="group bg-black overflow-hidden block mt-8 md:mt-0 md:w-[34%] md:ml-auto md:mr-[4%]"
-              style={{ aspectRatio: "19 / 20" }}
-            >
-              <CardContent data={schedule[3]} small />
-            </Link>
-          </div>
-
-          <Link
-            href="/programacao/4"
-            className="group bg-black overflow-hidden block md:w-[44%] md:ml-[8%] md:mt-4"
-            style={{ aspectRatio: "1 / 1" }}
-          >
-            <CardContent data={schedule[4]} />
-          </Link>
+          ))}
         </div>
 
-        <div className="hidden lg:grid grid-cols-12 gap-6 max-w-[1400px] mx-auto">
-          <Link
-            href="/programacao/0"
-            className="col-start-2 col-span-4 group bg-black overflow-hidden"
-            style={{ aspectRatio: "1 / 1" }}
-          >
-            <CardContent data={schedule[0]} />
-          </Link>
-
-          <Link
-            href="/programacao/1"
-            className="col-start-7 col-span-4 mt-20 group bg-black overflow-hidden"
-            style={{ aspectRatio: "1 / 1" }}
-          >
-            <CardContent data={schedule[1]} />
-          </Link>
-
-          <div className="col-span-12" />
-
-          <Link
-            href="/programacao/2"
-            className="col-start-4 col-span-3 -mt-21 group bg-black overflow-hidden"
-            style={{ aspectRatio: "1 / 1" }}
-          >
-            <CardContent data={schedule[2]} small />
-          </Link>
-          <Link
-            href="/programacao/3"
-            className="col-start-9 col-span-3 mt-8 group bg-black overflow-hidden"
-            style={{ aspectRatio: "19 / 20" }}
-          >
-            <CardContent data={schedule[3]} small />
-          </Link>
-
-          <div className="col-span-12" />
-
-          <Link
-            href="/programacao/4"
-            className="col-start-2 col-span-4 -mt-16 group bg-black overflow-hidden"
-            style={{ aspectRatio: "1 / 1" }}
-          >
-            <CardContent data={schedule[4]} />
-          </Link>
+        {/* Desktop: staggered rows of 2, alternating offset */}
+        <div className="hidden lg:flex flex-col max-w-[1400px] mx-auto">
+          {chunkSchedule(schedule).map((row, rowIndex) => (
+            <div
+              key={rowIndex}
+              className={`flex gap-24 items-start ${rowIndex * 2 > 0 ? "mt-20" : ""}`}
+              style={{ paddingLeft: rowIndex % 2 === 1 ? "1%" : "0%" }}
+            >
+              {row.map((item, colIndex) => (
+                <Link
+                  key={colIndex}
+                  href={`/programacao/${item.index}`}
+                  className="group bg-black overflow-hidden flex-shrink-0"
+                  style={{
+                    width: item.large ? "45%" : "43%",
+                    aspectRatio: "1 / 1",
+                    marginTop: colIndex === 1 ? "5rem" : "0",
+                  }}
+                >
+                  <CardContent data={item} small={!item.large} />
+                </Link>
+              ))}
+            </div>
+          ))}
         </div>
 
         <div className="mt-24 pt-12 border-t border-white/20 text-center">
@@ -162,6 +128,20 @@ export default function ProgramacaoPage() {
   );
 }
 
+// Splits schedule into rows of 2, alternating which card is larger
+function chunkSchedule(schedule: any[]) {
+  const rows = [];
+  for (let i = 0; i < schedule.length; i += 2) {
+    const row = [];
+    row.push({ ...schedule[i], index: i, large: i % 4 === 0 });
+    if (i + 1 < schedule.length) {
+      row.push({ ...schedule[i + 1], index: i + 1, large: i % 4 !== 0 });
+    }
+    rows.push(row);
+  }
+  return rows;
+}
+
 function CardContent({ data, small = false }: any) {
   return (
     <div className="relative w-full h-full">
@@ -169,10 +149,10 @@ function CardContent({ data, small = false }: any) {
         className="absolute inset-0 bg-center bg-no-repeat bg-contain bg-[#71AA7A] transition-transform duration-700 group-hover:scale-110 opacity-80"
         style={{
           backgroundImage: `url(${data.imagem})`,
-          backgroundSize: "80%",
+          backgroundSize: "92%",
+          backgroundPosition: "center 65%",
         }}
       />
-
       <div className="relative z-10 h-full p-6 flex flex-col justify-between">
         <h3
           className={`${
@@ -181,17 +161,6 @@ function CardContent({ data, small = false }: any) {
         >
           {data.title}
         </h3>
-
-        <div>
-          <div className="flex justify-between items-baseline">
-            <span className="text-white/60 text-xs uppercase tracking-wider font-light">
-              data
-            </span>
-            <time className="text-sm font-bold text-white font-mono">
-              {data.time}
-            </time>
-          </div>
-        </div>
       </div>
     </div>
   );

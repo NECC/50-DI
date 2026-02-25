@@ -3,55 +3,61 @@ import Link from "next/link";
 
 const schedule = [
   {
-    time: "8 Abril 2026",
-    title: "Sessão de Abertura",
-    imagem: "/Artboard2.svg",
-    location: "Auditório Principal",
-    description: "Cerimónia de abertura das comemorações dos 50 anos",
-  },
-  {
-    time: "9-12 Abril 2026",
-    title: "Seminário",
-    imagem: "/Artboard2.svg",
-    location: "Auditório Principal",
-    description:
-      "Seminário sobre Ensino/formação em Informática/Computação nos diversos níveis do Sistema Educativo: desafios para os próximos 50 anos – evento integrado na ENEI-Encontro Nacional de Estudantes de Informática",
-  },
-  {
-    time: "27 Maio 2026",
-    title: "Mesa Redonda",
-    imagem: "/Artboard2.svg",
-    location: "Auditório Principal",
-    description:
-      "Mesa redonda com empresas/indústria sobre O futuro da Informática",
-  },
-  {
-    time: "2 e 3 de Junho 2026",
-    title:
-      "Workshop em Engenharia de Software Apoiada por Assistentes Artificiais",
+    time: "Durante 2026-2027",
+    title: "Exposição 50 Anos Informática UMinho",
     imagem: "/Artboard2.svg",
     location:
-      "Anfiteatro B2 do Edifício 2 no Campus de Gualtar da Universidade do Minho",
-    description: [
-      "Será organizada pelo Departamento de Informática e realizada no final do 2º semestre letivo de 2025/2026, integrada nas actividades da unidade curricular de Laboratórios IV da Licenciatura em Engenharia Informática. A participação será aberta à comunidade académica e empresarial, e a qualquer outra pessoa com interesse neste domínio. A participação será gratuita, mas implicará um registo prévio dos participantes.",
-      "O workshop decorrerá nos dias 2 e 3 de junho de 2026, no  anfiteatro B1 do Edifício 2 no Campus de Gualtar da Universidade do Minho, e terá incluído no seu programa um conjunto de sessões especializadas (seminários, tutoriais, demonstrações e sessões 'hands-on'), que abordarão alguns dos aspetos científico-técnológicos mais relevantes da Inteligência Artifical Generativa e suas aplicações no mundo real.",
-    ],
+      "Departamento de Informática da Escola de Engenharia, Campus de Gualtar",
+    description:
+      "Sessão de Abertura, mesa-redonda, e inauguração da Exposição 50 Anos da Informática na UMinho.",
+  },
+  {
+    time: "8 Abril, 2026 (14H30)",
+    title: "Informática 50 Anos: Memória e Desafio",
+    imagem: "/Artboard2.svg",
+    location: "Campus de Gualtar (Ed. 2, B1)",
+    description:
+      "Sessão de Abertura, mesa-redonda, e inauguração da Exposição 50 Anos da Informática na UMinho.",
+  },
+  {
+    time: "11 Abril, 2026 (18H00)",
+    title: "Os Próximos 50 Anos no Ensino da Informática",
+    imagem: "/icon.svg",
+    location: "Fórum Braga",
+    description:
+      "Tertúlia integrada  na ENEI - Encontro Nacional de Estudantes de Informática.",
+  },
+  {
+    time: "27 Maio, 2026 (14H30)",
+    title: "Informática, Inovação e o Futuro",
+    imagem: "/icon.svg",
+    location: "Campus de Gualtar (Ed. 2, B1)",
+    description:
+      "Mesa-redonda com actores-chave do tecido empresarial em Informática.",
+  },
+  {
+    time: "2 - 3 Junho, 2026 (9H30 às 17H30)",
+    title: "Engenharia de Software Apoiada por Assistentes Artificiais",
+    imagem: "/icon.svg",
+    location: "Campus de Gualtar (Ed. 2, B1)",
+    description:
+      "Workshop sobre desafios e oportunidades da IA no desenvolvimento de software, com alunos, peritos e empresas.",
   },
   {
     time: "3ª semana de Setembro 2026",
-    title: "Festa dos 50 Anos da Informática na UMinho",
-    imagem: "/Artboard2.svg",
-    location: "Auditório Principal",
+    title: "Informática@UMinho: A Festa dos 50 Anos",
+    imagem: "/icon.svg",
+    location: "",
     description:
-      "Festa dos 50 Anos da Informática na UMinho, evento de convívio e networking  entre academia, estudantes, alumni e empresas",
+      "Oportunidade de convívio e networking  entre academia, estudantes, alumni e empresas.",
   },
   {
     time: "Data a anunciar em 2027",
-    title: "Seminário",
+    title: "Os próximos 50 anos: Caminhos para a investigação",
     imagem: "/Artboard2.svg",
-    location: "Auditório Principal",
+    location: "",
     description:
-      "Seminário sobre Temas fronteira: desafios à investigação em informática",
+      "Seminário sobre o futuro da investigação em Computação e sua Engenharia.",
   },
 ];
 
