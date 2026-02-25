@@ -68,6 +68,14 @@ export function Navigation() {
               Programação
             </a>
           </li>
+          <li>
+            <a
+              className={`inline-block px-8 py-4 text-lg font-medium rounded-sm transform hover:scale-105 transition-transform duration-300 ${textColor === "#FFFFFF" ? "text-white" : "text-black"}`}
+              href="/#exposicao" 
+            >
+              Exposição
+            </a>
+          </li>
           {/* <li>
             <a
               className="px-12 py-4 text-black text-lg font-medium rounded-sm hover:bg-white hover:text-black transition-all duration-300"
