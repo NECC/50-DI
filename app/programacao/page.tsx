@@ -50,7 +50,7 @@ export default function ProgramacaoPage() {
       imagem: "/icon.svg",
       location: "Auditório Principal",
       description:
-        "Oportunidade de convívio e networking  entre academia, estudantes, alumni e empresas.",
+        "Oportunidade de convívio e networking entre academia, estudantes, alumni e empresas.",
     },
     {
       time: "Data a anunciar em 2027",
@@ -77,26 +77,26 @@ export default function ProgramacaoPage() {
           </p>
         </div>
 
-        {/* Mobile: 2-column grid, every 5th item spans full width */}
-        <div className="lg:hidden grid grid-cols-2 gap-4">
+        {/* Mobile: one card per line */}
+        <div className="lg:hidden flex flex-col gap-4">
           {schedule.map((item, i) => (
             <Link
               key={i}
               href={`/programacao/${i}`}
-              className={`group bg-black overflow-hidden ${i % 5 === 0 ? "col-span-2" : "col-span-1"}`}
+              className="group bg-black overflow-hidden block w-full"
               style={{ aspectRatio: "1 / 1" }}
             >
-              <CardContent data={item} small={i % 5 !== 0} />
+              <CardContent data={item} />
             </Link>
           ))}
         </div>
 
-        {/* Desktop: staggered rows of 2, alternating offset */}
+        {/* Desktop: staggered pairs */}
         <div className="hidden lg:flex flex-col max-w-[1400px] mx-auto">
           {chunkSchedule(schedule).map((row, rowIndex) => (
             <div
               key={rowIndex}
-              className={`flex gap-24 items-start ${rowIndex * 2 > 0 ? "mt-20" : ""}`}
+              className={`flex gap-24 items-start ${rowIndex > 0 ? "mt-20" : ""}`}
               style={{ paddingLeft: rowIndex % 2 === 1 ? "1%" : "0%" }}
             >
               {row.map((item, colIndex) => (
@@ -110,7 +110,7 @@ export default function ProgramacaoPage() {
                     marginTop: colIndex === 1 ? "5rem" : "0",
                   }}
                 >
-                  <CardContent data={item} small={!item.large} />
+                  <CardContent data={item} />
                 </Link>
               ))}
             </div>
@@ -128,7 +128,6 @@ export default function ProgramacaoPage() {
   );
 }
 
-// Splits schedule into rows of 2, alternating which card is larger
 function chunkSchedule(schedule: any[]) {
   const rows = [];
   for (let i = 0; i < schedule.length; i += 2) {
@@ -156,7 +155,7 @@ function CardContent({ data, small = false }: any) {
       <div className="relative z-10 h-full p-6 flex flex-col justify-between">
         <h3
           className={`${
-            small ? "text-xl" : "text-2xl"
+            small ? "text-xl" : "text-4xl"
           } font-redaction-10 text-white leading-tight`}
         >
           {data.title}
