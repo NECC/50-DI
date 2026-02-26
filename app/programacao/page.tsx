@@ -86,7 +86,7 @@ export default function ProgramacaoPage() {
               className="group bg-black overflow-hidden block w-full"
               style={{ aspectRatio: "1 / 1" }}
             >
-              <CardContent data={item} />
+              <CardContent data={item} small={item} />
             </Link>
           ))}
         </div>
