@@ -6,7 +6,7 @@ export default function ProgramacaoPage() {
     {
       time: "Ao longo de 2026-2027",
       title: "Exposição 50 Anos Informática UMinho",
-      imagem: "/icon.svg",
+      imagem: "/ImagensEventosSite_03.jpg",
       location:
         "Departamento de Informática da Escola de Engenharia, Campus de Gualtar",
       description:
@@ -15,7 +15,7 @@ export default function ProgramacaoPage() {
     {
       time: "8 Abril 2026",
       title: "Informática 50 Anos: Memória e Desafio",
-      imagem: "/icon.svg",
+      imagem: "/ImagensEventosSite_04.jpg",
       location: "Auditório Principal",
       description:
         "Sessão de Abertura, mesa-redonda, e inauguração da Exposição 50 Anos da Informática na UMinho.",
@@ -23,7 +23,7 @@ export default function ProgramacaoPage() {
     {
       time: "11 Abril, 2026 (18H00)",
       title: "Os Próximos 50 Anos no Ensino da Informática",
-      imagem: "/icon.svg",
+      imagem: "/ImagensEventosSite_05.jpg",
       location: "Fórum Braga",
       description:
         "Tertúlia integrada na ENEI - Encontro Nacional de Estudantes de Informática.",
@@ -31,7 +31,7 @@ export default function ProgramacaoPage() {
     {
       time: "27 Maio, 2026 (14H30)",
       title: "Informática, Inovação e o Futuro",
-      imagem: "/icon.svg",
+      imagem: "/ImagensEventosSite_06.jpg",
       location: "Campus de Gualtar (Ed. 2, B1)",
       description:
         "Mesa-redonda com actores-chave do tecido empresarial em Informática.",
@@ -39,7 +39,7 @@ export default function ProgramacaoPage() {
     {
       time: "2 - 3 Junho, 2026 (9H30 às 17H30)",
       title: "Engenharia de Software Apoiada por Assistentes Artificiais",
-      imagem: "/icon.svg",
+      imagem: "/ImagensEventosSite_08.jpg",
       location: "Campus de Gualtar (Ed. 2, B1)",
       description:
         "Workshop sobre desafios e oportunidades da IA no desenvolvimento de software, com alunos, peritos e empresas.",
@@ -47,7 +47,7 @@ export default function ProgramacaoPage() {
     {
       time: "3ª semana de Setembro 2026",
       title: "Informática@UMinho: A Festa dos 50 Anos",
-      imagem: "/icon.svg",
+      imagem: "/ImagensEventosSite_09.jpg",
       location: "Auditório Principal",
       description:
         "Oportunidade de convívio e networking entre academia, estudantes, alumni e empresas.",
@@ -55,7 +55,7 @@ export default function ProgramacaoPage() {
     {
       time: "Data a anunciar em 2027",
       title: "Os próximos 50 anos: Caminhos para a investigação",
-      imagem: "/Artboard2.svg",
+      imagem: "/ImagensEventosSite_07.jpg",
       location: "",
       description:
         "Seminário sobre o futuro da investigação em Computação e sua Engenharia.",
@@ -148,7 +148,7 @@ function CardContent({ data, small = false }: any) {
         className="absolute inset-0 bg-center bg-no-repeat bg-contain bg-[#71AA7A] transition-transform duration-700 group-hover:scale-110 opacity-80"
         style={{
           backgroundImage: `url(${data.imagem})`,
-          backgroundSize: "92%",
+          backgroundSize: "67%",
           backgroundPosition: "center 65%",
         }}
       />
