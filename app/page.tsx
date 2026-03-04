@@ -7,7 +7,7 @@ import Sponsors from "@/components/sponsors/Sponsors";
 export default function HomePage() {
   return (
     <>
-      <main className="min-h-screen bg-[#71AA7A] flex items-center justify-center relative overflow-hidden px-6 [--bg-color:#71AA7A]">
+      <main className="min-h-screen bg-[#71AA7A] flex items-center justify-center relative overflow-visible pt-24 px-6 [--bg-color:#71AA7A]">
         <Navigation />
         {/* Decorative orange squares - Mantive exatamente como estavam */}
         <div className="absolute top-20 left-12 w-16 h-16 bg-[#EB5F0A] rounded-sm opacity-100" />
