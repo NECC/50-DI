@@ -40,7 +40,7 @@ export default function ProgramacaoPage() {
       time: "2 - 3 Junho, 2026 (9H30 às 17H30)",
       title: "Engenharia de Software Apoiada por Assistentes Artificiais",
       imagem: "/ImagensEventosSite_08.jpg",
-      location: "Campus de Gualtar (Ed. 2, B1)",
+      location: "Campus de Gualtar (Ed. 2, B2)",
       description:
         "Workshop sobre desafios e oportunidades da IA no desenvolvimento de software, com alunos, peritos e empresas.",
     },
