@@ -66,7 +66,8 @@ export default function ProgramacaoPage() {
     <main className="min-h-screen pt-20 bg-[#EB5F0A]">
       <Navigation />
 
-      <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
+      {/* Alterado de z-10 para z-1 */}
+      <div className="container mx-auto px-4 sm:px-6 py-12 relative">
         <div className="mb-16 md:mb-24">
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-redaction-20 text-white mb-4 leading-tight">
             Programação
@@ -78,7 +79,7 @@ export default function ProgramacaoPage() {
         </div>
 
         {/* Mobile: one card per line */}
-        <div className="lg:hidden flex flex-col gap-4">
+        <div className="lg:hidden flex flex-col gap-4 z-1">
           {schedule.map((item, i) => (
             <Link
               key={i}
@@ -92,7 +93,7 @@ export default function ProgramacaoPage() {
         </div>
 
         {/* Desktop: staggered pairs */}
-        <div className="hidden lg:flex flex-col max-w-[1400px] mx-auto">
+        <div className="hidden lg:flex flex-col max-w-[1400px] mx-auto z-1">
           {chunkSchedule(schedule).map((row, rowIndex) => (
             <div
               key={rowIndex}
@@ -103,7 +104,7 @@ export default function ProgramacaoPage() {
                 <Link
                   key={colIndex}
                   href={`/programacao/${item.index}`}
-                  className="group bg-black overflow-hidden flex-shrink-0"
+                  className="group bg-black overflow-hidden flex-shrink-0 "
                   style={{
                     width: item.large ? "45%" : "43%",
                     aspectRatio: "1 / 1",
@@ -152,7 +153,8 @@ function CardContent({ data, small = false }: any) {
           backgroundPosition: "center 65%",
         }}
       />
-      <div className="relative z-10 h-full p-6 flex flex-col justify-between">
+      {/* Alterado de z-1 para z-1 (já estava, mas garantido) */}
+      <div className="relative z-1 h-full p-6 flex flex-col justify-between">
         <h3
           className={`${
             small ? "text-xl" : "text-4xl"
