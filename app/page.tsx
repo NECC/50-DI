@@ -30,14 +30,14 @@ export default function HomePage() {
       <main className="min-h-screen bg-[#71AA7A] flex items-center justify-center relative overflow-visible pt-24 px-6 [--bg-color:#71AA7A]">
         <Navigation />
         {/* Decorative orange squares - Mantive exatamente como estavam */}
-        <div className="absolute top-20 left-12 w-16 h-16 bg-[#EB5F0A] rounded-sm opacity-100" />
+        <div className="absolute top-18 left-12 w-16 h-16 bg-[#EB5F0A] rounded-sm opacity-100" />
         <div className="absolute top-20 right-1/4 w-12 h-12 bg-[#EB5F0A] rounded-sm opacity-100" />
         <div className="absolute top-1/3 right-12 w-20 h-20 bg-[#EB5F0A] rounded-sm opacity-100" />
         <div className="absolute bottom-24 left-1/4 w-16 h-16 bg-[#EB5F0A] rounded-sm opacity-100" />
         <div className="absolute bottom-32 right-24 w-24 h-24 bg-[#EB5F0A] rounded-sm opacity-100" />
         <div className="absolute top-1/2 left-1/3 w-14 h-14 bg-[#EB5F0A] rounded-sm opacity-100" />
 
-        <div className="text-center z-10 max-w-4xl w-full">
+        <div className="text-center z-30 max-w-4xl w-full">
           {/* Image */}
           <div className="mb-12 flex justify-center">
             <Image
@@ -45,7 +45,7 @@ export default function HomePage() {
               alt="50 anos Informática Universidade do Minho"
               width={800}
               height={600}
-              priority
+              //priority
               className="w-full h-auto max-w-[500px] md:max-w-[700px]"
             />
           </div>
@@ -93,14 +93,14 @@ export default function HomePage() {
               </div>
 
               <div className="relative">
-                <div className="absolute inset-0 z-20 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
+                <div className="absolute inset-0 z-1 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
                 <Image
                   src="/home1.jpg"
                   alt="50 anos Informática Universidade do Minho"
                   width={800}
                   height={600}
                   priority
-                  className="relative z-10 w-full md:w-96 h-56 md:h-96 rounded-md flex-shrink-0 object-cover"
+                  className="relative z-1 w-full md:w-96 h-56 md:h-96 rounded-md flex-shrink-0 object-cover"
                 />
               </div>
             </div>
@@ -131,14 +131,14 @@ export default function HomePage() {
               </div>
 
               <div className="relative">
-                <div className="absolute inset-0 z-20 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
+                <div className="absolute inset-0 z-1 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
                 <Image
                   src="/home2.jpg"
                   alt="50 anos Informática Universidade do Minho"
                   width={800}
                   height={600}
                   priority
-                  className="relative z-10 w-full md:w-96 h-56 md:h-96 rounded-md flex-shrink-0 object-cover"
+                  className="relative z-1 w-full md:w-96 h-56 md:h-96 rounded-md flex-shrink-0 object-cover"
                 />
               </div>
             </div>
@@ -173,14 +173,14 @@ export default function HomePage() {
               </div>
 
               <div className="relative">
-                <div className="absolute inset-0 z-20 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
+                <div className="absolute inset-0 z-0 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
                 <Image
                   src="/home3.jpg"
                   alt="50 anos Informática Universidade do Minho"
                   width={800}
                   height={600}
                   priority
-                  className="relative z-10 w-full md:w-96 h-56 md:h-96 rounded-md flex-shrink-0 object-cover"
+                  className="relative z-1 w-full md:w-96 h-56 md:h-96 rounded-md flex-shrink-0 object-cover"
                 />
               </div>
             </div>

@@ -39,7 +39,7 @@ export function Navigation() {
   return (
     <>
       <div
-        className="flex justify-between items-center w-full fixed top-0 left-0 z-50 px-4 py-2 transition-colors duration-300"
+        className="flex justify-between items-center w-full fixed top-0 left-0 z-20 px-4 py-2 transition-colors duration-300"
         style={{ backgroundColor: bgColor }}
       >
         <div className="flex items-center">
