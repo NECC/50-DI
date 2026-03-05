@@ -19,7 +19,7 @@ export function Navigation() {
         if (scrollPosition < viewportHeight) {
           setBgColor("#71AA7A");
           setTextColor("#FFFFFF");
-        } else if (scrollPosition < viewportHeight * 2) {
+        } else if (scrollPosition < viewportHeight * 2.2) {
           setBgColor("#FFFFFF");
           setTextColor("#000000");
         } else {
@@ -34,7 +34,11 @@ export function Navigation() {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
+
+  const getIconVariant = (color: string): "icon" | "artboard4" => {
+    return color === "#000000" ? "artboard4" : "icon";
+  };
 
   return (
     <>
@@ -47,24 +51,11 @@ export function Navigation() {
             href="/"
             className="inline-flex items-center px-1 py-1 text-black text-lg font-medium rounded-sm transform hover:scale-105 transition-transform duration-300"
           >
-            <Icon
-              width={75}
-              height={75}
-              className="w-30 h-30"
-              color={textColor}
-            />
+            <Icon width={75} height={75} variant={getIconVariant(textColor)} />
           </a>
         </div>
 
         <ul className="text-white font-semibold sm:flex hidden items-center">
-          {/*<li>
-            <a
-              className="px-12 py-4 text-black text-lg font-medium rounded-sm hover:bg-white hover:text-black transition-all duration-300"
-              href="/"
-            >
-              Homepage
-            </a>
-          </li>*/}
           <li>
             <a
               className={`inline-block px-12 py-4 text-lg font-medium rounded-sm transform hover:scale-105 transition-transform duration-300 ${textColor === "#FFFFFF" ? "text-white" : "text-black"}`}

@@ -30,13 +30,22 @@ export default function HomePage() {
       <main className="min-h-screen bg-[#71AA7A] flex items-center justify-center relative overflow-visible pt-24 px-6 [--bg-color:#71AA7A]">
         <Navigation />
         {/* Decorative orange squares - Mantive exatamente como estavam */}
-        <div className="absolute top-18 left-12 w-16 h-16 bg-[#EB5F0A] rounded-sm opacity-100" />
-        <div className="absolute top-20 right-1/4 w-12 h-12 bg-[#EB5F0A] rounded-sm opacity-100" />
-        <div className="absolute top-1/3 right-12 w-20 h-20 bg-[#EB5F0A] rounded-sm opacity-100" />
-        <div className="absolute bottom-24 left-1/4 w-16 h-16 bg-[#EB5F0A] rounded-sm opacity-100" />
-        <div className="absolute bottom-32 right-24 w-24 h-24 bg-[#EB5F0A] rounded-sm opacity-100" />
-        <div className="absolute top-1/2 left-1/3 w-14 h-14 bg-[#EB5F0A] rounded-sm opacity-100" />
+        {/*<div className="absolute top-1/8 left-12 w-16 h-16 bg-[#EB5F0A] rounded-sm opacity-100" />*/}
+        <div className="hidden md:block absolute top-20 right-12 w-12 h-12 bg-[#EB5F0A] rounded-sm opacity-100" />
+        <div className="hidden md:block absolute top-1/3 right-12 w-20 h-20 bg-[#EB5F0A] rounded-sm opacity-100" />
+        <div className="hidden md:block absolute bottom-24 left-1/4 w-16 h-16 bg-[#EB5F0A] rounded-sm opacity-100" />
+        <div className="hidden md:block absolute bottom-32 right-24 w-24 h-24 bg-[#EB5F0A] rounded-sm opacity-100" />
+        <div className="hidden md:block absolute top-1/2 left-2 w-14 h-14 bg-[#EB5F0A] rounded-sm opacity-100" />
+        <div className="absolute top-6 right-4 w-6 h-6 bg-[#EB5F0A] rounded-sm md:top-20 md:right-12 md:w-12 md:h-12" />
 
+        {/*phone*/}
+        <div className="absolute top-1/4 right-2 w-8 h-8 bg-[#EB5F0A] rounded-sm md:top-1/3 md:right-12 md:w-20 md:h-20" />
+
+        <div className="absolute bottom-16 left-6 w-7 h-7 bg-[#EB5F0A] rounded-sm md:bottom-24 md:left-1/4 md:w-16 md:h-16" />
+
+        <div className="absolute bottom-20 right-6 w-10 h-10 bg-[#EB5F0A] rounded-sm md:bottom-32 md:right-24 md:w-24 md:h-24" />
+
+        <div className="absolute top-1/2 left-2 w-6 h-6 bg-[#EB5F0A] rounded-sm md:top-1/2 md:left-2 md:w-14 md:h-14" />
         <div className="text-center z-30 max-w-4xl w-full">
           {/* Image */}
           <div className="mb-12 flex justify-center">
@@ -49,13 +58,6 @@ export default function HomePage() {
               className="w-full h-auto max-w-[500px] md:max-w-[700px]"
             />
           </div>
-
-          {/* Coming Soon Button
-          <button className="px-12 py-4 border-2 border-white text-white text-lg font-medium rounded-lg hover:bg-white hover:text-[#71AA7A] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-            Em Breve
-          </button>
-
-          {/* Additional info */}
           <div className="mt-16 text-white/70 text-sm font-mono max-w-2xl mx-auto leading-relaxed">
             <p>
               Celebrando cinco décadas de inovação, excelência e transformação
