@@ -9,22 +9,27 @@ export default function HomePage() {
       {/* Barra Lateral de Patrocinadores */}
       <SponsorsSidebar
         platinum={[
-          { name: "ACC", logo: "/Acc_Logo_All_Black_RGB.png" },
+          { name: "Accenture", logo: "/Acc_Logo_All_Black_RGB.png" },
           {
             name: "Uphold",
             logo: "/uphold-branded-house-horizontal-for-light.svg",
           },
         ]}
         gold={[
-          { name: "RC", logo: "/rc_logo_rgb_main.png" },
+          { name: "Retail Consult", logo: "/rc_logo_rgb_main.png" },
           { name: "F3M", logo: "/LOGO-F3M.svg" },
+          { name: "VisionWare", logo: "/LOGO-HORIZONTAL_GRADIENTE-AZUL.svg" },
         ]}
         silver={[
           { name: "INESC TEC", logo: "/INESCTECLogotipo_CORPositivo_RGB.png" },
           { name: "KEEPS", logo: "/keeps_logo_black_en_large 1.svg" },
           { name: "Cachapuz", logo: "/Cachapuz.svg" },
         ]}
-        bronze={[{ name: "Kelvin", logo: "/Kelvin-Color-TM.svg" }]}
+        bronze={[
+          { name: "Kelvin", logo: "/Kelvin-Color-TM.svg" },
+          { name: "Ponto 25", logo: "/Logo_Ponto25.svg" },
+        ]}
+        outros={[{ name: "EEUM", logo: "/EEUM_logo.png" }]}
       />
 
       <main className="min-h-screen bg-[#71AA7A] flex items-center justify-center relative overflow-visible pt-24 px-6 [--bg-color:#71AA7A]">
