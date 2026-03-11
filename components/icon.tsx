@@ -10,7 +10,6 @@ export type IconProps = {
 };
 
 export function Icon({ variant = "icon", width = 75, height = 75 }: IconProps) {
-  // Fix: check for "artboard4" instead of "black"
   const src = variant === "artboard4" ? "/Artboard4.svg" : "/icon.svg";
   return <Image src={src} width={width} height={height} alt="icon" />;
 }

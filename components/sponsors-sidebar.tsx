@@ -20,6 +20,7 @@ interface SponsorsSidebarProps {
   gold?: Sponsor[];
   silver?: Sponsor[];
   bronze?: Sponsor[];
+  outros?: Sponsor[];
 }
 
 export default function SponsorsSidebar({
@@ -27,6 +28,7 @@ export default function SponsorsSidebar({
   gold = [],
   silver = [],
   bronze = [],
+  outros = [],
 }: SponsorsSidebarProps) {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [buttonColor, setButtonColor] = useState("#71AA7A");
@@ -83,7 +85,8 @@ export default function SponsorsSidebar({
     platinum.length > 0 ||
     gold.length > 0 ||
     silver.length > 0 ||
-    bronze.length > 0;
+    bronze.length > 0 ||
+    outros.length > 0;
 
   if (!hasSponsors) return null;
 
@@ -181,6 +184,43 @@ export default function SponsorsSidebar({
                 );
               })}
             </div>
+
+            {/* Outros Apoios */}
+            {outros.length > 0 && (
+              <div className="space-y-3 pt-4 border-t-2 border-gray-200">
+                <h3
+                  className="text-lg font-semibold text-center py-2 rounded-md"
+                  style={{
+                    backgroundColor: "#6B7280",
+                    color: "#fff",
+                    textShadow: "0 1px 2px rgba(0,0,0,0.3)",
+                  }}
+                >
+                  Outros Apoios
+                </h3>
+                <div className="space-y-3">
+                  {outros.map((sponsor, index) => (
+                    <div
+                      key={`${sponsor.name}-${index}`}
+                      className="bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition-colors border border-gray-200"
+                    >
+                      <div className="flex items-center justify-center h-16 relative">
+                        <Image
+                          src={sponsor.logo}
+                          alt={sponsor.name}
+                          width={120}
+                          height={60}
+                          className="object-contain max-h-14"
+                        />
+                      </div>
+                      <p className="text-xs text-center text-gray-600 mt-2 font-medium">
+                        {sponsor.name}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>
