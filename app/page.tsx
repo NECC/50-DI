@@ -19,6 +19,7 @@ export default function HomePage() {
           { name: "Retail Consult", logo: "/rc_logo_rgb_main.png" },
           { name: "F3M", logo: "/LOGO-F3M.svg" },
           { name: "VisionWare", logo: "/LOGO-HORIZONTAL_GRADIENTE-AZUL.svg" },
+          { name: "Checkmarx", logo: "/CheckmarxBlue.svg" },
         ]}
         silver={[
           { name: "INESC TEC", logo: "/INESCTECLogotipo_CORPositivo_RGB.png" },
