@@ -25,6 +25,7 @@ export default function HomePage() {
           { name: "INESC TEC", logo: "/INESCTECLogotipo_CORPositivo_RGB.png" },
           { name: "KEEPS", logo: "/keeps_logo_black_en_large 1.svg" },
           { name: "Cachapuz", logo: "/Cachapuz.svg" },
+          { name: "Eurotux", logo: "/Tux_logo2_svg_site.svg" },
         ]}
         bronze={[
           { name: "Kelvin", logo: "/Kelvin-Color-TM.svg" },
