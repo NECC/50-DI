@@ -54,14 +54,12 @@ export default function HomePage() {
 
         <div className="absolute top-1/2 left-2 w-6 h-6 bg-[#EB5F0A] rounded-sm md:top-1/2 md:left-2 md:w-14 md:h-14" />
         <div className="text-center z-30 max-w-4xl w-full">
-          {/* Image */}
           <div className="mb-12 flex justify-center">
             <Image
               src="/Artboard2.svg"
               alt="50 anos Informática Universidade do Minho"
               width={800}
               height={600}
-              //priority
               className="w-full h-auto max-w-[500px] md:max-w-[700px]"
             />
           </div>
@@ -104,7 +102,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute inset-0 z-1 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
                 <Image
-                  src="/home1.jpg"
+                  src="/ImagensEventosSite_04.jpg"
                   alt="50 anos Informática Universidade do Minho"
                   width={800}
                   height={600}
@@ -142,7 +140,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute inset-0 z-1 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
                 <Image
-                  src="/home2.jpg"
+                  src="/ImagensEventosSite_05.jpg"
                   alt="50 anos Informática Universidade do Minho"
                   width={800}
                   height={600}
@@ -184,7 +182,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute inset-0 z-0 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
                 <Image
-                  src="/home3.jpg"
+                  src="/ImagensEventosSite_09.jpg"
                   alt="50 anos Informática Universidade do Minho"
                   width={800}
                   height={600}
@@ -199,25 +197,6 @@ export default function HomePage() {
       <section id="programacao">
         <ProgramacaoPage />
       </section>
-      {/* <section id="patrocinadores">
-        <Sponsors
-          mainSponsors={[
-            { name: "Patrocinador 1", logo: "/icon.svg" },
-            { name: "Patrocinador 2" },
-            { name: "Patrocinador 4" },
-            { name: "Patrocinador 4" },
-            { name: "Patrocinador 4" },
-            { name: "Patrocinador 3", logo: "/icon.svg" },
-            { name: "Patrocinador 3", logo: "/icon.svg" },
-            { name: "Patrocinador 3", logo: "/icon.svg" },
-          ]}
-          exhibitionSponsors={[
-            { name: "Exposição 1", logo: "/icon.svg" },
-            { name: "Exposição 2" },
-            { name: "Exposição 3", logo: "/icon.svg" },
-          ]}
-        />
-      </section> */}
     </>
   );
 }

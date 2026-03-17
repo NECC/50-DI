@@ -8,56 +8,73 @@ const schedule = [
     imagem: "/Artboard2.svg",
     location:
       "Departamento de Informática da Escola de Engenharia, Campus de Gualtar",
-    description:
+    description: [
       "Sessão de Abertura, mesa-redonda, e inauguração da Exposição 50 Anos da Informática na UMinho.",
+    ],
   },
   {
     time: "8 Abril, 2026 (14H30)",
     title: "Informática 50 Anos: Memória e Desafio",
     imagem: "/Artboard2.svg",
     location: "Campus de Gualtar (Ed. 2, B1)",
-    description:
-      "Sessão de Abertura, mesa-redonda, e inauguração da Exposição 50 Anos da Informática na UMinho.",
+    description: [
+      "14:30",
+      "           Saudação do Director do Departamento de Informática",
+      "           Intervenção do Senhor Presidente da Escola de Engenharia",
+      "           Abertura das Comemorações pelo Senhor Reitor da Universidade do Minho",
+      "15:00",
+      "           Mesa-redonda - Informática 50 Anos: Memória e Desafio",
+      "           Moderada pelo Prof João Álvaro Carvalho, com a participação dos Professores Alberto Proença, António Porto, Carlos Couto, José Manuel Esgalhado Valença, Pedro Guerreiro, Raúl Vidal e Senhorinha Fortunas.",
+      "16:30",
+      "           Inauguração da Exposição Informática na UMinho: 50 Anos - Departamento de Informática no Campus de Gualtar.",
+      "17:30",
+      "           Cocktail.",
+    ],
   },
   {
     time: "11 Abril, 2026 (18H00)",
     title: "Os Próximos 50 Anos no Ensino da Informática",
     imagem: "/icon.svg",
     location: "Fórum Braga",
-    description:
+    description: [
       "Tertúlia integrada  na ENEI - Encontro Nacional de Estudantes de Informática.",
+    ],
   },
   {
     time: "27 Maio, 2026 (14H30)",
     title: "Informática, Inovação e o Futuro",
     imagem: "/icon.svg",
     location: "Campus de Gualtar (Ed. 2, B1)",
-    description:
+    description: [
       "Mesa-redonda com actores-chave do tecido empresarial em Informática.",
+    ],
   },
   {
     time: "2 - 3 Junho, 2026 (9H30 às 17H30)",
     title: "Engenharia de Software Apoiada por Assistentes Artificiais",
     imagem: "/icon.svg",
     location: "Campus de Gualtar (Ed. 2, B2)",
-    description:
+    description: [
       "Workshop sobre desafios e oportunidades da IA no desenvolvimento de software, com alunos, peritos e empresas.",
+    ],
   },
   {
     time: "3ª semana de Setembro 2026",
     title: "Informática@UMinho: A Festa dos 50 Anos",
     imagem: "/icon.svg",
     location: "",
-    description:
+    description: [
       "Oportunidade de convívio e networking  entre academia, estudantes, alumni e empresas.",
+    ],
   },
   {
     time: "Data a anunciar em 2027",
     title: "Os próximos 50 anos: Caminhos para a investigação",
     imagem: "/Artboard2.svg",
     location: "",
-    description:
+    description: [
       "Seminário sobre o futuro da investigação em Computação e sua Engenharia.",
+    ],
   },
 ];
 
@@ -122,8 +139,6 @@ export default async function EventoPage({
                 {event.title}
               </h1>
             </div>
-
-            {/* Date and Location */}
             <div className="grid grid-cols-2 gap-6 py-6 border-y border-[#EB5F0A]/20">
               <div>
                 <p className="text-xs uppercase tracking-widest text-[#EB5F0A]/60 mb-2">
@@ -142,19 +157,46 @@ export default async function EventoPage({
                 </p>
               </div>
             </div>
-
-            <div className="space-y-4">
-              <h2 className="text-2xl sm:text-3xl font-redaction-20 text-[#EB5F0A] uppercase tracking-wide">
+            <div className="flex items-center gap-4">
+              <div className="h-px flex-1 bg-[#E8E4DC]" />
+              <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-[#EB5F0A]">
                 Descrição
-              </h2>
-              <div className="text-base sm:text-lg text-[#EB5F0A] leading-relaxed">
-                {Array.isArray(event.description) ? (
-                  event.description.map((para, idx) => <p key={idx}>{para}</p>)
-                ) : (
-                  <p>{event.description}</p>
-                )}
-              </div>
+              </span>
+              <div className="h-px w-8 bg-[#EB5F0A]" />
             </div>
+            {Array.isArray(event.description) ? (
+              <div className="bg-white border border-[#E8E4DC] rounded-2xl overflow-hidden shadow-sm">
+                {event.description.map((line, idx) => {
+                  const trimmed = line.trim();
+                  const isTimeHeader = /^\d{1,2}:\d{2}$/.test(trimmed);
+                  if (isTimeHeader) {
+                    return (
+                      <div
+                        key={idx}
+                        className="flex items-center gap-4 px-6 py-3 bg-[#EB5F0A]/5 border-b border-[#EB5F0A]/10"
+                      >
+                        <span className="font-mono text-l font-black text-[#EB5F0A] tabular-nums">
+                          {trimmed}
+                        </span>
+                        <div className="h-px flex-1 bg-[#EB5F0A]/20" />
+                      </div>
+                    );
+                  }
+                  return (
+                    <p
+                      key={idx}
+                      className="px-6 py-2 text-xl text-[#EB5F0A] leading-relaxed border-b border-[#F0EDE6] last:border-b-0"
+                    >
+                      {trimmed}
+                    </p>
+                  );
+                })}
+              </div>
+            ) : (
+              <p className="text-xl text-[#EB5F0A] leading-relaxed max-w-2xl">
+                {event.description}
+              </p>
+            )}
           </div>
 
           <div className="lg:col-span-1 flex flex-col gap-6">
