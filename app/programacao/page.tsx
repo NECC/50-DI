@@ -118,6 +118,36 @@ export default function ProgramacaoPage() {
           ))}
         </div>
 
+
+<div className="mt-24 pt-12 border-t border-white/20 text-center">
+  <p className="text-white/70 font-light mb-8">
+    Outros Apoios
+  </p>
+
+  <div className="flex flex-wrap justify-center items-center gap-10">
+    {[
+      { name: "EEUM", logo: "logos/EEUM_logo.png" },
+      { name: "Arquivo Distrital", logo: "logos/logo_adb_white.png" },
+      { name: "Algoritmi", logo: "logos/ALGORITMI.png" },
+      { name: "HASLab", logo: "logos/HASLAB.png" },
+    ].map((org, i) => (
+      <div key={i} className="flex flex-col items-center gap-2">
+        <img
+          src={org.logo}
+          alt={org.name}
+          className="h-12 object-contain"
+        />
+        <span className="text-white/70 text-sm">{org.name}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+
+
+
         <div className="mt-24 pt-12 border-t border-white/20 text-center">
           <p className="text-white/70 font-light max-w-2xl mx-auto">
             Clique em qualquer evento para obter mais detalhes. Inscrições e

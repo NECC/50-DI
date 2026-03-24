@@ -94,7 +94,8 @@ export default function SponsorsSidebar({
     <div className="fixed right-0 top-24 z-50 transition-all duration-300">
       <div
         className={`bg-white shadow-2xl rounded-l-lg transition-all duration-300 ${
-          isCollapsed ? "w-12" : "w-72"
+          // isCollapsed ? "w-12" : "w-72" 
+          isCollapsed ? "w-12" : "w-56"
         }`}
       >
         {/* Toggle Button */}
