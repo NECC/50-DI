@@ -185,7 +185,10 @@ export default function SponsorsSidebar({
               })}
             </div>
 
+
+
             {/* Outros Apoios */}
+{/* Outros Apoios
             {outros.length > 0 && (
               <div className="space-y-3 pt-4 border-t-2 border-gray-200">
                 <h3
@@ -221,6 +224,8 @@ export default function SponsorsSidebar({
                 </div>
               </div>
             )}
+
+*/}
           </div>
         )}
       </div>

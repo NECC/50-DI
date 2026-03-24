@@ -56,6 +56,14 @@ export function Navigation() {
         </div>
 
         <ul className="text-white font-semibold sm:flex hidden items-center">
+<li>
+            <a
+              className={`inline-block px-12 py-4 text-lg font-medium rounded-sm transform hover:scale-105 transition-transform duration-300 ${textColor === "#FFFFFF" ? "text-white" : "text-black"}`}
+              href="/programacao/1/"
+            >
+              Próximo Evento
+            </a>
+          </li>
           <li>
             <a
               className={`inline-block px-12 py-4 text-lg font-medium rounded-sm transform hover:scale-105 transition-transform duration-300 ${textColor === "#FFFFFF" ? "text-white" : "text-black"}`}

@@ -8,9 +8,10 @@ const schedule = [
     imagem: "/Artboard2.svg",
     location:
       "Departamento de Informática da Escola de Engenharia, Campus de Gualtar",
-    description: [
-      "Sessão de Abertura, mesa-redonda, e inauguração da Exposição 50 Anos da Informática na UMinho.",
-    ],
+description: [
+  "Esta exposição faz parte das celebrações dos 50 anos da Informática na Universidade do Minho que ao longo deste ano de 2026 e prolongando-se por 2027 terão lugar no Departamento de Informática da Escola de Engenharia (Campus de Gualtar).",
+  "Com a desmaterialização progressiva da actividade académica, consequência do advento da internet e das rápidas comunicações que hoje temos, permitindo que tudo esteja disponível de imediato, em suporte electrónico, achou-se interessante dar prioridade aos tempos em que tudo era ‘feito à mão’, ou quase, pelo interesse que isso possa suscitar nas camadas mais jovens e a bem da preservação da memória colectiva da instituição."
+],
   },
   {
     time: "8 Abril, 2026 (14H30)",
