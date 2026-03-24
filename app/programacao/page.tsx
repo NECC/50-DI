@@ -121,7 +121,7 @@ export default function ProgramacaoPage() {
 
 <div className="mt-24 pt-12 border-t border-white/20 text-center">
   <p className="text-white/70 font-light mb-8">
-    Outros Apoios
+{/*    Outros Apoios */}
   </p>
 
   <div className="flex flex-wrap justify-center items-center gap-10">
@@ -135,7 +135,7 @@ export default function ProgramacaoPage() {
         <img
           src={org.logo}
           alt={org.name}
-          className="h-12 object-contain"
+          className="h-20 object-contain"
         />
         <span className="text-white/70 text-sm">{org.name}</span>
       </div>
