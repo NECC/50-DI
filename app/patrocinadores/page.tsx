@@ -1,31 +1,36 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import { Navigation as SwiperNav, Pagination, Autoplay } from "swiper/modules"
 
 export default function PatrocinadoresPage() {
   const sponsors = {
-    platinum: [
-      { name: "Tech Corp", logo: "/images/sponsor-1.jpg" },
-      { name: "Innovation Labs", logo: "/images/sponsor-2.jpg" },
-    ],
-    gold: [
-      { name: "Cloud Systems", logo: "/images/sponsor-3.jpg" },
-      { name: "Data Solutions", logo: "/images/sponsor-4.jpg" },
-      { name: "AI Ventures", logo: "/images/sponsor-5.jpg" },
-    ],
-    silver: [
-      { name: "Software Inc", logo: "/images/sponsor-6.jpg" },
-      { name: "Digital Agency", logo: "/images/sponsor-7.jpg" },
-      { name: "Tech Startup", logo: "/images/sponsor-8.jpg" },
-      { name: "Code Factory", logo: "/images/sponsor-9.jpg" },
-    ],
-    bronze: [
-      { name: "Dev Tools", logo: "/images/sponsor-10.jpg" },
-      { name: "Web Services", logo: "/images/sponsor-11.jpg" },
-      { name: "Mobile Apps", logo: "/images/sponsor-12.jpg" },
-      { name: "Cloud Hosting", logo: "/images/sponsor-13.jpg" },
-      { name: "Analytics Pro", logo: "/images/sponsor-14.jpg" },
-      { name: "Security Systems", logo: "/images/sponsor-15.jpg" },
-    ],
-  }
+  platinum: [
+    { name: "Accenture", logo: "/Acc_Logo_All_Black_RGB.png" },
+    { name: "Uphold", logo: "/uphold-branded-house-horizontal-for-light.svg" },
+  ],
+  gold: [
+    { name: "Retail Consult", logo: "/rc_logo_rgb_main.png" },
+    { name: "F3M", logo: "/LOGO-F3M.svg" },
+    { name: "VisionWare", logo: "/LOGO-HORIZONTAL_GRADIENTE-AZUL.svg" },
+    { name: "Checkmarx", logo: "/CheckmarxBlue.svg" },
+  ],
+  silver: [
+    { name: "INESC TEC", logo: "/INESCTECLogotipo_CORPositivo_RGB.png" },
+    { name: "KEEPS", logo: "/keeps_logo_black_en_large 1.svg" },
+    { name: "Cachapuz", logo: "/Cachapuz.svg" },
+    { name: "Eurotux", logo: "/Tux_logo2_svg_site.svg" },
+  ],
+  bronze: [
+    { name: "Kelvin", logo: "/Kelvin-Color-TM.svg" },
+    { name: "Ponto 25", logo: "/Logo_Ponto25.svg" },
+  ],
+}
+
 
   return (
     <>
@@ -43,86 +48,166 @@ export default function PatrocinadoresPage() {
           </div>
 
           <div className="space-y-16 pb-24">
-            {/* Platinum Tier */}
-            <div>
-              <div className="flex items-center gap-4 mb-8">
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#EB5F0A] font-mono">PLATINUM</h2>
-                <div className="h-1 flex-1 bg-gradient-to-r from-[#EB5F0A] to-transparent" />
-              </div>
-              <div className="grid sm:grid-cols-2 gap-8">
-                {sponsors.platinum.map((sponsor, index) => (
-                  <div
-                    key={index}
-                    className="bg-white rounded-xl p-12 border-2 border-gray-200 hover:border-[#EB5F0A]/50 hover:shadow-lg transition-all duration-300 flex items-center justify-center min-h-[200px]"
-                  >
-                    <div className="text-center">
-                      <span className="text-2xl font-bold text-gray-700">{sponsor.name}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
 
-            {/* Gold Tier */}
-            <div>
-              <div className="flex items-center gap-4 mb-8">
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#EB5F0A] font-mono">GOLD</h2>
-                <div className="h-1 flex-1 bg-gradient-to-r from-[#EB5F0A] to-transparent" />
-              </div>
-              <div className="grid sm:grid-cols-3 gap-6">
-                {sponsors.gold.map((sponsor, index) => (
-                  <div
-                    key={index}
-                    className="bg-white rounded-xl p-8 border-2 border-gray-200 hover:border-[#EB5F0A]/50 hover:shadow-lg transition-all duration-300 flex items-center justify-center min-h-[150px]"
-                  >
-                    <div className="text-center">
-                      <span className="text-lg font-bold text-gray-700">{sponsor.name}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Silver Tier */}
-            <div>
-              <div className="flex items-center gap-4 mb-8">
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#EB5F0A] font-mono">SILVER</h2>
-                <div className="h-1 flex-1 bg-gradient-to-r from-[#EB5F0A] to-transparent" />
-              </div>
-              <div className="grid sm:grid-cols-4 gap-4">
-                {sponsors.silver.map((sponsor, index) => (
-                  <div
-                    key={index}
-                    className="bg-white rounded-lg p-6 border-2 border-gray-200 hover:border-[#EB5F0A]/50 hover:shadow-md transition-all duration-300 flex items-center justify-center min-h-[120px]"
-                  >
-                    <div className="text-center">
-                      <span className="text-sm font-bold text-gray-700">{sponsor.name}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Bronze Tier */}
-            <div>
-              <div className="flex items-center gap-4 mb-8">
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#EB5F0A] font-mono">BRONZE</h2>
-                <div className="h-1 flex-1 bg-gradient-to-r from-[#EB5F0A] to-transparent" />
-              </div>
-              <div className="grid sm:grid-cols-6 gap-3">
-                {sponsors.bronze.map((sponsor, index) => (
-                  <div
-                    key={index}
-                    className="bg-white rounded-lg p-4 border-2 border-gray-200 hover:border-[#EB5F0A]/50 hover:shadow-md transition-all duration-300 flex items-center justify-center min-h-[100px]"
-                  >
-                    <div className="text-center">
-                      <span className="text-xs font-bold text-gray-700">{sponsor.name}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+        {/* PLATINUM */}
+        <section>
+          <div className="flex items-center gap-4 mb-8">
+            <h2 className="text-4xl font-bold text-[#E5E4E2] font-mono">PLATINUM</h2>
+            <div className="h-1 flex-1 bg-gradient-to-r from-[#E5E4E2] to-transparent" />
           </div>
+
+          <Swiper
+            modules={[SwiperNav, Pagination, Autoplay]}
+            spaceBetween={40}
+            slidesPerView={2}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 2200 }}
+            loop
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              640: { slidesPerView: 1 },
+              1024: { slidesPerView: 2 },
+            }}
+          >
+            {sponsors.platinum.map((sponsor, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white rounded-xl p-10 border-2 border-gray-300 hover:border-[#E5E4E2]/70 hover:shadow-xl transition-all duration-300 flex items-center justify-center min-h-[200px]">
+                  <div className="text-center">
+                    <img
+                      src={sponsor.logo}
+                      alt={sponsor.name}
+                      className="h-28 mx-auto mb-4 object-contain"
+                    />
+                    <span className="text-xl font-bold text-gray-700">{sponsor.name}</span>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </section>
+
+       {/* GOLD */}
+        <section>
+          <div className="flex items-center gap-4 mb-8">
+            <h2 className="text-4xl font-bold text-[#EB5F0A] font-mono">GOLD</h2>
+            <div className="h-1 flex-1 bg-gradient-to-r from-[#EB5F0A] to-transparent" />
+          </div>
+
+          <Swiper
+            modules={[SwiperNav, Pagination, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={3}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 2500 }}
+            loop
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {sponsors.gold.map((sponsor, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white rounded-xl p-8 border-2 border-gray-200 hover:border-[#EB5F0A]/50 hover:shadow-lg transition-all duration-300 flex items-center justify-center min-h-[150px]">
+                  <div className="text-center">
+                    <img
+                      src={sponsor.logo}
+                      alt={sponsor.name}
+                      className="h-24 mx-auto mb-4 object-contain"
+                    />
+                    <span className="text-lg font-bold text-gray-700">{sponsor.name}</span>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </section>
+
+
+
+
+
+       {/* SILVER */}
+        <section>
+          <div className="flex items-center gap-4 mb-8">
+            <h2 className="text-4xl font-bold text-[#EB5F0A] font-mono">SILVER</h2>
+            <div className="h-1 flex-1 bg-gradient-to-r from-[#EB5F0A] to-transparent" />
+          </div>
+
+          <Swiper
+            modules={[SwiperNav, Pagination, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={4}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 2800 }}
+            loop
+            breakpoints={{
+              320: { slidesPerView: 2 },
+              640: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
+            }}
+          >
+            {sponsors.silver.map((sponsor, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white rounded-lg p-6 border-2 border-gray-200 hover:border-[#EB5F0A]/50 hover:shadow-md transition-all duration-300 flex items-center justify-center min-h-[120px]">
+                  <div className="text-center">
+                    <img
+                      src={sponsor.logo}
+                      alt={sponsor.name}
+                      className="h-20 mx-auto mb-3 object-contain"
+                    />
+                    <span className="text-sm font-bold text-gray-700">{sponsor.name}</span>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </section>
+
+
+
+       {/* BRONZE */}
+        <section>
+          <div className="flex items-center gap-4 mb-8">
+            <h2 className="text-4xl font-bold text-[#EB5F0A] font-mono">BRONZE</h2>
+            <div className="h-1 flex-1 bg-gradient-to-r from-[#EB5F0A] to-transparent" />
+          </div>
+
+          <Swiper
+            modules={[SwiperNav, Pagination, Autoplay]}
+            spaceBetween={15}
+            slidesPerView={6}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000 }}
+            loop
+            breakpoints={{
+              320: { slidesPerView: 2 },
+              640: { slidesPerView: 4 },
+              1024: { slidesPerView: 6 },
+            }}
+          >
+            {sponsors.bronze.map((sponsor, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white rounded-lg p-4 border-2 border-gray-200 hover:border-[#EB5F0A]/50 hover:shadow-md transition-all duration-300 flex items-center justify-center min-h-[100px]">
+                  <div className="text-center">
+                    <img
+                      src={sponsor.logo}
+                      alt={sponsor.name}
+                      className="h-14 mx-auto mb-2 object-contain"
+                    />
+                    <span className="text-xs font-bold text-gray-700">{sponsor.name}</span>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </section>
+
+</div>
         </div>
       </main>
     </>
