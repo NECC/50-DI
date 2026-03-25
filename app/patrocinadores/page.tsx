@@ -7,6 +7,10 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 import { Navigation as SwiperNav, Pagination, Autoplay } from "swiper/modules"
 
+
+
+
+
 export default function PatrocinadoresPage() {
   const sponsors = {
   platinum: [
@@ -49,7 +53,9 @@ export default function PatrocinadoresPage() {
 
           <div className="space-y-16 pb-24">
 
-        {/* PLATINUM */}
+
+
+        {/* PLATINUM — GLASS + METAL */}
         <section>
           <div className="flex items-center gap-4 mb-8">
             <h2 className="text-4xl font-bold text-[#E5E4E2] font-mono">PLATINUM</h2>
@@ -72,26 +78,49 @@ export default function PatrocinadoresPage() {
           >
             {sponsors.platinum.map((sponsor, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white rounded-xl p-10 border-2 border-gray-300 hover:border-[#E5E4E2]/70 hover:shadow-xl transition-all duration-300 flex items-center justify-center min-h-[200px]">
-                  <div className="text-center">
+                <div
+                  className="
+                    relative rounded-2xl p-10 border border-white/30
+                    bg-gradient-to-br from-white/20 via-white/10 to-white/5
+                    backdrop-blur-xl
+                    shadow-[0_8px_32px_rgba(0,0,0,0.15)]
+                    before:absolute before:inset-0 before:rounded-2xl
+                    before:bg-gradient-to-br before:from-[#ffffff]/60 before:via-[#e5e5e5]/30 before:to-[#cfcfcf]/20
+                    before:opacity-60
+                    hover:before:opacity-80
+                    before:transition-all before:duration-500
+                    overflow-hidden
+                  "
+                >
+                  <div className="text-center relative z-10">
                     <img
                       src={sponsor.logo}
                       alt={sponsor.name}
-                      className="h-28 mx-auto mb-4 object-contain"
+                      className="h-28 mx-auto mb-4 object-contain drop-shadow-md"
                     />
-                    <span className="text-xl font-bold text-gray-700">{sponsor.name}</span>
+                    <span className="text-xl font-bold text-gray-800">{sponsor.name}</span>
                   </div>
+
+                  {/* Reflexo diagonal */}
+                  <div
+                    className="
+                      absolute inset-0 pointer-events-none
+                      bg-gradient-to-tr from-transparent via-white/20 to-transparent
+                      opacity-0 hover:opacity-40
+                      transition-opacity duration-700
+                    "
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </section>
 
-       {/* GOLD */}
+        {/* GOLD — OURO LÍQUIDO */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-4xl font-bold text-[#EB5F0A] font-mono">GOLD</h2>
-            <div className="h-1 flex-1 bg-gradient-to-r from-[#EB5F0A] to-transparent" />
+            <h2 className="text-4xl font-bold text-yellow-600 font-mono">GOLD</h2>
+            <div className="h-1 flex-1 bg-gradient-to-r from-yellow-500 to-transparent" />
           </div>
 
           <Swiper
@@ -110,30 +139,45 @@ export default function PatrocinadoresPage() {
           >
             {sponsors.gold.map((sponsor, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white rounded-xl p-8 border-2 border-gray-200 hover:border-[#EB5F0A]/50 hover:shadow-lg transition-all duration-300 flex items-center justify-center min-h-[150px]">
-                  <div className="text-center">
-                    <img
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      className="h-24 mx-auto mb-4 object-contain"
-                    />
-                    <span className="text-lg font-bold text-gray-700">{sponsor.name}</span>
+                <div
+                  className="
+                    relative rounded-xl p-8 border border-yellow-300/40
+                    bg-gradient-to-br from-yellow-200/40 via-yellow-100/20 to-yellow-50/10
+                    backdrop-blur-md
+                    shadow-[0_8px_24px_rgba(255,200,0,0.25)]
+                    before:absolute before:inset-0 before:rounded-xl
+                    before:bg-gradient-to-br before:from-yellow-300/60 before:via-yellow-200/30 before:to-yellow-100/10
+                    before:opacity-50
+                    hover:before:opacity-80
+                    before:transition-all before:duration-500
+                    overflow-hidden
+                  "
+                >
+                  <div className="text-center relative z-10">
+                    <img src={sponsor.logo} alt={sponsor.name} className="h-24 mx-auto mb-4 object-contain drop-shadow" />
+                    <span className="text-lg font-bold text-yellow-800">{sponsor.name}</span>
                   </div>
+
+                  {/* Reflexo */}
+                  <div
+                    className="
+                      absolute inset-0 pointer-events-none
+                      bg-gradient-to-tr from-transparent via-yellow-200/20 to-transparent
+                      opacity-0 hover:opacity-40
+                      transition-opacity duration-700
+                    "
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </section>
 
-
-
-
-
-       {/* SILVER */}
+        {/* SILVER — VIDRO PRATEADO */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-4xl font-bold text-[#EB5F0A] font-mono">SILVER</h2>
-            <div className="h-1 flex-1 bg-gradient-to-r from-[#EB5F0A] to-transparent" />
+            <h2 className="text-4xl font-bold text-gray-500 font-mono">SILVER</h2>
+            <div className="h-1 flex-1 bg-gradient-to-r from-gray-400 to-transparent" />
           </div>
 
           <Swiper
@@ -152,28 +196,45 @@ export default function PatrocinadoresPage() {
           >
             {sponsors.silver.map((sponsor, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white rounded-lg p-6 border-2 border-gray-200 hover:border-[#EB5F0A]/50 hover:shadow-md transition-all duration-300 flex items-center justify-center min-h-[120px]">
-                  <div className="text-center">
-                    <img
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      className="h-20 mx-auto mb-3 object-contain"
-                    />
+                <div
+                  className="
+                    relative rounded-xl p-6 border border-gray-300/40
+                    bg-gradient-to-br from-gray-200/30 via-gray-100/10 to-gray-50/5
+                    backdrop-blur-lg
+                    shadow-[0_6px_20px_rgba(0,0,0,0.15)]
+                    before:absolute before:inset-0 before:rounded-xl
+                    before:bg-gradient-to-br before:from-white/50 before:via-gray-200/20 before:to-gray-100/10
+                    before:opacity-50
+                    hover:before:opacity-80
+                    before:transition-all before:duration-500
+                    overflow-hidden
+                  "
+                >
+                  <div className="text-center relative z-10">
+                    <img src={sponsor.logo} alt={sponsor.name} className="h-20 mx-auto mb-3 object-contain drop-shadow-sm" />
                     <span className="text-sm font-bold text-gray-700">{sponsor.name}</span>
                   </div>
+
+                  {/* Reflexo */}
+                  <div
+                    className="
+                      absolute inset-0 pointer-events-none
+                      bg-gradient-to-tr from-transparent via-white/15 to-transparent
+                      opacity-0 hover:opacity-40
+                      transition-opacity duration-700
+                    "
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </section>
 
-
-
-       {/* BRONZE */}
+        {/* BRONZE — COBRE QUENTE */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-4xl font-bold text-[#EB5F0A] font-mono">BRONZE</h2>
-            <div className="h-1 flex-1 bg-gradient-to-r from-[#EB5F0A] to-transparent" />
+            <h2 className="text-4xl font-bold text-orange-900 font-mono">BRONZE</h2>
+            <div className="h-1 flex-1 bg-gradient-to-r from-orange-800 to-transparent" />
           </div>
 
           <Swiper
@@ -192,20 +253,50 @@ export default function PatrocinadoresPage() {
           >
             {sponsors.bronze.map((sponsor, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white rounded-lg p-4 border-2 border-gray-200 hover:border-[#EB5F0A]/50 hover:shadow-md transition-all duration-300 flex items-center justify-center min-h-[100px]">
-                  <div className="text-center">
-                    <img
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      className="h-14 mx-auto mb-2 object-contain"
-                    />
-                    <span className="text-xs font-bold text-gray-700">{sponsor.name}</span>
+                <div
+                  className="
+                    relative rounded-lg p-4 border border-orange-900/40
+                    bg-gradient-to-br from-orange-300/30 via-orange-200/20 to-orange-100/10
+                    backdrop-blur-sm
+                    shadow-[0_6px_18px_rgba(120,60,0,0.25)]
+                    before:absolute before:inset-0 before:rounded-lg
+                    before:bg-gradient-to-br before:from-orange-200/50 before:via-orange-100/20 before:to-orange-50/10
+                    before:opacity-40
+                    hover:before:opacity-70
+                    before:transition-all before:duration-500
+                    overflow-hidden
+                  "
+                >
+                  <div className="text-center relative z-10">
+                    <img src={sponsor.logo} alt={sponsor.name} className="h-14 mx-auto mb-2 object-contain drop-shadow-sm" />
+                    <span className="text-xs font-bold text-orange-900">{sponsor.name}</span>
                   </div>
+
+                  {/* Reflexo */}
+                  <div
+                    className="
+                      absolute inset-0 pointer-events-none
+                      bg-gradient-to-tr from-transparent via-orange-200/15 to-transparent
+                      opacity-0 hover:opacity-40
+                      transition-opacity duration-700
+                    "
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </section>
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
         </div>
