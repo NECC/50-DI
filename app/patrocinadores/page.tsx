@@ -39,7 +39,43 @@ export default function PatrocinadoresPage() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-white pt-20">
+      <main className="min-h-screen bg-white pt-20"> 
+
+{/*
+
+<main className="min-h-screen pt-20 bg-gradient-to-br from-[#EB5F0A] via-[#EB5F0A] to-[#E55100]">
+*/}
+{/*
+<main className="
+  min-h-screen 
+  bg-gradient-to-br from-[#1a1a1a] via-[#2a2a2a] to-[#0f0f0f]
+  bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.08),transparent_60%)]
+  bg-[radial-gradient(circle_at_80%_80%,rgba(255,255,255,0.05),transparent_70%)]
+  py-20 px-6 text-white
+">
+
+<main className="
+  min-h-screen 
+  bg-gradient-to-br from-white/80 to-white/40
+  backdrop-blur-2xl
+  bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.7),transparent_60%)]
+  bg-[radial-gradient(circle_at_70%_70%,rgba(240,240,240,0.5),transparent_70%)]
+  py-20 px-6
+">
+
+
+
+<main className="
+  min-h-screen 
+  bg-gradient-to-br from-[#f8f8f8] via-[#eaeaea] to-[#dcdcdc]
+  bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.6),transparent_60%)]
+  bg-[radial-gradient(circle_at_80%_80%,rgba(200,200,200,0.4),transparent_70%)]
+  py-20 px-6
+">
+
+*/}
+
+
         <div className="container mx-auto px-4 sm:px-6 py-12">
           {/* Header */}
           <div className="mb-16 md:mb-24">
