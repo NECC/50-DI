@@ -168,7 +168,7 @@ video: {
             slidesPerView={2}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 2200 }}
+            autoplay={{ delay: 100500 }}
             loop
             breakpoints={{
               320: { slidesPerView: 1 },
@@ -213,7 +213,22 @@ video: {
       <video
         className="w-full h-full rounded-lg"
         controls
-        preload="none"
+
+      muted
+      playsInline
+        preload="metadata"
+      onPlay={(e) => {
+        const swiper = e.currentTarget.closest(".swiper")?.swiper
+        swiper?.autoplay.stop()
+      }}
+      onEnded={(e) => {
+        const swiper = e.currentTarget.closest(".swiper")?.swiper
+        swiper?.autoplay.start()
+        swiper?.slideNext()
+      }}
+
+
+
       >
         <source src={sponsor.video.src} type="video/mp4" />
         O seu browser não suporta vídeo.
@@ -252,7 +267,7 @@ video: {
             slidesPerView={3}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 2500 }}
+            autoplay={{ delay: 100000 }}
             loop
             breakpoints={{
               320: { slidesPerView: 1 },
@@ -296,7 +311,22 @@ video: {
       <video
         className="w-full h-full rounded-lg"
         controls
-        preload="none"
+      muted
+      playsInline
+        preload="metadata"
+      onPlay={(e) => {
+        const swiper = e.currentTarget.closest(".swiper")?.swiper
+        swiper?.autoplay.stop()
+      }}
+      onEnded={(e) => {
+        const swiper = e.currentTarget.closest(".swiper")?.swiper
+        swiper?.autoplay.start()
+        swiper?.slideNext()
+      }}
+
+
+
+
       >
         <source src={sponsor.video.src} type="video/mp4" />
         O seu browser não suporta vídeo.
@@ -339,7 +369,7 @@ video: {
             slidesPerView={4}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 2800 }}
+            autoplay={{ delay: 100000 }}
             breakpoints={{
               320: { slidesPerView: 2 },
               640: { slidesPerView: 3 },
@@ -382,6 +412,30 @@ video: {
         className="w-full h-full rounded-lg"
         controls
         preload="none"
+
+
+
+
+
+      muted
+      playsInline
+      onPlay={(e) => {
+        const swiper = e.currentTarget.closest(".swiper")?.swiper
+        swiper?.autoplay.stop()
+      }}
+      onEnded={(e) => {
+        const swiper = e.currentTarget.closest(".swiper")?.swiper
+        swiper?.autoplay.start()
+        swiper?.slideNext()
+      }}
+
+
+
+
+
+
+
+
       >
         <source src={sponsor.video.src} type="video/mp4" />
         O seu browser não suporta vídeo.
@@ -422,7 +476,7 @@ video: {
             slidesPerView={6}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 100000 }}
             loop
             breakpoints={{
               320: { slidesPerView: 2 },
