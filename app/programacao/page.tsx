@@ -118,16 +118,22 @@ export default function ProgramacaoPage() {
           ))}
         </div>
 
+<div className="mt-24 pt-12 pb-20 border-t border-gray-300 text-center bg-white">
+  <p className="text-gray-600 font-light mb-8">
 
-<div className="mt-24 pt-12 border-t border-white/20 text-center">
-  <p className="text-white/70 font-light mb-8">
+
 {/*    Outros Apoios */}
   </p>
+
+<h2 className="text-gray-800 text-xl font-semibold mb-6">
+    Apoios
+  </h2>
+
 
   <div className="flex flex-wrap justify-center items-center gap-10">
     {[
       { name: "EEUM", logo: "logos/EEUM_logo.png" },
-      { name: "Arquivo Distrital", logo: "logos/logo_adb_white.png" },
+      { name: "Arquivo Distrital", logo: "logos/logo_adb_black.png" },
       { name: "Algoritmi", logo: "logos/ALGORITMI.png" },
       { name: "HASLab", logo: "logos/HASLAB.png" },
     ].map((org, i) => (
@@ -135,9 +141,13 @@ export default function ProgramacaoPage() {
         <img
           src={org.logo}
           alt={org.name}
-          className="h-20 object-contain"
-        />
-        <span className="text-white/70 text-sm">{org.name}</span>
+        className={`object-contain ${
+          org.name === "Arquivo Distrital" ? "h-20" : "h-20"
+        }`}
+      />
+
+
+        <span className="text-black/70 text-sm">{org.name}</span>
       </div>
     ))}
   </div>

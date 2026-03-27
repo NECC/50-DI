@@ -14,24 +14,96 @@ import { Navigation as SwiperNav, Pagination, Autoplay } from "swiper/modules"
 export default function PatrocinadoresPage() {
   const sponsors = {
   platinum: [
-    { name: "Accenture", logo: "/Acc_Logo_All_Black_RGB.png" },
-    { name: "Uphold", logo: "/uphold-branded-house-horizontal-for-light.svg" },
+    { name: "Accenture", logo: "/Acc_Logo_All_Black_RGB.png" , 
+video: {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/YSJ4P2XZeSQ"
+    }
+},
+    { name: "Uphold", logo: "/uphold-branded-house-horizontal-for-light.svg" , video: {
+      type: "file",
+      src: "/videos/THIS_IS_UPHOLD_16_9.mp4"
+    } },
   ],
   gold: [
-    { name: "Retail Consult", logo: "/rc_logo_rgb_main.png" },
-    { name: "F3M", logo: "/LOGO-F3M.svg" },
-    { name: "VisionWare", logo: "/LOGO-HORIZONTAL_GRADIENTE-AZUL.svg" },
-    { name: "Checkmarx", logo: "/CheckmarxBlue.svg" },
+    { name: "Retail Consult", logo: "/rc_logo_rgb_main.png" , 
+video: {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/-GidmadVPbM"
+}
+
+},
+    { name: "F3M", logo: "/LOGO-F3M.svg",
+video: {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/AysYpWMNKt8"
+}
+
+},
+    { name: "VisionWare", logo: "/LOGO-HORIZONTAL_GRADIENTE-AZUL.svg",
+video: {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/AysYpWMNKt8"
+}
+
+
+ },
+    { name: "Checkmarx", logo: "/CheckmarxBlue.svg",
+
+video: {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/rB7sr0f6dq0"
+},
+ },
   ],
   silver: [
-    { name: "INESC TEC", logo: "/INESCTECLogotipo_CORPositivo_RGB.png" },
-    { name: "KEEPS", logo: "/keeps_logo_black_en_large 1.svg" },
-    { name: "Cachapuz", logo: "/Cachapuz.svg" },
-    { name: "Eurotux", logo: "/Tux_logo2_svg_site.svg" },
+    { name: "INESC TEC", logo: "/INESCTECLogotipo_CORPositivo_RGB.png" ,
+
+video: {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/O_F43w6qfwc"
+}
+},
+    { name: "KEEPS", logo: "/keeps_logo_black_en_large 1.svg" , 
+video: {
+      type: "video",
+      src: "/videos/video-promocial-RH-v6.mp4"
+}
+},
+    { name: "Cachapuz", logo: "/Cachapuz.svg" ,
+
+
+video: {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/AysYpWMNKt8&list=PLAeea2YuaNTeq_foOfjhT7_k-AGykjol3&index=32"
+}
+},
+    { name: "Eurotux", logo: "/Tux_logo2_svg_site.svg" ,
+
+video: {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/p4oZwer0RvQ"
+}
+
+},
   ],
   bronze: [
-    { name: "Kelvin", logo: "/Kelvin-Color-TM.svg" },
-    { name: "Ponto 25", logo: "/Logo_Ponto25.svg" },
+    { name: "Kelvin", logo: "/Kelvin-Color-TM.svg" ,
+
+video: {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/AysYpWMNKt8&list=PLAeea2YuaNTeq_foOfjhT7_k-AGykjol3&index=32"
+},
+
+},
+    { name: "Ponto 25", logo: "/Logo_Ponto25.svg" ,
+
+
+video: {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/AysYpWMNKt8&list=PLAeea2YuaNTeq_foOfjhT7_k-AGykjol3&index=32"
+},
+},
   ],
 }
 
@@ -135,6 +207,29 @@ export default function PatrocinadoresPage() {
                       className="h-28 mx-auto mb-4 object-contain drop-shadow-md"
                     />
                     <span className="text-xl font-bold text-gray-800">{sponsor.name}</span>
+
+{sponsor.video && (
+  <div className="mt-4 aspect-video w-full">
+    {sponsor.video.type === "youtube" ? (
+      <iframe
+        className="w-full h-full rounded-lg"
+        src={sponsor.video.src}
+        title={sponsor.name}
+        allowFullScreen
+      />
+    ) : (
+      <video
+        className="w-full h-full rounded-lg"
+        controls
+        preload="none"
+      >
+        <source src={sponsor.video.src} type="video/mp4" />
+        O seu browser não suporta vídeo.
+      </video>
+    )}
+  </div>
+)}
+
                   </div>
 
                   {/* Reflexo diagonal */}
@@ -192,6 +287,36 @@ export default function PatrocinadoresPage() {
                   <div className="text-center relative z-10">
                     <img src={sponsor.logo} alt={sponsor.name} className="h-24 mx-auto mb-4 object-contain drop-shadow" />
                     <span className="text-lg font-bold text-yellow-800">{sponsor.name}</span>
+
+
+
+
+{sponsor.video && (
+  <div className="mt-4 aspect-video w-full">
+    {sponsor.video.type === "youtube" ? (
+      <iframe
+        className="w-full h-full rounded-lg"
+        src={sponsor.video.src}
+        title={sponsor.name}
+        allowFullScreen
+      />
+    ) : (
+      <video
+        className="w-full h-full rounded-lg"
+        controls
+        preload="none"
+      >
+        <source src={sponsor.video.src} type="video/mp4" />
+        O seu browser não suporta vídeo.
+      </video>
+    )}
+  </div>
+)}
+
+
+
+
+
                   </div>
 
                   {/* Reflexo */}
@@ -249,6 +374,33 @@ export default function PatrocinadoresPage() {
                   <div className="text-center relative z-10">
                     <img src={sponsor.logo} alt={sponsor.name} className="h-20 mx-auto mb-3 object-contain drop-shadow-sm" />
                     <span className="text-sm font-bold text-gray-700">{sponsor.name}</span>
+
+
+
+{sponsor.video && (
+  <div className="mt-4 aspect-video w-full">
+    {sponsor.video.type === "youtube" ? (
+      <iframe
+        className="w-full h-full rounded-lg"
+        src={sponsor.video.src}
+        title={sponsor.name}
+        allowFullScreen
+      />
+    ) : (
+      <video
+        className="w-full h-full rounded-lg"
+        controls
+        preload="none"
+      >
+        <source src={sponsor.video.src} type="video/mp4" />
+        O seu browser não suporta vídeo.
+      </video>
+    )}
+  </div>
+)}
+
+
+
                   </div>
 
                   {/* Reflexo */}
@@ -306,6 +458,33 @@ export default function PatrocinadoresPage() {
                   <div className="text-center relative z-10">
                     <img src={sponsor.logo} alt={sponsor.name} className="h-14 mx-auto mb-2 object-contain drop-shadow-sm" />
                     <span className="text-xs font-bold text-orange-900">{sponsor.name}</span>
+
+
+
+{sponsor.video && (
+  <div className="mt-4 aspect-video w-full">
+    {sponsor.video.type === "youtube" ? (
+      <iframe
+        className="w-full h-full rounded-lg"
+        src={sponsor.video.src}
+        title={sponsor.name}
+        allowFullScreen
+      />
+    ) : (
+      <video
+        className="w-full h-full rounded-lg"
+        controls
+        preload="none"
+      >
+        <source src={sponsor.video.src} type="video/mp4" />
+        O seu browser não suporta vídeo.
+      </video>
+    )}
+  </div>
+)}
+
+
+
                   </div>
 
                   {/* Reflexo */}

@@ -24,6 +24,8 @@ Com a desmaterialização progressiva da actividade académica, consequência do
       "Saudação do Director do Departamento de Informática",
       "Intervenção do Senhor Presidente da Escola de Engenharia",
       "Abertura das Comemorações pelo Senhor Reitor da Universidade do Minho",
+      "14:45",
+      "Atuação do quarteto de cordas e clarinete do Departamento de Música da ELACH",
       "15:00",
       "Mesa-redonda - Informática 50 Anos: Memória e Desafio",
       "Moderada pelo Prof João Álvaro Carvalho, com vários professores convidados.",
