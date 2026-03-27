@@ -83,7 +83,7 @@ export default function HomePage() {
                   país, o novo curso, sob a designação Engenharia de Produção –
                   Ramo Sistemas, incluia no seu plano de estudos disciplinas
                   como Linguagens de Programação, Sistemas de Computação ou
-                  Processamento de Dados, O último semestre previa um estágio na
+                  Processamento de Dados. O último semestre previa um estágio na
                   indústria de modo a facilitar a integração dos futuros
                   engenheiros no mercado de trabalho.
                 </p>
@@ -93,7 +93,7 @@ export default function HomePage() {
                   autonomizava-se na Licenciatura em Engenharia de Sistemas e
                   Informática, a LESI, e, um pouco depois, diversificar-se-ia
                   com a criação da Licenciatura em Matemática e Ciências da
-                  Computação, a LMCC. Dois cursos marcaram decisivamente o
+                  Computação, a LMCC. Dois cursos que marcaram decisivamente o
                   desenvolvimento da Informática em Portugal e sucessivas
                   gerações de alunos.
                 </p>

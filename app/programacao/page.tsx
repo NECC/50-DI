@@ -129,8 +129,12 @@ export default function ProgramacaoPage() {
     Apoios
   </h2>
 
-
   <div className="flex flex-wrap justify-center items-center gap-10">
+
+
+{/*
+  <div style={{position:fixed},{bottom:0},{right:0}}>
+*/}
     {[
       { name: "EEUM", logo: "logos/EEUM_logo.png" },
       { name: "Arquivo Distrital", logo: "logos/g3.png" },

@@ -43,7 +43,7 @@ video: {
     { name: "VisionWare", logo: "/LOGO-HORIZONTAL_GRADIENTE-AZUL.svg",
 video: {
       type: "youtube",
-      src: "https://www.youtube.com/embed/AysYpWMNKt8"
+      src: "https://www.youtube.com/embed/WEE0Yk1K71I"
 }
 
 
@@ -75,7 +75,7 @@ video: {
 
 video: {
       type: "youtube",
-      src: "https://www.youtube.com/embed/AysYpWMNKt8&list=PLAeea2YuaNTeq_foOfjhT7_k-AGykjol3&index=32"
+      src: "https://www.youtube.com/embed/VIpc7lmJ4QE"
 }
 },
     { name: "Eurotux", logo: "/Tux_logo2_svg_site.svg" ,
@@ -88,21 +88,13 @@ video: {
 },
   ],
   bronze: [
-    { name: "Kelvin", logo: "/Kelvin-Color-TM.svg" ,
-
-video: {
-      type: "youtube",
-      src: "https://www.youtube.com/embed/AysYpWMNKt8&list=PLAeea2YuaNTeq_foOfjhT7_k-AGykjol3&index=32"
-},
+    { name: "Kelvin", logo: "/Kelvin-Color-TM.svg" 
 
 },
-    { name: "Ponto 25", logo: "/Logo_Ponto25.svg" ,
+
+    { name: "Ponto 25", logo: "/Logo_Ponto25.svg" 
 
 
-video: {
-      type: "youtube",
-      src: "https://www.youtube.com/embed/AysYpWMNKt8&list=PLAeea2YuaNTeq_foOfjhT7_k-AGykjol3&index=32"
-},
 },
   ],
 }
@@ -166,7 +158,7 @@ video: {
         {/* PLATINUM — GLASS + METAL */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-4xl font-bold text-[#E5E4E2] font-mono">PLATINUM</h2>
+            <h2 className="text-4xl font-bold text-[#E5E4E2] font-mono">PLATINA</h2>
             <div className="h-1 flex-1 bg-gradient-to-r from-[#E5E4E2] to-transparent" />
           </div>
 
@@ -250,7 +242,7 @@ video: {
         {/* GOLD — OURO LÍQUIDO */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-4xl font-bold text-yellow-600 font-mono">GOLD</h2>
+            <h2 className="text-4xl font-bold text-yellow-600 font-mono">OURO</h2>
             <div className="h-1 flex-1 bg-gradient-to-r from-yellow-500 to-transparent" />
           </div>
 
@@ -337,7 +329,7 @@ video: {
         {/* SILVER — VIDRO PRATEADO */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-4xl font-bold text-gray-500 font-mono">SILVER</h2>
+            <h2 className="text-4xl font-bold text-gray-500 font-mono">PRATA</h2>
             <div className="h-1 flex-1 bg-gradient-to-r from-gray-400 to-transparent" />
           </div>
 
@@ -348,7 +340,6 @@ video: {
             navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 2800 }}
-            loop
             breakpoints={{
               320: { slidesPerView: 2 },
               640: { slidesPerView: 3 },
