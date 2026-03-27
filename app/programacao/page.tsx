@@ -133,7 +133,7 @@ export default function ProgramacaoPage() {
   <div className="flex flex-wrap justify-center items-center gap-10">
     {[
       { name: "EEUM", logo: "logos/EEUM_logo.png" },
-      { name: "Arquivo Distrital", logo: "logos/logo_adb_black.png" },
+      { name: "Arquivo Distrital", logo: "logos/g3.png" },
       { name: "Algoritmi", logo: "logos/ALGORITMI.png" },
       { name: "HASLab", logo: "logos/HASLAB.png" },
     ].map((org, i) => (
