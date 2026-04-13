@@ -45,7 +45,7 @@ export default function ProgramacaoPage() {
         "Workshop sobre desafios e oportunidades da IA no desenvolvimento de software, com alunos, peritos e empresas.",
     },
     {
-      time: "3ª semana de Setembro 2026",
+      time: "23 de Setembro 2026",
       title: "Informática@UMinho: A Festa dos 50 Anos",
       imagem: "/ImagensEventosSite_09.jpg",
       location: "Auditório Principal",

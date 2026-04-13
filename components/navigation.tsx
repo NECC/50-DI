@@ -88,7 +88,7 @@ export function Navigation() {
             className={`px-12 py-4 text-lg transition-transform duration-300 hover:scale-105 ${
               textColor === "#FFFFFF" ? "text-white" : "text-black"
             }`}
-            href="/programacao/1/"
+            href="/programacao/3/"
           >
             Próximo Evento
           </a>
@@ -135,7 +135,7 @@ export function Navigation() {
         <li>
           <a
             className="block w-full text-center px-6 py-4 text-black text-lg hover:bg-gray-100 transition-colors"
-            href="/programacao/1/"
+            href="/programacao/3/"
             onClick={() => setOpen(false)}
           >
             Próximo Evento

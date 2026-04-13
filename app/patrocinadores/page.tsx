@@ -21,8 +21,8 @@ video: {
     }
 },
     { name: "Uphold", logo: "/uphold-branded-house-horizontal-for-light.svg" , video: {
-      type: "file",
-      src: "/videos/THIS_IS_UPHOLD_16_9.mp4"
+      type: "youtube",
+      src: "https://www.youtube.com/embed/bJEgnJUh_m8"
     } },
   ],
   gold: [
@@ -66,8 +66,8 @@ video: {
 },
     { name: "KEEPS", logo: "/keeps_logo_black_en_large 1.svg" , 
 video: {
-      type: "video",
-      src: "/videos/video-promocial-RH-v6.mp4"
+      type: "youtube",
+      src: "https://www.youtube.com/embed/svvw41jgBbc"
 }
 },
     { name: "Cachapuz", logo: "/Cachapuz.svg" ,
