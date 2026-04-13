@@ -75,7 +75,7 @@ video: {
 
 video: {
       type: "youtube",
-      src: "https://www.youtube.com/embed/VIpc7lmJ4QE"
+      src: "https://www.youtube.com/embed/b08gNMzf48o"
 }
 },
     { name: "Eurotux", logo: "/Tux_logo2_svg_site.svg" ,
