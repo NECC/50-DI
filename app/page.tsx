@@ -102,7 +102,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute inset-0 z-1 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
                 <Image
-                  src="/ImagensEventosSite_04.jpg"
+                  src="/ImagensEventosSite_10.jpg"
                   alt="50 anos Informática Universidade do Minho"
                   width={800}
                   height={600}
@@ -140,7 +140,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute inset-0 z-1 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
                 <Image
-                  src="/ImagensEventosSite_05.jpg"
+                  src="/ImagensEventosSite_11.jpg"
                   alt="50 anos Informática Universidade do Minho"
                   width={800}
                   height={600}
@@ -182,7 +182,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute inset-0 z-0 bg-[#71AA7A] opacity-40 rounded-md pointer-events-none" />
                 <Image
-                  src="/ImagensEventosSite_09.jpg"
+                  src="/ImagensEventosSite_12.jpg"
                   alt="50 anos Informática Universidade do Minho"
                   width={800}
                   height={600}

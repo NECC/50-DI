@@ -3,3 +3,6 @@ pass.txt
 pass.txt.pub
 out/_next/*
 .next
+
+# Turborepo
+.turbo
