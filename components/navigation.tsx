@@ -104,6 +104,17 @@ export function Navigation() {
             Programação
           </a>
         </li>
+        
+	<li>
+          <a
+            className={`px-12 py-4 text-lg transition-transform duration-300 hover:scale-105 ${
+              textColor === "#FFFFFF" ? "text-white" : "text-black"
+            }`}
+            href="/imprensa"
+          >
+            Imprensa
+          </a>
+        </li>
 
         <li>
           <a
