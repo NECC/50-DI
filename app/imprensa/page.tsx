@@ -21,10 +21,12 @@ export default function ImprensaPage() {
         },
 	{
         titulo: "Diário do Minho",
+	descricao: "UMinho evoca 50 anos de ensino pioneiro da Informática",
         link: "https://www.diariodominho.pt/noticias/braga/2026-04-08-uminho-evoca-50-anos-de-ensino-pioneiro-da-informatica-69d69f44dd83b",
         },
         {
         titulo: "Correio do Minho",
+	descricao: "Departamento de Informática celebra 50 anos de acção",
         link: "https://www.correiodominho.pt/noticias/departamento-de-informatica-celebra-50-anos-de-accao/167751",
         }
       ]
