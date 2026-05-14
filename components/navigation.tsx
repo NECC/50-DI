@@ -126,6 +126,19 @@ export function Navigation() {
             Patrocinadores
           </a>
         </li>
+
+
+        <li>
+          <a
+            className={`px-12 py-4 text-lg transition-transform duration-300 hover:scale-105 ${
+              textColor === "#FFFFFF" ? "text-white" : "text-black"
+            }`}
+            href="/submissaocvsalunos"
+          >
+            SubmissãoCVsAlunos
+          </a>
+        </li>
+
       </ul>
 
       {/* MENU MOBILE */}
@@ -166,12 +179,37 @@ export function Navigation() {
         <li>
           <a
             className="block w-full text-center px-6 py-4 text-black text-lg hover:bg-gray-100 transition-colors"
+            href="/imprensa"
+            onClick={() => setOpen(false)}
+          >
+            Imprensa
+          </a>
+        </li>
+
+        <li>
+          <a
+            className="block w-full text-center px-6 py-4 text-black text-lg hover:bg-gray-100 transition-colors"
             href="/patrocinadores"
             onClick={() => setOpen(false)}
           >
             Patrocinadores
           </a>
         </li>
+
+        <li>
+          <a
+            className="block w-full text-center px-6 py-4 text-black text-lg hover:bg-gray-100 transition-colors"
+            href="/submissaocvsalunos"
+            onClick={() => setOpen(false)}
+          >
+            SubmissãoCVsAlunos
+          </a>
+        </li>
+
+
+
+
+
       </ul>
     </nav>
   );

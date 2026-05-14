@@ -20,29 +20,21 @@ Com a desmaterialização progressiva da actividade académica, consequência do
     title: "Informática 50 Anos: Memória e Desafio",
     imagem: "/Artboard2.svg",
     location: "Campus de Gualtar (Ed. 2, B1)",
-    description: `
-
-**Programação**
-<br/><br/>
-### 14:30
-Saudação do Diretor do Departamento de Informática  
-Intervenção do Senhor Presidente da Escola de Engenharia  
-Abertura das Comemorações pelo Senhor Reitor da Universidade do Minho
-<br/><br/>
-### 14:45
-Atuação do quarteto de cordas e clarinete do Departamento de Música da ELACH
-<br/><br/>
-### 15:00
-Mesa-redonda: **Informática 50 Anos — Memória e Desafio**
-
-Moderada pelo Prof. João Álvaro Carvalho, com vários professores convidados.
-<br/><br/>
-### 16:30
-Inauguração da Exposição Informática na UMinho: 50 Anos
-<br/><br/>
-### 17:30
-Cocktail
-`,
+    description: [
+      "14:30",
+      "Saudação do Director do Departamento de Informática",
+      "Intervenção do Senhor Presidente da Escola de Engenharia",
+      "Abertura das Comemorações pelo Senhor Reitor da Universidade do Minho",
+      "14:45",
+      "Atuação do quarteto de cordas e clarinete do Departamento de Música da ELACH",
+      "15:00",
+      "Mesa-redonda - Informática 50 Anos: Memória e Desafio",
+      "Moderada pelo Prof João Álvaro Carvalho, com vários professores convidados.",
+      "16:30",
+      "Inauguração da Exposição Informática na UMinho: 50 Anos",
+      "17:30",
+      "Cocktail",
+    ],
   },
   {
     time: "11 Abril, 2026 (18H00)",
