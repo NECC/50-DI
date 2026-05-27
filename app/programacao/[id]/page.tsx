@@ -11,9 +11,12 @@ const schedule = [
     imagem: "/Artboard2.svg",
     location:
       "Departamento de Informática da Escola de Engenharia, Campus de Gualtar",
-    description: `Esta exposição faz parte das celebrações os **50 anos da Informática na Universidade do Minho** que ao longo deste ano de 2026 e prolongando-se por 2027 terão lugar no [Departamento de Informática](https://web.di.uminho.pt/sitedi/) da [Escola de Engenharia](https://www.eng.uminho.pt/pt/Paginas/default.aspx).
-
-Com a desmaterialização progressiva da actividade académica, consequência do advento da internet e das rápidas comunicações que hoje temos, permitindo que tudo esteja disponível de imediato, em suporte electrónico, achou-se interessante dar prioridade aos tempos em que tudo era ‘*feito à mão*’, ou quase, pelo interesse que isso possa suscitar nas camadas mais jovens e a bem da preservação da memória colectiva da instituição.`,
+    description: `
+<p align="justify">Esta exposição faz parte das celebrações os <b>50 anos da Informática na Universidade do Minho</b> que ao longo deste ano de 2026 e prolongando-se por 2027 terão lugar no <a href="https://web.di.uminho.pt/sitedi/">Departamento de Informática</a> da <a href="https://www.eng.uminho.pt/pt/Paginas/default.aspx">Escola de Engenharia</a>.
+</p>
+<br>
+<p align="justify">
+Com a desmaterialização progressiva da actividade académica, consequência do advento da internet e das rápidas comunicações que hoje temos, permitindo que tudo esteja disponível de imediato, em suporte electrónico, achou-se interessante dar prioridade aos tempos em que tudo era <em>feito à mão</em>, ou quase, pelo interesse que isso possa suscitar nas camadas mais jovens e a bem da preservação da memória colectiva da instituição.</p>`,
   },
   {
     time: "8 Abril, 2026 (14H30)",
@@ -95,9 +98,15 @@ Edifício do Departamento de Informática no Campus de Gualtar.
     title: "Engenharia de Software Apoiada por Assistentes Artificiais",
     imagem: "/icon.svg",
     location: "Campus de Gualtar (Ed. 2, B2)",
-    description: [
-      "Workshop sobre desafios e oportunidades da IA no desenvolvimento de software.",
-    ],
+    description: `
+<p align="center"><b>Workshop sobre desafios e oportunidades da IA no desenvolvimento de software</b></p>
+<br>
+<p align="justify">
+O aparecimento dos modelos de linguagem avançados (LLM) impulsionou uma nova era no desenvolvimento de software assistido por agentes artificiais, no qual podemos encontrar sistemas inteligentes a colaborar na criação de código-fonte, testes de software, documentação e automação de diversas tarefas técnicas. Este tipo de abordagem está numa vertiginosa evolução, aumentando a sofisticação e o poder do desenvolvimento de software apoiado por agentes artificiais. Como consequência, obtemos ganhos na produtividade e na inovação de software, bem como enfrentamos novos desafios relacionados com fiabilidade, segurança e o futuro do papel dos programadores. Nesta workshop exploraremos o futuro do desenvolvimento de software impulsionado por agentes artificiais e LLM. Ao longo da workshop, serão abordados aspetos essenciais desta abordagem de desenvolvimento, como agentes inteligentes, orquestração de tarefas, automação de processos e colaboração entre humanos e artefactos de Inteligência Artificial no ciclo de desenvolvimento de software. Além disso promover-se-á o contacto com abordagens modernas para criação de sistemas autónomos capazes de analisar, planear, executar e otimizar tarefas de engenharia de software, bem como analisaremos o impacto da Inteligência Artificial na produtividade, arquitetura e inovação de software.
+</p>
+<br/>
+Mais detalhes e programa completo <a href="http://es3a.di.uminho.pt">aqui</a>    
+`,
   },
   {
     time: "23 de Setembro 2026",

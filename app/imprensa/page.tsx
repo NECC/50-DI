@@ -5,7 +5,19 @@ import { Navigation } from "@/components/navigation"
 export default function ImprensaPage() {
 
   const press = [
-    {
+{
+      titulo: "Departamento de Informática da UMinho reúne profissionais para discutir desafios do futuro",
+      data: "",
+      descricao: "",
+      noticias: [
+        {
+        titulo: "Vamos deixar de programar? Vamos mudar as nossas práticas profissionais? Portanto, é um debate muito importante que temos.",
+        descricao: "RUM entrevista Luís Soares Barbosa (áudio) em 25-5-2026",
+        link: "https://www.rum.pt/departamento-de-informatica-da-uminho-reune-profissionais-para-discutir-desafios-do-futuro/",
+        }
+      ]
+    },
+{
       titulo: "Informática 50 Anos: Memória e Desafio",
       data: "8 Abril 2026",
       descricao: "",
