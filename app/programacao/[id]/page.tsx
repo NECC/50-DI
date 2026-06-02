@@ -52,9 +52,9 @@ Cocktail
     title: "Os Próximos 50 Anos no Ensino da Informática",
     imagem: "/icon.svg",
     location: "Fórum Braga",
-    description: [
-      "Tertúlia integrada na ENEI - Encontro Nacional de Estudantes de Informática.",
-    ],
+    description: `
+<p>Tertúlia integrada na ENEI - Encontro Nacional de Estudantes de Informática.</p>
+`,
   },
 {
   time: "27 Maio, 2026 (14H30)",
