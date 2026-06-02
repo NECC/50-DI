@@ -14,6 +14,16 @@ export default function ImprensaPage() {
         titulo: "Vamos deixar de programar? Vamos mudar as nossas práticas profissionais? Portanto, é um debate muito importante que temos.",
         descricao: "RUM entrevista Luís Soares Barbosa (áudio) em 25-5-2026",
         link: "https://www.rum.pt/departamento-de-informatica-da-uminho-reune-profissionais-para-discutir-desafios-do-futuro/",
+        },
+        {
+          titulo: "Sessão de fotos",
+          link: "https://www.sas.uminho.pt/galeria/1980",
+	  descricao: "Evento no dia 27 de Maio de 2026 (Informática, Inovação e o Futuro)",
+          imagens: [
+            "https://picsum.photos/400/300?random=1",
+            "https://picsum.photos/400/300?random=2",
+            "https://picsum.photos/400/300?random=3"
+          ]
         }
       ]
     },
