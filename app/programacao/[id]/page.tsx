@@ -113,18 +113,18 @@ Mais detalhes e programa completo <a href="http://es3a.di.uminho.pt">aqui</a>
     title: "Informática@UMinho: A Festa dos 50 Anos",
     imagem: "/icon.svg",
     location: "",
-    description: [
-      "Convívio e networking entre academia, estudantes, alumni e empresas.",
-    ],
+    description: `
+Convívio e networking entre academia, estudantes, alumni e empresas.
+    `,
   },
   {
     time: "Data a anunciar em 2027",
     title: "Os próximos 50 anos: Caminhos para a investigação",
     imagem: "/Artboard2.svg",
     location: "",
-    description: [
-      "Seminário sobre o futuro da investigação em Computação.",
-    ],
+    description: `
+Seminário sobre o futuro da investigação em Computação.
+    `,
   },
 ];
 
