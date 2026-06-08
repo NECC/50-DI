@@ -20,9 +20,9 @@ export default function ImprensaPage() {
           link: "https://www.sas.uminho.pt/galeria/1980",
 	  descricao: "Evento no dia 27 de Maio de 2026 (Informática, Inovação e o Futuro)",
           imagens: [
-            "https://picsum.photos/400/300?random=1",
-            "https://picsum.photos/400/300?random=2",
-            "https://picsum.photos/400/300?random=3"
+            "https://picsum.photos/400/300?random=7",
+            "https://picsum.photos/400/300?random=8",
+            "https://picsum.photos/400/300?random=9"
           ]
         },
         {
