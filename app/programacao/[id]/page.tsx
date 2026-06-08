@@ -88,6 +88,8 @@ Encerramento pelo Prof. Daniel Oliveira, Vice‑Presidente da Escola de Engenhar
 <br/><br/>
 ### 17:00 — Visita à Exposição **Informática na UMinho: 50 Anos**
 Edifício do Departamento de Informática no Campus de Gualtar.
+<br/><br/>
+<a href="https://youtu.be/iJADEov8raA">Vídeo do evento</a>
 `,
 },
   

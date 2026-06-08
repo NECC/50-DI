@@ -24,6 +24,16 @@ export default function ImprensaPage() {
             "https://picsum.photos/400/300?random=2",
             "https://picsum.photos/400/300?random=3"
           ]
+        },
+        {
+          titulo: "Vídeo do evento",
+          link: "https://youtu.be/iJADEov8raA",
+	  descricao: "Evento no dia 27 de Maio de 2026 (Informática, Inovação e o Futuro)",
+          imagens: [
+            "https://picsum.photos/400/300?random=4",
+            "https://picsum.photos/400/300?random=5",
+            "https://picsum.photos/400/300?random=6"
+          ]
         }
       ]
     },
