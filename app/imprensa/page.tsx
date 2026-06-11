@@ -34,6 +34,11 @@ export default function ImprensaPage() {
             "https://picsum.photos/400/300?random=5",
             "https://picsum.photos/400/300?random=6"
           ]
+        },
+        {
+        titulo: "UMINHO I&D com Ariana Azevedo",
+        descricao: "RUM entrevista Luís Soares Barbosa (áudio) em 4-6-2026",
+        link: "https://www.rum.pt/episodio/luis-soares-barbosa/",
         }
       ]
     },
