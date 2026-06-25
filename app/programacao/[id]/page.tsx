@@ -111,13 +111,25 @@ Mais detalhes e programa completo <a href="http://es3a.di.uminho.pt">aqui</a>
 `,
   },
   {
-    time: "23 de Setembro 2026",
+    time: "23 de Setembro, 2026",
     title: "Informática@UMinho: A Festa dos 50 Anos",
     imagem: "/icon.svg",
     location: "",
     description: `
 Convívio e networking entre academia, estudantes, alumni e empresas.
     `,
+  },
+  {
+    time: "27 de Novembro, 2026",
+    title: "IEEE Engineering Day 2026 (ED'26)",
+    imagem: "/icon.svg",
+    location: "",
+    description: `
+<p> 
+Evento anual promovido pelo IEEE Portugal que tem como objetivo reunir representantes do meio académico e da indústria para a apresentação e discussão de temas relevantes para a comunidade tecnológica.
+A edição deste ano será subordinada ao tema <i>Intelligent-Driven Engineering</i>.
+</p>    
+`,
   },
   {
     time: "Data a anunciar em 2027",

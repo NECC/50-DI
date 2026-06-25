@@ -13,7 +13,7 @@ export default function ProgramacaoPage() {
         "Patente no Departamento de Informática da Escola de Engenharia, Campus de Gualtar, ao longo de 2026-2027.",
     },
     {
-      time: "8 Abril 2026",
+      time: "8 Abril, 2026",
       title: "Informática 50 Anos: Memória e Desafio",
       imagem: "/ImagensEventosSite_04.jpg",
       location: "Auditório Principal",
@@ -45,12 +45,20 @@ export default function ProgramacaoPage() {
         "Workshop sobre desafios e oportunidades da IA no desenvolvimento de software, com alunos, peritos e empresas.",
     },
     {
-      time: "23 de Setembro 2026",
+      time: "23 de Setembro, 2026",
       title: "Informática@UMinho: A Festa dos 50 Anos",
       imagem: "/ImagensEventosSite_09.jpg",
       location: "Auditório Principal",
       description:
         "Oportunidade de convívio e networking entre academia, estudantes, alumni e empresas.",
+    },
+    {
+      time: "27 de Novembro, 2026",
+      title: "IEEE Engineering Day 2026 (ED'26)",
+      imagem: "/ImagensEventosSite_09.jpg",
+      location: "Escola de Engenharia da Universidade do Minho, Campus de Azurém",
+      description:
+        "Evento anual promovido pelo IEEE Portugal que tem como objetivo reunir representantes do meio académico e da indústria para a apresentação e discussão de temas relevantes para a comunidade tecnológica. A edição deste ano será subordinada ao tema Intelligent-Driven Engineering.",
     },
     {
       time: "Data a anunciar em 2027",
