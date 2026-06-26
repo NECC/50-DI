@@ -123,7 +123,7 @@ Convívio e networking entre academia, estudantes, alumni e empresas.
     time: "27 de Novembro, 2026",
     title: "IEEE Engineering Day 2026 (ED'26)",
     imagem: "/icon.svg",
-    location: "",
+    location: "Escola de Engenharia, Campus de Azurém",
     description: `
 <p> 
 Evento anual promovido pelo IEEE Portugal que tem como objetivo reunir representantes do meio académico e da indústria para a apresentação e discussão de temas relevantes para a comunidade tecnológica.
