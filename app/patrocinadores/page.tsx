@@ -142,11 +142,11 @@ video: {
 
         <div className="container mx-auto px-4 sm:px-6 py-12">
           {/* Header */}
-          <div className="mb-16 md:mb-24">
+          <div className="mb-16 md:mb-24 text-center">
             <h1 className="text-6xl sm:text-7xl md:text-8xl font-redaction-20 text-[#EB5F0A] mb-4 text-balance leading-tight">
               Patrocinadores
             </h1>
-            <p className="text-gray-600 text-lg sm:text-xl font-light max-w-2xl">
+            <p className="text-gray-600 text-lg sm:text-xl font-light max-w-2xl mx-auto text-center">
               Apoiantes das Comemorações dos 50 Anos
             </p>
           </div>
