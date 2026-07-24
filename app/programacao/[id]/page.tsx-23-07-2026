@@ -110,75 +110,14 @@ O aparecimento dos modelos de linguagem avançados (LLM) impulsionou uma nova er
 Mais detalhes e programa completo <a href="http://es3a.di.uminho.pt">aqui</a>    
 `,
   },
-
-{
-  time: "24 Julho, 2026 (16H30)",
-  title: "Visita da Senhora Secretária de Estado da Ciência e Inovação",
-  imagem: "/icon.svg",
-  location: "Departamento de Informática, Campus de Gualtar",
-  description: `
-<p align="justify">Visita da Senhora Secretária de Estado da Ciência e Inovação, Professora Helena Canhão, ao Departamento de Informática da Escola de Engenharia da Universidade do Minho, no âmbito das comemorações dos seus 50 anos.
-</p>
-
-<p align="justify"> 
-<br/>
-
-Programa da visita:
-<br/>
-
-16h30 – Visita à Exposição “Informática na UMinho: 50 Anos”;
-<br/>
-
-17h00 – Apresentação e demonstrações de iniciativas e projetos;
-<br/>
-
-17h30 – Intervenção de Sua Excelência a Secretária de Estado da Ciência e Inovação.
-
-<br/>
-
-</p>
-
-`,
-},
-
-
-
-
   {
-    time: "23 Setembro, 2026 (18:00)",
+    time: "23 de Setembro, 2026",
     title: "Informática@UMinho: A Festa dos 50 Anos",
     imagem: "/icon.svg",
-    location: "Restaurante Universitário, Campus de Gualtar",
+    location: "",
     description: `
-
-<p align="justify">
-
-No culminar de diversos eventos já realizados, o próximo dia 23 de Setembro será um dia de festa. Procuraremos reunir ao fim do dia alunos, alumni, docentes, investigadores, colaboradores e amigos num momento de encontro, memória, alegria e celebração.
- 
-<br/>
-
-<b>Programa</b>
-
-<br/>
-
-<b>17:00 Acolhimento dos novos alunos dos cursos do DI</b> no piso 0 do Departamento, seguida de uma visita à Exposição Comemorativa dos 50 Anos da Informática na Uminho.
-
-<br/>
-
-<b>18.00 Sunset no Restaurante Universitário,</b> em Gualtar, que incluirá alguns momentos musicais por membros da comunidade DI, pequenos videos e intervenções breves a relembrar histórias marcantes e divertidas destes 50 anos. Contaremos ainda com uma intervenção do Director do Departamento de Informática e do Senhor Reitor da Universidade do Minho.
-
-<br/>
-
-<b>Todos estão convidados: alunos, alumni, docentes, investigadores, colaboradores, amigos.</b>
- 
-<br/>
-
-Pede-se a quem quiser fazer uma breve intervenção (para contar aquela história inesquecível) o favor de sinalizar a organização através de um email para divulgacao@di.uminho.pt até ao dia 18 de Setembro.
-
-<br/>
-
-</p>    
-`,
+Convívio e networking entre academia, estudantes, alumni e empresas.
+    `,
   },
   {
     time: "27 de Novembro, 2026",

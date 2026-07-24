@@ -45,14 +45,6 @@ export default function ProgramacaoPage() {
         "Workshop sobre desafios e oportunidades da IA no desenvolvimento de software, com alunos, peritos e empresas.",
     },
     {
-      time: "24 Julho, 2026 (16H30)",
-      title: "Visita da Senhora Secretária de Estado da Ciência e Inovação",
-      imagem: "/ImagensEventosSite_07.jpg",
-      location: "Departamento de Informática, Campus de Gualtar",
-      description:
-        "Visita da Senhora Secretária de Estado da Ciência e Inovação, Professora Helena Canhão, ao Departamento de Informática da Escola de Engenharia da Universidade do Minho, no âmbito das comemorações dos seus 50 anos.",
-    },
-    {
       time: "23 de Setembro, 2026",
       title: "Informática@UMinho: A Festa dos 50 Anos",
       imagem: "/ImagensEventosSite_09.jpg",
