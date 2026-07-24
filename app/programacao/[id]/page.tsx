@@ -177,6 +177,8 @@ Pede-se a quem quiser fazer uma breve intervenção (para contar aquela históri
 
 <br/>
 
+<a href="https://50informatica.di.uminho.pt/Convite-Festa50AnosInformaticaNaUMinho_signed.pdf">Convite</a>
+
 </p>    
 `,
   },
