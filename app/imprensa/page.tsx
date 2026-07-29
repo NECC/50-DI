@@ -6,6 +6,18 @@ export default function ImprensaPage() {
 
   const press = [
 {
+      titulo: "Visita da Senhora Secretária de Estado da Ciência e Inovação, Professora Helena Canhão",
+      data: "",
+      descricao: "",
+      noticias: [
+        {
+        titulo: "Galeria de Fotos",
+        descricao: "24-07-2026",
+        link: "https://galeria.di.uminho.pt/?album=Visita+da+Senhora+Secretaria+de+Estado+da+Ci%C3%AAncia+e+Inova%C3%A7%C3%A3o+ao+DI+no+dia+24-07-2026",
+        }
+      ]
+    },
+{
       titulo: "Departamento de Informática da UMinho reúne profissionais para discutir desafios do futuro",
       data: "",
       descricao: "",

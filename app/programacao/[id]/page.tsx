@@ -136,6 +136,8 @@ Programa da visita:
 
 <br/>
 
+Sessão de fotos (<a href="https://galeria.di.uminho.pt/?album=Visita+da+Senhora+Secretaria+de+Estado+da+Ci%C3%AAncia+e+Inova%C3%A7%C3%A3o+ao+DI+no+dia+24-07-2026">Link</a>)
+
 </p>
 
 `,
