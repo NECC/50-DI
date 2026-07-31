@@ -16,7 +16,13 @@ const schedule = [
 </p>
 <br>
 <p align="justify">
-Com a desmaterialização progressiva da actividade académica, consequência do advento da internet e das rápidas comunicações que hoje temos, permitindo que tudo esteja disponível de imediato, em suporte electrónico, achou-se interessante dar prioridade aos tempos em que tudo era <em>feito à mão</em>, ou quase, pelo interesse que isso possa suscitar nas camadas mais jovens e a bem da preservação da memória colectiva da instituição.</p>`,
+Com a desmaterialização progressiva da actividade académica, consequência do advento da internet e das rápidas comunicações que hoje temos, permitindo que tudo esteja disponível de imediato, em suporte electrónico, achou-se interessante dar prioridade aos tempos em que tudo era <em>feito à mão</em>, ou quase, pelo interesse que isso possa suscitar nas camadas mais jovens e a bem da preservação da memória colectiva da instituição.</p>
+<br>
+<p>
+Visitar a exposição (<a href="https://galeria.di.uminho.pt/?album=Exposi%C3%A7%C3%A3o+dos+50+Anos">link</a>)
+</p>
+
+`,
   },
   {
     time: "8 Abril, 2026 (14H30)",
