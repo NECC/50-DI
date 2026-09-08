@@ -139,6 +139,18 @@ export function Navigation() {
           </a>
         </li>
 
+
+        <li>
+          <a
+            className={`px-12 py-4 text-lg transition-transform duration-300 hover:scale-105 ${
+              textColor === "#FFFFFF" ? "text-white" : "text-black"
+            }`}
+            href="/contactos"
+          >
+            Contactos
+          </a>
+        </li>
+
       </ul>
 
       {/* MENU MOBILE */}
@@ -206,6 +218,17 @@ export function Navigation() {
           </a>
         </li>
 
+
+
+        <li>
+          <a
+            className="block w-full text-center px-6 py-4 text-black text-lg hover:bg-gray-100 transition-colors"
+            href="/contactos"
+            onClick={() => setOpen(false)}
+          >
+            SubmissãoCVsAlunos
+          </a>
+        </li>
 
 
 
