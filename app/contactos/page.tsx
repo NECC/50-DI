@@ -101,10 +101,10 @@ return (
 
                 <div className="flex justify-center gap-4">
                   <a
-                    href="tel:604465"
+                    href="tel:253604465"
                     className="text-[#EB5F0A] font-semibold text-lg hover:underline"
                   >
-                    604465
+                    253604465
                   </a>
 
                   <span className="text-gray-400 text-lg">
@@ -112,10 +112,10 @@ return (
                   </span>
 
                   <a
-                    href="tel:604470"
+                    href="tel:253604470"
                     className="text-[#EB5F0A] font-semibold text-lg hover:underline"
                   >
-                    604470
+                    253604470
                   </a>
                 </div>
               </div>

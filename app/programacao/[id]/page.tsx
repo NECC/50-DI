@@ -187,6 +187,10 @@ Pede-se a quem quiser fazer uma breve intervenção (para contar aquela históri
 
 <a href="https://50informatica.di.uminho.pt/Convite-Festa50AnosInformaticaNaUMinho_signed.pdf">Convite</a>
 
+<br/>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSckzCXwatgXN6K7k6d8PT8xScP1Ypl45g9YjTcuHJoDNWObvg/viewform">Inscrição</a>
+
 </p>    
 `,
   },
