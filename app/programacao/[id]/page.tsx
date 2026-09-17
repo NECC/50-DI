@@ -165,6 +165,10 @@ No culminar de diversos eventos já realizados, o próximo dia 23 de Setembro se
  
 <br/>
 
+<b><a href="https://docs.google.com/forms/d/e/1FAIpQLSckzCXwatgXN6K7k6d8PT8xScP1Ypl45g9YjTcuHJoDNWObvg/viewform">Inscrição</a></b>
+
+<br/>
+
 <b>Programa</b>
 
 <br/>
@@ -189,7 +193,6 @@ Pede-se a quem quiser fazer uma breve intervenção (para contar aquela históri
 
 <br/>
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSckzCXwatgXN6K7k6d8PT8xScP1Ypl45g9YjTcuHJoDNWObvg/viewform">Inscrição</a>
 
 </p>    
 `,
