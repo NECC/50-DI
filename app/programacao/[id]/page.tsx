@@ -165,14 +165,6 @@ No culminar de diversos eventos já realizados, o próximo dia 23 de Setembro se
  
 <br/>
 
-<p>
-<i><b>
-Informamos que as inscrições para o Sunset no Restaurante Panorâmico (18h00) já se encontram encerradas, devido à enorme adesão e ao limite de capacidade do espaço.
-
-No entanto, a celebração continua! Todos estão convidados a participar no acolhimento aos novos alunos e na visita à Exposição dos 50 Anos da Informática na UMinho. Junta-te a nós a partir das 17h00, no Piso 0 do Departamento de Informática (DI).
-</b></i>
-</p>
-
 
 <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSckzCXwatgXN6K7k6d8PT8xScP1Ypl45g9YjTcuHJoDNWObvg/viewform" style="display:none;">Inscrição</a></b>
 
@@ -199,8 +191,6 @@ Pede-se a quem quiser fazer uma breve intervenção (para contar aquela históri
 <br/>
 
 <a href="https://50informatica.di.uminho.pt/Convite-Festa50AnosInformaticaNaUMinho_signed.pdf">Convite</a>
-
-<br/>
 
 <br/>
 

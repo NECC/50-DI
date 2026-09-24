@@ -6,6 +6,18 @@ export default function ImprensaPage() {
 
   const press = [
 {
+      titulo: "A Festa dos 50 Anos da Informática@UMinho",
+      data: "23 Setembro 2026",
+      descricao: "",
+      noticias: [
+        {
+        titulo: "Galeria de Fotos",
+        descricao: "23-09-2026",
+        link: "https://galeria.eng.uminho.pt/share/5cXp9TXZJVArF4H3CAf6joWtKmyBKTGjQ-_GJf2qiEOo79lh_nJmq6cV-ovwdXUBnOM",
+        }
+      ]
+    },
+{
       titulo: "Visita da Senhora Secretária de Estado da Ciência e Inovação, Professora Helena Canhão",
       data: "",
       descricao: "",
