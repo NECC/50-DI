@@ -54,6 +54,24 @@ export default function ImprensaPage() {
         }
       ]
     },
+
+{
+      titulo: "Os Próximos 50 Anos no Ensino da Informática",
+      data: "11 Abril 2026",
+      descricao: "Fórum Braga, inserida no ENEI - Encontro Nacional de Estudantes de Informática",
+      noticias: [
+        {
+          titulo: "Sessão de fotos",
+          link: "https://galeria.di.uminho.pt/?album=Os+Pr%C3%B3ximos+50+Anos+no+Ensino+da+Inform%C3%A1tica",
+          imagens: [
+            "https://picsum.photos/400/300?random=1",
+            "https://picsum.photos/400/300?random=2",
+            "https://picsum.photos/400/300?random=3"
+          ]
+        },
+      ]
+    },
+
 {
       titulo: "Informática 50 Anos: Memória e Desafio",
       data: "8 Abril 2026",

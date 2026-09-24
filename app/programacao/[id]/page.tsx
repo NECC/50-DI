@@ -202,6 +202,13 @@ Pede-se a quem quiser fazer uma breve intervenção (para contar aquela históri
 
 <br/>
 
+<br/>
+
+<a href="https://galeria.eng.uminho.pt/share/5cXp9TXZJVArF4H3CAf6joWtKmyBKTGjQ-_GJf2qiEOo79lh_nJmq6cV-ovwdXUBnOM">Sessão de fotos</a>
+
+<br/>
+
+
 
 </p>    
 `,
