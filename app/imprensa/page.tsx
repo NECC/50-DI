@@ -11,9 +11,29 @@ export default function ImprensaPage() {
       descricao: "",
       noticias: [
         {
+        titulo: "Press Release",
+        descricao: "",
+	link: "https://50informatica.di.uminho.pt/gci-23-9-2026.png",
+        },
+        {
         titulo: "Galeria de Fotos",
-        descricao: "23-09-2026",
+        descricao: "",
         link: "https://galeria.eng.uminho.pt/share/5cXp9TXZJVArF4H3CAf6joWtKmyBKTGjQ-_GJf2qiEOo79lh_nJmq6cV-ovwdXUBnOM",
+        },
+        {
+        titulo: "BragaTV",
+        descricao: "",
+        link: "https://bragatv.pt/informatica-da-uminho-assinala-50-anos-com-250-antigos-e-atuais-alunos/",
+        },
+        {
+        titulo: "Correio do Minho",
+        descricao: "",
+        link: "https://www.correiodominho.pt/noticias/informatica-da-uminho-festejou-50-anos/171211",
+        },
+        {
+        titulo: "O Vila Verdense",
+        descricao: "",
+        link: "https://ovilaverdense.pt/informatica-da-uminho-assinala-50-anos-com-encontro-no-campus-de-gualtar/",
         }
       ]
     },
