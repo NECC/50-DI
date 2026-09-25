@@ -19,7 +19,7 @@ export default function ImprensaPage() {
     },
 {
       titulo: "Visita da Senhora Secretária de Estado da Ciência e Inovação, Professora Helena Canhão",
-      data: "",
+      data: "24 Julho 2026",
       descricao: "",
       noticias: [
         {
@@ -30,15 +30,10 @@ export default function ImprensaPage() {
       ]
     },
 {
-      titulo: "Departamento de Informática da UMinho reúne profissionais para discutir desafios do futuro",
-      data: "",
-      descricao: "",
+      titulo: "Informática, Inovação e o Futuro",
+      data: "27 Maio 2026",
+      descricao: "Departamento de Informática da UMinho reúne profissionais para discutir desafios do futuro",
       noticias: [
-        {
-        titulo: "Vamos deixar de programar? Vamos mudar as nossas práticas profissionais? Portanto, é um debate muito importante que temos.",
-        descricao: "RUM entrevista Luís Soares Barbosa (áudio) em 25-5-2026",
-        link: "https://www.rum.pt/departamento-de-informatica-da-uminho-reune-profissionais-para-discutir-desafios-do-futuro/",
-        },
         {
           titulo: "Sessão de fotos",
           link: "https://www.sas.uminho.pt/galeria/1980",
@@ -58,6 +53,19 @@ export default function ImprensaPage() {
             "https://picsum.photos/400/300?random=5",
             "https://picsum.photos/400/300?random=6"
           ]
+        }
+      ]
+    },
+
+{
+      titulo: "RUM entrevista Luís Soares Barbosa",
+      data: "",
+      descricao: "",
+      noticias: [
+        {
+        titulo: "Vamos deixar de programar? Vamos mudar as nossas práticas profissionais? Portanto, é um debate muito importante que temos.",
+        descricao: "RUM entrevista Luís Soares Barbosa (áudio) em 25-5-2026",
+        link: "https://www.rum.pt/departamento-de-informatica-da-uminho-reune-profissionais-para-discutir-desafios-do-futuro/",
         },
         {
         titulo: "UMINHO I&D com Ariana Azevedo",
@@ -70,7 +78,7 @@ export default function ImprensaPage() {
 {
       titulo: "Os Próximos 50 Anos no Ensino da Informática",
       data: "11 Abril 2026",
-      descricao: "Fórum Braga, inserida no ENEI - Encontro Nacional de Estudantes de Informática",
+      descricao: "Tertúlia integrada no ENEI - Encontro Nacional de Estudantes de Informática, Fórum Braga",
       noticias: [
         {
           titulo: "Sessão de fotos",

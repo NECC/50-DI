@@ -63,7 +63,7 @@ export default function ProgramacaoPage() {
     {
       time: "27 de Novembro, 2026",
       title: "IEEE Engineering Day 2026 (ED'26)",
-      imagem: "/ImagensEventosSite_09.jpg",
+      imagem: "/ImagensEventosSite_04.jpg",
       location: "Escola de Engenharia da Universidade do Minho, Campus de Azurém",
       description:
         "Evento anual promovido pelo IEEE Portugal que tem como objetivo reunir representantes do meio académico e da indústria para a apresentação e discussão de temas relevantes para a comunidade tecnológica. A edição deste ano será subordinada ao tema Intelligent-Driven Engineering.",
@@ -168,8 +168,7 @@ export default function ProgramacaoPage() {
 
         <div className="mt-24 pt-12 border-t border-white/20 text-center">
           <p className="text-white/70 font-light max-w-2xl mx-auto">
-            Clique em qualquer evento para obter mais detalhes. Inscrições e
-            informações adicionais serão disponibilizadas em breve.
+            Clique em qualquer evento para obter mais detalhes.
           </p>
         </div>
       </div>
