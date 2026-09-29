@@ -11,9 +11,9 @@ export default function ImprensaPage() {
       descricao: "",
       noticias: [
         {
-        titulo: "Press Release",
+        titulo: "UMINHO Press Release",
         descricao: "",
-	link: "https://50informatica.di.uminho.pt/gci-23-9-2026.png",
+	link: "/gci-23-9-2026.html",
         },
         {
         titulo: "Galeria de Fotos",
@@ -27,8 +27,18 @@ export default function ImprensaPage() {
         },
         {
         titulo: "Correio do Minho",
-        descricao: "",
+        descricao: "Site",
         link: "https://www.correiodominho.pt/noticias/informatica-da-uminho-festejou-50-anos/171211",
+        },
+        {
+        titulo: "Correio do Minho",
+        descricao: "Jornal (página 6)",
+        link: "https://www.correiodominho.pt/edicoes/download/189293",
+        },
+        {
+        titulo: "Antena Minho",
+        descricao: "",
+        link: "https://www.facebook.com/AntenaMinho/posts/pfbid0ZwvkH7Px56hqFxLRebh1envmhMdZPGK3nYBBW9ec2toKHid33TMNJmaD8PgW2Qxhl",
         },
         {
         titulo: "O Vila Verdense",

@@ -44,7 +44,7 @@ Atuação do quarteto de cordas e clarinete do Departamento de Música da ELACH
 ### 15:00
 Mesa-redonda: **Informática 50 Anos — Memória e Desafio**
 
-Moderada pelo Prof. João Álvaro Carvalho, com vários professores convidados.
+Moderada pelo Prof. João Álvaro Carvalho (UM), contando com os seguintes convidados: Prof. Alberto Proença (UM), Prof. António Porto (UP/UNL), Prof. Carlos Couto (UM), Prof. José Valença (UM),  Prof. Pedro Guerreiro (UA), Prof. Raúl Vidal (UP) e Prof.ª Senhorinha Fortunas (UM).
 <br/><br/>
 ### 16:30
 Inauguração da Exposição Informática na UMinho: 50 Anos
@@ -59,7 +59,24 @@ Cocktail
     imagem: "/icon.svg",
     location: "Fórum Braga",
     description: `
-<p>Tertúlia integrada na ENEI - Encontro Nacional de Estudantes de Informática.</p>
+Tertúlia integrada na ENEI - Encontro Nacional de Estudantes de Informática.
+<br/></br>
+Moderada pelo Prof. Pedro Rangel Henriques (UM), contando com os seguintes convidados:
+<br/><br/>
+-Doutora Daniela da Cruz (Datadog)  
+
+-Prof. Gabriel David (FEUP)  
+
+-Eng.º Luís Neves (ENSICO)  
+
+-Prof. José Nuno Oliveira (UM)  
+
+-Prof. Miguel Rocha (UM)  
+
+-Prof. Nuno Rodrigues (EST-IPCA)  
+
+-Prof. Pedro Ribeiro (FCUP)  
+
 `,
   },
 {
