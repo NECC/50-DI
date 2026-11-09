@@ -242,9 +242,9 @@ Painel:
 <br>
 - Doutor Hugo Peixoto, investigador do Centro Algoritmi
 <br>
-- Diana Dinis, estudante em Mestrado de Engenharia Informática
+- Diana Dinis, estudante do Mestrado de Engenharia Informática
 <br>
-- João Costa, estudante em Mestrado de Engenharia Informática
+- João Costa, estudante do Mestrado de Engenharia Informática
 <br>
 <br>
 - Moderadora: Professora Diana Ferreira, Departamento de Informática
