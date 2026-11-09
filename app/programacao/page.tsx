@@ -53,12 +53,20 @@ export default function ProgramacaoPage() {
         "Visita da Senhora Secretária de Estado da Ciência e Inovação, Professora Helena Canhão, ao Departamento de Informática da Escola de Engenharia da Universidade do Minho, no âmbito das comemorações dos seus 50 anos.",
     },
     {
-      time: "23 de Setembro, 2026",
+      time: "23 de Setembro, 2026 (18:00)",
       title: "Informática@UMinho: A Festa dos 50 Anos",
       imagem: "/ImagensEventosSite_09.jpg",
       location: "Auditório Principal",
       description:
         "Oportunidade de convívio e networking entre academia, estudantes, alumni e empresas.",
+    },
+    {
+      time: "27 de Novembro, 2026 (10:30)",
+      title: "Aceleração tecnológica e pressão humana: 50 anos de Informática e os desafios da era da inteligência artificial",
+      imagem: "/ImagensEventosSite_08.jpg",
+      location: "B-Lounge da Biblioteca Geral, Campus de Gualtar",
+      description:
+        "A mesa-redonda pretende promover uma reflexão informal e multidisciplinar sobre o impacto da IA na forma como pensamos, aprendemos e trabalhamos, explorando os desafios que esta transformação coloca à aprendizagem, ao pensamento crítico e ao discernimento humano, reunindo diferentes perspetivas, nomeadamente da história da informática, da inteligência artificial, da psicologia e dos estudantes, num formato de conversa aberta.",
     },
     {
       time: "27 de Novembro, 2026",

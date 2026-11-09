@@ -234,6 +234,7 @@ export function Navigation() {
           </a>
         </li>
 
+{/*
         <li>
           <a
             className="block w-full text-center px-6 py-4 text-black text-lg hover:bg-gray-100 transition-colors"
@@ -244,6 +245,7 @@ export function Navigation() {
           </a>
         </li>
 
+*/}
 
 
         <li>
@@ -252,7 +254,7 @@ export function Navigation() {
             href="/contactos"
             onClick={() => setOpen(false)}
           >
-            SubmissãoCVsAlunos
+            Contactos
           </a>
         </li>
 

@@ -221,14 +221,73 @@ Pede-se a quem quiser fazer uma breve intervenção (para contar aquela históri
 `,
   },
   {
+    time: "27 de Novembro, 2026 (10:30)",
+    title: "Aceleração tecnológica e pressão humana: 50 anos de Informática e os desafios da era da inteligência artificial",
+    imagem: "/icon.svg",
+    location: "B-Lounge da Biblioteca Geral, Campus de Gualtar",
+    description: `
+
+Mesa-redonda
+<p>
+“Aceleração tecnológica e pressão humana: 50 anos de Informática e os desafios da era da inteligência artificial”
+</p>
+<br>
+<p>
+Painel:
+</p>
+<p align=justify>
+- Professor Pedro Henriques, Departamento de Informática
+<br>
+- Professora Adriana Sampaio, Escola de Psicologia
+<br>
+- Doutor Hugo Peixoto, investigador do Centro Algoritmi
+<br>
+- Diana Dinis, estudante em Mestrado de Engenharia Informática
+<br>
+- João Costa, estudante em Mestrado de Engenharia Informática
+<br>
+<br>
+- Moderadora: Professora Diana Ferreira, Departamento de Informática
+</p>
+<br>
+<p>
+A mesa-redonda pretende promover uma reflexão informal e multidisciplinar sobre o impacto da IA na forma como pensamos, aprendemos e trabalhamos, explorando os desafios que esta transformação coloca à aprendizagem, ao pensamento crítico e ao discernimento humano, reunindo diferentes perspetivas, nomeadamente da história da informática, da inteligência artificial, da psicologia e dos estudantes, num formato de conversa aberta.
+</p>
+`,
+  },
+  {
     time: "27 de Novembro, 2026",
     title: "IEEE Engineering Day 2026 (ED'26)",
     imagem: "/icon.svg",
     location: "Escola de Engenharia, Campus de Azurém",
     description: `
-<p> 
+<p align=justify> 
 Evento anual promovido pelo IEEE Portugal que tem como objetivo reunir representantes do meio académico e da indústria para a apresentação e discussão de temas relevantes para a comunidade tecnológica.
 A edição deste ano será subordinada ao tema <i>Intelligent-Driven Engineering</i>.
+</p>
+<br>
+<p>
+<img src="/27-11-2026.jpg" alt="IEEE">
+</p>    
+`,
+  },
+  {
+    time: "9 de Dezembro, 2026 (16:00)",
+    title: "Encontro DI Amanhã",
+    imagem: "/icon.svg",
+    location: "Campus de Gualtar (Ed.2 B1)",
+    description: `
+<p align=justify> 
+A Direção do Departamento de Informática promoverá, no próximo dia 9 de dezembro de 2026, no Campus de Gualtar no Anfiteatro B1 do CP2, o Encontro DI Amanhã, que se pretende afirmar como um momento de diálogo e reflexão sobre os desafios, as oportunidades e os caminhos de futuro do Departamento e do ensino da Informática. A iniciativa destina-se à comunidade do DI, reunindo docentes de carreira, docentes convidados e colegas do pessoal técnico, administrativo e de gestão. Serão, ainda, convidados representantes dos núcleos de estudantes.
+
+O programa incluirá uma conferência pelo colega Arlindo Oliveira (IST) e um painel de reflexão e debate que reunirá diferentes perspetivas das áreas disciplinares do Departamento de Informática, procurando discutir o futuro da formação em Informática e a missão da Universidade nas próximas décadas.
+
+O encontro culminará com um jantar-convívio no Restaurante Panorâmico, proporcionando um momento de encontro e partilha entre os membros da comunidade do DI.
+
+</p>
+<br>
+<p>
+<img src="/9-12-2026.jpg" alt="DIAmanhã">
 </p>    
 `,
   },
