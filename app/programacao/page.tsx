@@ -77,6 +77,14 @@ export default function ProgramacaoPage() {
         "Evento anual promovido pelo IEEE Portugal que tem como objetivo reunir representantes do meio académico e da indústria para a apresentação e discussão de temas relevantes para a comunidade tecnológica. A edição deste ano será subordinada ao tema Intelligent-Driven Engineering.",
     },
     {
+      time: "9 de Dezembro, 2026",
+      title: "Encontro DI Amanhã",
+      imagem: "/ImagensEventosSite_09.jpg",
+      location: "Campus de Gualtar (Ed.2 B1)",
+      description:
+        "O Ensino da Informática e a Missão da Universidade na Era da Inteligência Artificial",
+    },
+    {
       time: "Data a anunciar em 2027",
       title: "Os próximos 50 anos: Caminhos para a investigação",
       imagem: "/ImagensEventosSite_07.jpg",
