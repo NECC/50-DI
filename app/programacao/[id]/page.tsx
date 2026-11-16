@@ -267,7 +267,7 @@ A edição deste ano será subordinada ao tema <i>Intelligent-Driven Engineering
 </p>
 <br>
 <p>
-<img src="/27-11-2026.jpg" alt="IEEE">
+<img src="/IEEE.svg" alt="IEEE">
 </p>    
 `,
   },
